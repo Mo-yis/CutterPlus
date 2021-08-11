@@ -30,6 +30,12 @@
         },
         {
             "item": "minecraft:crafting_table"
+        },
+        {
+            "item": "minecraft:painting"
+        },
+        {
+            "item": "minecraft:item_frame"
         }
     ],
     "result": "minecraft:stick",
