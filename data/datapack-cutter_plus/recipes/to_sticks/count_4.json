@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "tag": "minecraft:wooden_doors"
+        },
+        {
+            "tag": "datapack-cutter_plus:wooden_fence_gates"
+        },
+        {
+            "tag": "datapack-cutter_plus:wooden_signs"
+        },
+        {
+            "tag": "minecraft:wooden_pressure_plates"
+        },
+        {
+            "tag": "minecraft:beds"
+        },
+        {
+            "item": "minecraft:lectern"
+        },
+        {
+            "item": "minecraft:cartography_table"
+        },
+        {
+            "item": "minecraft:fletching_table"
+        },
+        {
+            "item": "minecraft:smithing_table"
+        },
+        {
+            "item": "minecraft:crafting_table"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 4
+}

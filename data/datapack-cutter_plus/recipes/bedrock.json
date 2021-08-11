@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:command_block"
+    },
+    "result": "minecraft:bedrock",
+    "count": 1
+}

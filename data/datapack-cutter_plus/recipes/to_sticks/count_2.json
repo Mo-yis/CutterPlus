@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "tag": "minecraft:wooden_fences"
+        },
+        {
+            "tag": "minecraft:planks"
+        },
+        {
+            "item": "minecraft:ladder"
+        },
+        {
+            "item": "minecraft:loom"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 2
+}

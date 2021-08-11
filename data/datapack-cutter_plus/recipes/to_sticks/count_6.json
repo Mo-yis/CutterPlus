@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "tag": "minecraft:wooden_trapdoors"
+        },
+        {
+            "item": "minecraft:composter"
+        },
+        {
+            "item": "minecraft:campfire"
+        },
+        {
+            "item": "minecraft:soul_campfire"
+        },
+        {
+            "item": "minecraft:armor_stand"
+        },
+        {
+            "item": "minecraft:barrel"
+        },
+        {
+            "item": "minecraft:beehive"
+        },
+        {
+            "item": "minecraft:bookshelf"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 6
+}
