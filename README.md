@@ -12,7 +12,7 @@
     This datapack is dedicated to all those who strive to survive!
 
 ## 说明 Explain
-- 一个简单的数据包, 仅使用一种合成方式, 方便合成.
+- 一个轻量级数据包, 仅使用一种合成方式, 方便合成.
 - 你甚至可以用切石机切木头 ! Emmm... 在生活中是可以.
 
 <p>
@@ -28,6 +28,7 @@
 
 - Add a lot of working formula of stone-cutter without destroying the balance of the original game.
 - Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
+
 ### 木制物品加工图 Wooden Crafting Tree
 ~~~~
 ------------------------------------------------------------------
@@ -97,6 +98,7 @@
 - 相互转换
 
 基岩 <===========>  命令方块
+
 紫珀块 <=========>  紫珀柱
 花岗岩 <=========>  磨制花岗岩
 闪长岩 <=========>  磨制闪长岩
@@ -112,19 +114,24 @@
 黑石 <===========>  磨制黑石 <=====>  磨制黑石砖 <====> 錾制磨制黑石砖
 石英块 <=========>  石英砖 <=======>  錾制石英块 <====> 石英柱
 
+深板岩圆石 <======>  錾制深板岩 <===>  磨制深板岩
+<================>
+深板岩砖 <========>  深板岩瓦
+
 - 单向转换
 
-石头 ============>  石头按钮
-黑石 ============>  磨制黑石按钮
-磨制黑石 ========>  磨制黑石按钮
-海晶石砖 ========>  海晶石
-红色下界砖块 ====>  下界砖
-下界砖块 ========>  下界砖
-砖块 ============>  红砖
+石头 ------------>>  石头按钮
+黑石 ------------>>  磨制黑石按钮
+磨制黑石 -------->>  磨制黑石按钮
+海晶石砖 -------->>  海晶石
+红色下界砖块 ---->>  下界砖 [2]
+下界砖块 -------->>  下界砖 [4]
+砖块 ------------>>  红砖 [4]
 
 - Exchange
 
 bedrock <==========>  command_block
+
 purpur_block <=====>  purpur_pillar
 granite <==========>  polished_granite
 diorite <==========>  polished_diorite
@@ -145,19 +152,28 @@ chiseled_quartz_block <================>  quartz_pillar
 
 - Transform to
 
-stone =================>  stone_button
-blackstone ============>  polished_blackstone_button
-polished_blackstone ===>  polished_blackstone_button
-prismarine_bricks =====>  prismarine
-red_nether_bricks =====>  nether_brick
-nether_bricks =========>  nether_brick
-bricks ================>  brick
+stone ----------------->>  stone_button
+blackstone ------------>>  polished_blackstone_button
+polished_blackstone --->>  polished_blackstone_button
+prismarine_bricks ----->>  prismarine
+red_nether_bricks ----->>  nether_brick [2]
+nether_bricks --------->>  nether_brick [4]
+bricks ---------------->>  brick [4]
 
 ------------------------------------------------------------------
 ~~~~
 
+## 更新内容 Update
+- 调整文件夹结构.
+- 增加对1.17深板岩类的支持.
 
-
+## 计划更新 Update Plan
+- 对同类的石质台阶相互转换的支持.
+- 对同类的石质楼梯相互转换的支持.
+- 烧制而成的石质方块可以加工回原始形态.
+- (1.17)铜可以除锈和脱蜡, 有蜡先脱蜡, 无蜡降低一级锈蚀程度.
+- 对矿石块分解的支持, 如钻石块加工成9个钻石.
+- 对部分砖台阶和砖楼梯的分解支持, 如下界砖楼梯加工成2个下界砖.
 
 ## 使用方式 Usage
 - Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**" .
@@ -169,6 +185,7 @@ bricks ================>  brick
 - 如果你正准备新建世界, 请解压下载的压缩包, 再从根目录重新压缩以添加到游戏中.
 - 如果你打算加载到已经启动的游戏或服务器, 请在后台或以3级操作员身份键入 /reload 以加载数据包.
 - 详细步骤请查询 Minecraft Wiki.
+
 <p>
 
 - Github: Click the **green** "**Code**" in the upper right corner and then click "**Download ZIP**".
@@ -181,9 +198,11 @@ bricks ================>  brick
 - 该数据包兼容新版本和旧版本.
 - 请勿添加功能类似或相同的数据包.
 - 合成配方可以通过JSON文件修改, 但不推荐这么做.
+- 当数据包成功加载时, 游戏中会提示 "[< 数据包名称 >] Loading Successful !" .
 
 <p>
 
 - This packet is compatible with new and old versions.
 - Do not add datapack with similar or identical functions.
 - Synthetic recipes can be modified through JSON files, but this is not recommended.
+- When the datapack is successfully loaded, the game will prompt "[< datapack name >] Loading Successful !".
