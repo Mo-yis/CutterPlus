@@ -1,7 +1,7 @@
 ## 切石机增强 Cutter Plus
 - 作者 Author: 莫yis
-- 版本 Version: 0.2
-- 支持版本 Supported version: 1.16.5
+- 版本 Version: 1.0
+- 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
 
@@ -195,14 +195,16 @@ bricks ---------------->>  brick [4]
 - For detailed steps, please query minecraft wiki.
 
 ## 注意 Warming
-- 该数据包兼容新版本和旧版本.
+- 该数据包兼容旧版本, 但是不会专门针对旧版本进行维护.
 - 请勿添加功能类似或相同的数据包.
 - 合成配方可以通过JSON文件修改, 但不推荐这么做.
 - 当数据包成功加载时, 游戏中会提示 "[< 数据包名称 >] Loading Successful !" .
+- 版本低于1.15.2无法显示提示信息, 请以管理员身份键入命令"/datapack list"查看数据包信息.
 
 <p>
 
-- This packet is compatible with new and old versions.
+- The datapack is compatible with the new version and the old version, but it will not be maintained specifically for the old version.
 - Do not add datapack with similar or identical functions.
 - Synthetic recipes can be modified through JSON files, but this is not recommended.
 - When the datapack is successfully loaded, the game will prompt "[< datapack name >] Loading Successful !".
+- The prompt message cannot be displayed in versions lower than 1.15.2. Please type the command "/datapack list" as an administrator to view the datapack information.
