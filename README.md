@@ -1,6 +1,6 @@
 ## 切石机增强 Cutter Plus
 - 作者 Author: 莫yis
-- 版本 Version: 1.0
+- 版本 Version: 1.1
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -23,11 +23,13 @@
 ## 特性 Features
 - 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方.
 - 要经过烧炼才能得到的方块无法从切石机获得, 比如平滑石头.
+- 与其他物品一同合成出的同类方块间无法相互转换, 如苔石砖和苔石.
 
 <p>
 
 - Add a lot of working formula of stone-cutter without destroying the balance of the original game.
 - Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
+- Similar blocks synthesized together with other items cannot be converted to each other, such as mossy_cobblestone and mossy_stone_bricks.
 
 ### 木制物品加工图 Wooden Crafting Tree
 ~~~~
@@ -97,6 +99,8 @@
 
 - 相互转换
 
+(方块)
+
 基岩 <===========>  命令方块
 
 紫珀块 <=========>  紫珀柱
@@ -118,17 +122,30 @@
 <================>
 深板岩砖 <========>  深板岩瓦
 
+(台阶)
+
+花岗岩台阶 <======>  磨制花岗岩台阶
+闪长岩台阶 <======>  磨制闪长岩台阶
+安山岩台阶 <======>  磨制安山岩台阶
+黑石台阶 <========>  磨制黑石台阶 <==>  磨制黑石砖台阶
+
 - 单向转换
 
 石头 ------------>>  石头按钮
-黑石 ------------>>  磨制黑石按钮
-磨制黑石 -------->>  磨制黑石按钮
-海晶石砖 -------->>  海晶石
+黑石 ------------>>  磨制黑石按钮    <<------  磨制黑石
+红色下界砖台阶 -->>  下界砖        <<--------  红色下界砖楼梯
 红色下界砖块 ---->>  下界砖 [2]
+下界砖台阶 ------>>  下界砖[2]       <<------  下界砖楼梯
 下界砖块 -------->>  下界砖 [4]
+砖台阶 ---------->>  红砖[2]       <<--------  砖楼梯
 砖块 ------------>>  红砖 [4]
 
+海晶石砖台阶 -> 海晶石台阶
+海晶石砖 -------->>  海晶石 ---->>  海晶石碎片 <<------  海晶灯
+
 - Exchange
+
+(Block)
 
 bedrock <==========>  command_block
 
@@ -150,30 +167,42 @@ polished_blackstone_bricks <===========>  chiseled_polished_blackstone
 quartz_block <=====>  quartz_bricks <============>
 chiseled_quartz_block <================>  quartz_pillar
 
+(Slab)
+
+granite_slab <=====>  polished_granite_slab
+diorite_slab <=====>  polished_diorite_slab
+andesite_slab <====>  polished_andesite_slab
+blackstone_slab <==>  polished_blackstone_slab <==> polished_blackstone_brick_slab
+
+
 - Transform to
 
 stone ----------------->>  stone_button
-blackstone ------------>>  polished_blackstone_button
-polished_blackstone --->>  polished_blackstone_button
-prismarine_bricks ----->>  prismarine
+blackstone ------------>>  polished_blackstone_button <<- polished_blackstone
+red_nether_brick_slab ->>  nether_brick          <<------ red_nether_brick_stairs
 red_nether_bricks ----->>  nether_brick [2]
+nether_brick_slab ----->>  nether_brick [2]     <<------- nether_brick_stairs
 nether_bricks --------->>  nether_brick [4]
+brick_slab ------------>>  brick [2]         <------------ brick_stairs
 bricks ---------------->>  brick [4]
+
+prismarine_brick_slab ->>  prismarine_slab
+prismarine_bricks ----->>  prismarine --->>  prismarine_shard <<-- sea_lantern
 
 ------------------------------------------------------------------
 ~~~~
 
 ## 更新内容 Update
-- 调整文件夹结构.
-- 增加对1.17深板岩类的支持.
+- 调整文件夹结构
+- 对同类的石质台阶相互转换的支持.
+- 添加部分物品的分解
+- 更新数据包图标
 
 ## 计划更新 Update Plan
-- 对同类的石质台阶相互转换的支持.
+- 所有楼梯切割成台阶.
 - 对同类的石质楼梯相互转换的支持.
-- 烧制而成的石质方块可以加工回原始形态.
 - (1.17)铜可以除锈和脱蜡, 有蜡先脱蜡, 无蜡降低一级锈蚀程度.
 - 对矿石块分解的支持, 如钻石块加工成9个钻石.
-- 对部分砖台阶和砖楼梯的分解支持, 如下界砖楼梯加工成2个下界砖.
 
 ## 使用方式 Usage
 - Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**" .
