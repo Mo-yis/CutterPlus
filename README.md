@@ -1,6 +1,6 @@
 ## 切石机增强 Cutter Plus
 - 作者 Author: 莫yis
-- 版本 Version: 1.1
+- 版本 Version: 1.2
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -13,7 +13,7 @@
 
 ## 说明 Explain
 - 一个轻量级数据包, 仅使用一种合成方式, 方便合成.
-- 你甚至可以用切石机切木头 ! Emmm... 在生活中是可以.
+- 你甚至可以用切石机切木头 ! Emmm... 在生活中是可以的.
 
 <p>
 
@@ -24,12 +24,14 @@
 - 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方.
 - 要经过烧炼才能得到的方块无法从切石机获得, 比如平滑石头.
 - 与其他物品一同合成出的同类方块间无法相互转换, 如苔石砖和苔石.
+- 切石机只能加工固态物品和没有NBT标签的物品.
 
 <p>
 
 - Add a lot of working formula of stone-cutter without destroying the balance of the original game.
 - Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
 - Similar blocks synthesized together with other items cannot be converted to each other, such as mossy_cobblestone and mossy_stone_bricks.
+- The stone-cutter can only process solid articles and articles without NBT label.
 
 ### 木制物品加工图 Wooden Crafting Tree
 ~~~~
@@ -47,9 +49,10 @@
             |-- 木板 planks [4]
     |-- 木板 planks
         |-- 栅栏 fence
-        |-- 楼梯 stairs
         |-- 台阶 slab [2]
         |-- 按钮 button
+        |-- 楼梯 stairs
+			|-- 台阶 slab
 
 ------------------------------------------------------------------
 
@@ -140,8 +143,23 @@
 砖台阶 ---------->>  红砖[2]       <<--------  砖楼梯
 砖块 ------------>>  红砖 [4]
 
-海晶石砖台阶 -> 海晶石台阶
+海晶石砖台阶 ---->>  海晶石台阶
 海晶石砖 -------->>  海晶石 ---->>  海晶石碎片 <<------  海晶灯
+
+*
+楼梯 -->台阶(1.16)
+stairs --> slab
+楼梯 == 楼梯
+石台阶 == 石砖台阶
+
+铁块 > 铁锭[9] > 铁粒[9]
+金块 > 金锭[9] > 金粒[9]
+钻石块 > 钻石[9]
+下界合金块 > 下界合金锭[9]
+煤块 > 煤炭[9]
+绿宝石块 > 绿宝石[9]
+青金石块 > 青金石[9]
+*
 
 - Exchange
 
@@ -193,16 +211,15 @@ prismarine_bricks ----->>  prismarine --->>  prismarine_shard <<-- sea_lantern
 ~~~~
 
 ## 更新内容 Update
-- 调整文件夹结构
-- 对同类的石质台阶相互转换的支持.
-- 添加部分物品的分解
-- 更新数据包图标
+- 调整文件夹结构.
+- 楼梯可以切割成台阶(1.16).
+- 楼梯间相互转化(1.16).
+- 加工过的矿石块切割.
 
 ## 计划更新 Update Plan
-- 所有楼梯切割成台阶.
-- 对同类的石质楼梯相互转换的支持.
 - (1.17)铜可以除锈和脱蜡, 有蜡先脱蜡, 无蜡降低一级锈蚀程度.
-- 对矿石块分解的支持, 如钻石块加工成9个钻石.
+- 对1.17的所有方块支持.
+- 英文翻译.
 
 ## 使用方式 Usage
 - Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**" .
