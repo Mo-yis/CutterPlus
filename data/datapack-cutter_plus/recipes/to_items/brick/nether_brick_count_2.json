@@ -1,8 +1,6 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": [{
-        "item": "minecraft:red_nether_bricks"
-    },{
         "item": "nether_brick_slab"
     },{
         "item": "nether_brick_stairs"

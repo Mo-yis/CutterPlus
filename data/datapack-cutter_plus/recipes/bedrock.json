@@ -1,8 +1,10 @@
 {
     "type": "minecraft:stonecutting",
-    "ingredient": {
+    "ingredient": [{
         "item": "minecraft:command_block"
-    },
+    },{
+        "item": "minecraft:structure_block"
+    }],
     "result": "minecraft:bedrock",
     "count": 1
 }

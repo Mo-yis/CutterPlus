@@ -1,6 +1,6 @@
 ## 切石机增强 Cutter Plus
 - 作者 Author: 莫yis
-- 版本 Version: 1.2
+- 版本 Version: 1.3
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -52,7 +52,7 @@
         |-- 台阶 slab [2]
         |-- 按钮 button
         |-- 楼梯 stairs
-			|-- 台阶 slab
+            |-- 台阶 slab
 
 ------------------------------------------------------------------
 
@@ -104,8 +104,6 @@
 
 (方块)
 
-基岩 <===========>  命令方块
-
 紫珀块 <=========>  紫珀柱
 花岗岩 <=========>  磨制花岗岩
 闪长岩 <=========>  磨制闪长岩
@@ -114,6 +112,7 @@
 末地石 <=========>  末地石砖
 下界砖块 <=======>  錾制下界砖块
 
+基岩 <===========>  命令方块 <=====>  结构方块
 石头 <===========>  石砖 <=========>  錾制石砖
 砂岩 <===========>  錾制砂岩 <=====>  切制砂岩
 红砂岩 <=========>  錾制红砂岩 <===>  切制红砂岩
@@ -122,50 +121,51 @@
 石英块 <=========>  石英砖 <=======>  錾制石英块 <====> 石英柱
 
 深板岩圆石 <======>  錾制深板岩 <===>  磨制深板岩
-<================>
-深板岩砖 <========>  深板岩瓦
+<================>  深板岩砖 <========>  深板岩瓦
 
 (台阶)
 
+石台阶 <=========>  石砖台阶
 花岗岩台阶 <======>  磨制花岗岩台阶
 闪长岩台阶 <======>  磨制闪长岩台阶
 安山岩台阶 <======>  磨制安山岩台阶
 黑石台阶 <========>  磨制黑石台阶 <==>  磨制黑石砖台阶
 
+(楼梯)
+
+石楼梯 <=========>  石砖楼梯
+花岗岩楼梯 <======>  磨制花岗岩楼梯
+闪长岩楼梯 <======>  磨制闪长岩楼梯
+安山岩楼梯 <======>  磨制安山岩楼梯
+黑石楼梯 <========>  磨制黑石楼梯 <==>  磨制黑石砖楼梯
+
 - 单向转换
+
+楼梯 ----------->>  台阶
 
 石头 ------------>>  石头按钮
 黑石 ------------>>  磨制黑石按钮    <<------  磨制黑石
-红色下界砖台阶 -->>  下界砖        <<--------  红色下界砖楼梯
-红色下界砖块 ---->>  下界砖 [2]
-下界砖台阶 ------>>  下界砖[2]       <<------  下界砖楼梯
+
+下界砖台阶 ------>>  下界砖 [2]       <<-----  下界砖楼梯
 下界砖块 -------->>  下界砖 [4]
-砖台阶 ---------->>  红砖[2]       <<--------  砖楼梯
+砖台阶 ---------->>  红砖 [2]       <<-------  砖楼梯
 砖块 ------------>>  红砖 [4]
 
+铁块 ------------>>  铁锭 [9] -------->>  铁粒 [9]
+金块 ------------>>  金锭 [9] -------->> 金粒[9]
+下界合金块 ------->>  下界合金锭 [9]
+钻石块 ---------->>  钻石 [9]
+绿宝石块 -------->>  绿宝石 [9]
+青金石块 -------->>  青金石 [9]
+
 海晶石砖台阶 ---->>  海晶石台阶
+海晶石砖楼梯 ---->>  海晶石楼梯
 海晶石砖 -------->>  海晶石 ---->>  海晶石碎片 <<------  海晶灯
 
-*
-楼梯 -->台阶(1.16)
-stairs --> slab
-楼梯 == 楼梯
-石台阶 == 石砖台阶
-
-铁块 > 铁锭[9] > 铁粒[9]
-金块 > 金锭[9] > 金粒[9]
-钻石块 > 钻石[9]
-下界合金块 > 下界合金锭[9]
-煤块 > 煤炭[9]
-绿宝石块 > 绿宝石[9]
-青金石块 > 青金石[9]
-*
 
 - Exchange
 
 (Block)
-
-bedrock <==========>  command_block
 
 purpur_block <=====>  purpur_pillar
 granite <==========>  polished_granite
@@ -175,6 +175,7 @@ basalt <===========>  polished_basalt
 end_stone <========>  end_stone_bricks
 nether_bricks <====>  chiseled_nether_bricks
 
+bedrock <==========>  command_block <===========>  structure_block
 stone <============>  stone_bricks<=============>  chiseled_stone_bricks
 sandstone <========>  chiseled_sandstone<=======>  cut_sandstone
 red_sandstone <====>  chiseled_red_sandstone<===>  cut_red_sandstone
@@ -187,24 +188,41 @@ chiseled_quartz_block <================>  quartz_pillar
 
 (Slab)
 
+stone_slab <=======>  stone_brick_slab
 granite_slab <=====>  polished_granite_slab
 diorite_slab <=====>  polished_diorite_slab
 andesite_slab <====>  polished_andesite_slab
 blackstone_slab <==>  polished_blackstone_slab <==> polished_blackstone_brick_slab
 
+(stairs)
+
+stone_stairs <=======>  stone_brick_stairs
+granite_stairs <=====>  polished_granite_stairs
+diorite_stairs <=====>  polished_diorite_stairs
+andesite_stairs <====>  polished_andesite_stairs
+blackstone_stairs <==>  polished_blackstone_stairs <==> polished_blackstone_brick_stairs
 
 - Transform to
 
+stairs ---------------->>  slab
+
 stone ----------------->>  stone_button
 blackstone ------------>>  polished_blackstone_button <<- polished_blackstone
-red_nether_brick_slab ->>  nether_brick          <<------ red_nether_brick_stairs
-red_nether_bricks ----->>  nether_brick [2]
+
 nether_brick_slab ----->>  nether_brick [2]     <<------- nether_brick_stairs
 nether_bricks --------->>  nether_brick [4]
 brick_slab ------------>>  brick [2]         <------------ brick_stairs
 bricks ---------------->>  brick [4]
 
+iron_block ------------>>  iron_ingot [9] ---->>  iron_nugget [9]
+gold_block ------------>>  gold_ingot [9] ---->>  gold_nugget [9]
+netherite_block ------->>  netherite_ingot [9]
+diamond_block --------->>  diamond [9]
+emerald_block --------->>  emerald [9]
+lapis_block ----------->>  lapis_lazuli [9]
+
 prismarine_brick_slab ->>  prismarine_slab
+prismarine_brick_stairs ->>  prismarine_stairs
 prismarine_bricks ----->>  prismarine --->>  prismarine_shard <<-- sea_lantern
 
 ------------------------------------------------------------------
@@ -212,9 +230,12 @@ prismarine_bricks ----->>  prismarine --->>  prismarine_shard <<-- sea_lantern
 
 ## 更新内容 Update
 - 调整文件夹结构.
-- 楼梯可以切割成台阶(1.16).
-- 楼梯间相互转化(1.16).
-- 加工过的矿石块切割.
+- 添加结构方块配方.
+- 添加 石台阶 <==>  石砖台阶.
+- 移除 红色下界砖台阶 -->> 下界砖 <<--  红色下界砖楼梯.
+- 移除 煤炭块 -->> 煤炭 [9].
+- 移除 红色下界砖块 -->> 下界砖 [2].
+- 更新翻译.
 
 ## 计划更新 Update Plan
 - (1.17)铜可以除锈和脱蜡, 有蜡先脱蜡, 无蜡降低一级锈蚀程度.

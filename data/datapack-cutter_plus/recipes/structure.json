@@ -3,8 +3,8 @@
     "ingredient": [{
         "item": "minecraft:bedrock"
     },{
-        "item": "minecraft:structure_block"
+        "item": "minecraft:command_block"
     }],
-    "result": "minecraft:command_block",
+    "result": "minecraft:structure_block",
     "count": 1
 }
