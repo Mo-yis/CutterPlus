@@ -1,6 +1,6 @@
 ## 切石机增强 Cutter Plus
 - 作者 Author: 莫yis
-- 版本 Version: 1.3
+- 版本 Version: 2.0
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -12,16 +12,17 @@
     This datapack is dedicated to all those who strive to survive!
 
 ## 说明 Explain
-- 一个轻量级数据包, 仅使用一种合成方式, 方便合成.
+- 一个轻量级数据包, 仅使用一个加工工具, 方便加工.
+- 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方.
 - 你甚至可以用切石机切木头 ! Emmm... 在生活中是可以的.
 
 <p>
 
-- A simple packet, using only one synthesis method, is convenient for synthesis.
+- A lightweight datapack that uses only one processing tool to facilitate processing.
+- Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
 - You can even cut wood with a stone-cutter! Emmm... It's OK in life.
 
 ## 特性 Features
-- 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方.
 - 要经过烧炼才能得到的方块无法从切石机获得, 比如平滑石头.
 - 与其他物品一同合成出的同类方块间无法相互转换, 如苔石砖和苔石.
 - 切石机只能加工固态物品和没有NBT标签的物品.
@@ -29,13 +30,13 @@
 <p>
 
 - Add a lot of working formula of stone-cutter without destroying the balance of the original game.
-- Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
 - Similar blocks synthesized together with other items cannot be converted to each other, such as mossy_cobblestone and mossy_stone_bricks.
 - The stone-cutter can only process solid articles and articles without NBT label.
 
 ### 木制物品加工图 Wooden Crafting Tree
 ~~~~
 ------------------------------------------------------------------
+
 木头种类 wooden_type
     |-- 原木 log (菌柄 stem)
         |-- 木头 wood (菌核 hyphae)
@@ -100,7 +101,7 @@
 ~~~~
 ------------------------------------------------------------------
 
-- 相互转换
+- 相互转化
 
 (方块)
 
@@ -119,30 +120,23 @@
 
 黑石 <===========>  磨制黑石 <=====>  磨制黑石砖 <====> 錾制磨制黑石砖
 石英块 <=========>  石英砖 <=======>  錾制石英块 <====> 石英柱
+深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
-深板岩圆石 <======>  錾制深板岩 <===>  磨制深板岩
-<================>  深板岩砖 <========>  深板岩瓦
+(台阶 / 楼梯)
 
-(台阶)
+石 <=========>  石砖
+花岗岩 <======>  磨制花岗岩
+闪长岩 <======>  磨制闪长岩
+安山岩 <======>  磨制安山岩
+黑石 <========>  磨制黑石 <==>  磨制黑石砖
+深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
-石台阶 <=========>  石砖台阶
-花岗岩台阶 <======>  磨制花岗岩台阶
-闪长岩台阶 <======>  磨制闪长岩台阶
-安山岩台阶 <======>  磨制安山岩台阶
-黑石台阶 <========>  磨制黑石台阶 <==>  磨制黑石砖台阶
-
-(楼梯)
-
-石楼梯 <=========>  石砖楼梯
-花岗岩楼梯 <======>  磨制花岗岩楼梯
-闪长岩楼梯 <======>  磨制闪长岩楼梯
-安山岩楼梯 <======>  磨制安山岩楼梯
-黑石楼梯 <========>  磨制黑石楼梯 <==>  磨制黑石砖楼梯
-
-- 单向转换
+- 单向转化
 
 楼梯 ----------->>  台阶
+玻璃(染色) ------>>  玻璃板(染色) [3]
 
+滴水石块 -------->> 滴水石锥
 石头 ------------>>  石头按钮
 黑石 ------------>>  磨制黑石按钮    <<------  磨制黑石
 
@@ -186,30 +180,30 @@ polished_blackstone_bricks <===========>  chiseled_polished_blackstone
 quartz_block <=====>  quartz_bricks <============>
 chiseled_quartz_block <================>  quartz_pillar
 
-(Slab)
+cobbled_deepslate <==> chiseled_deepslate <======>
+polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
-stone_slab <=======>  stone_brick_slab
-granite_slab <=====>  polished_granite_slab
-diorite_slab <=====>  polished_diorite_slab
-andesite_slab <====>  polished_andesite_slab
-blackstone_slab <==>  polished_blackstone_slab <==> polished_blackstone_brick_slab
+(Slab / stairs)
 
-(stairs)
+stone <=======>  stone_brick
+granite <=====>  polished_granite
+diorite <=====>  polished_diorite
+andesite <====>  polished_andesite
+blackstone <==>  polished_blackstone <==> polished_blackstone_brick
 
-stone_stairs <=======>  stone_brick_stairs
-granite_stairs <=====>  polished_granite_stairs
-diorite_stairs <=====>  polished_diorite_stairs
-andesite_stairs <====>  polished_andesite_stairs
-blackstone_stairs <==>  polished_blackstone_stairs <==> polished_blackstone_brick_stairs
+cobbled_deepslate <==> chiseled_deepslate <==>
+polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
 - Transform to
 
 stairs ---------------->>  slab
+glass(stained) -------->>  glass_pane(stained) [3]
 
+dripstone_block ------->>  pointed_dripstone
 stone ----------------->>  stone_button
-blackstone ------------>>  polished_blackstone_button <<- polished_blackstone
+blackstone ------------>>  polished_blackstone_button <<-- polished_blackstone
 
-nether_brick_slab ----->>  nether_brick [2]     <<------- nether_brick_stairs
+nether_brick_slab ----->>  nether_brick [2]     <<-------- nether_brick_stairs
 nether_bricks --------->>  nether_brick [4]
 brick_slab ------------>>  brick [2]         <------------ brick_stairs
 bricks ---------------->>  brick [4]
@@ -228,19 +222,41 @@ prismarine_bricks ----->>  prismarine --->>  prismarine_shard <<-- sea_lantern
 ------------------------------------------------------------------
 ~~~~
 
+### 铜质物品加工图 Coppery Crafting Tree
+~~~~
+------------------------------------------------------------------
+
+(先) 打蜡的 -->> 未打蜡的
+(后) 氧化的 -->> 锈蚀的 -->> 斑驳的 -->> 新的
+
+块状的 <==> 切制的
+
+楼梯 -->> 台阶 -->> 铜锭 [4]
+楼梯 -->> 铜锭 [4]
+铜块 -->> 铜锭 [9] <<-- 切制铜块
+
+(first) waxed -->> unwaxed
+(second) oxidized -->> weathered -->> exposed -->> new
+
+block <==> cut
+
+stairs -->> slab -->> copper_ingot [4]
+stairs -->> copper_ingot [4]
+copper_block -->> copper_ingot [4] <<-- cut_copper
+
+------------------------------------------------------------------
+~~~~
+
 ## 更新内容 Update
-- 调整文件夹结构.
-- 添加结构方块配方.
-- 添加 石台阶 <==>  石砖台阶.
-- 移除 红色下界砖台阶 -->> 下界砖 <<--  红色下界砖楼梯.
-- 移除 煤炭块 -->> 煤炭 [9].
-- 移除 红色下界砖块 -->> 下界砖 [2].
+- 玻璃(染色) -->> 玻璃板(染色) [3].
+- 滴水石块 -->> 滴水石锥.
+- 相互转化(楼梯/半砖)深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦.
+- 深板岩楼梯 -->> 深板岩台阶.
+- 铜质物品加工.
 - 更新翻译.
 
 ## 计划更新 Update Plan
-- (1.17)铜可以除锈和脱蜡, 有蜡先脱蜡, 无蜡降低一级锈蚀程度.
-- 对1.17的所有方块支持.
-- 英文翻译.
+- 暂无.
 
 ## 使用方式 Usage
 - Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**" .
