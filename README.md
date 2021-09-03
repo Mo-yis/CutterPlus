@@ -23,13 +23,13 @@
 - You can even cut wood with a stone-cutter! Emmm... It's OK in life.
 
 ## 特性 Features
-- 要经过烧炼才能得到的方块无法从切石机获得，如平滑石头。
+- 要经过烧炼才能获得的方块无法从切石机获得，如平滑石头。
 - 苔石和苔石砖是由圆石和石砖加工而来，故不能相互转化。
 - 切石机只能加工固态物品和没有NBT标签的物品。
 
 <p>
 
-- Add a lot of working formula of stone-cutter without destroying the balance of the original game.
+- Blocks that can only be obtained by burning cannot be obtained from a stone cutter, such as the smooth_stones.
 - The mossy_cobblestone and the mossy_stone_bricks are processed from the cobblestone and the stone_bricks, so they can not be transformed into each other.
 - The stone-cutter can only process solid articles and articles without NBT label.
 
@@ -246,6 +246,7 @@ prismarine_bricks ----->>  prismarine --->>  prismarine_shard <<-- sea_lantern
 楼梯 -->>  台阶 ------>> 铜锭 [4]
 楼梯 -->>  铜锭 [4]
 铜块 -->>  铜锭 [9] <<---- 切制铜块
+
 
 (first) waxed ------>>  unwaxed
 (second) oxidized -->>  weathered -->> exposed -->> new
