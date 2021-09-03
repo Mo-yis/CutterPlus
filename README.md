@@ -131,6 +131,10 @@
 黑石 <========>  磨制黑石 <===>  磨制黑石砖
 深板岩圆石 <==>  錾制深板岩 <==>  磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
+(墙)
+
+黑石墙 <=====>  磨制黑石墙 <==>  磨制黑石砖墙
+
 - 单向转化
 
 楼梯 ----------->>  台阶
@@ -196,6 +200,10 @@ blackstone <==>  polished_blackstone <==> polished_blackstone_brick
 cobbled_deepslate <==> chiseled_deepslate <==>
 polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
+(wall)
+
+blackstone_wall <==> polished_blackstone_wall <==> polished_blackstone_brick_wall
+
 - Transform to
 
 stairs ---------------->>  slab
@@ -252,7 +260,6 @@ copper_block -->>  copper_ingot [4] <<---- cut_copper
 ~~~~
 
 ## 更新内容 Update
-- 黑石墙 <==> 磨制黑石墙 <==> 磨制黑石砖墙。
 - 更新 README.md。
 
 ## 计划更新 Update Plan
