@@ -1,28 +1,37 @@
-# 切石机增强 Cutter Plus
+<h1 id="Top">切石机增强 Cutter Plus</h1>
+
 - 作者 Author: 莫yis
-- 版本 Version: 2.3
+- 版本 Version: 2.4-test2
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
 
-## 目录 Contents
-
-1. [献辞 Dedication](##献辞-dedication)
-2. [说明 Explain](##说明-explain)
-3. [特性 Features](##特性-features)
-    1. [木制物品加工图 Wooden Crafting Tree](###木制物品加工图-Wooden-Crafting-Tree)
-    2. <a href="#Stony-Crafting-Tree">石质物品加工图 Stony Crafting Tree</a>
-    3. <a href="#Coppery-Crafting-Tree">铜质物品加工图 Coppery Crafting Tree</a>
-4. <a href="#Update">更新内容 Update</a>
-
-
-## 献辞 Dedication
+<h2>献辞 Dedication</h2>
 
     谨将此数据包, 献给所有努力生存的方块人！
 
     This datapack is dedicated to all those who strive to survive!
 
-## 说明 Explain
+<h2 id="Contents">目录 Contents</h2>
+
+<ol>
+    <li><a href="#Explain">说明 Explain</a></li>
+    <li>
+        <a href="#Features">特性 Features</a>
+        <ol>
+            <li><a href="#Wooden-Crafting-Tree">木制物品加工图 Wooden Crafting Tree</a></li>
+            <li><a href="#Stony-Crafting-Tree">石质物品加工图 Stony Crafting Tree</a></li>
+            <li><a href="#Coppery-Crafting-Tree">铜质物品加工图 Coppery Crafting Tree</a></li>
+        </ol>
+    </li>
+    <li><a href="#Update">更新内容 Update</a></li>
+    <li><a href="#Update-Plan">计划更新 Update Plan</a></li>
+    <li><a href="#Usage">使用方式 Usage</a></li>
+    <li><a href="#Warming">注意 Warming</a></li>
+</ol>
+
+<h2 id="Explain">说明 Explain</h2>
+
 - 一个轻量级数据包，仅使用一个加工工具，方便加工。
 - 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方。
 - 你甚至可以用切石机切木头！ Emmm... 在生活中是可以的。
@@ -33,7 +42,8 @@
 - Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
 - You can even cut wood with a stone-cutter! Emmm... It's OK in life.
 
-## 特性 Features
+<h2 id="Features">特性 Features</h2>
+
 - 要经过烧炼才能获得的方块无法从切石机获得，如平滑石头。
 - 苔石和苔石砖是由圆石和石砖加工而来，故不能相互转化。
 - 切石机只能加工固态物品和没有NBT标签的物品。
@@ -44,7 +54,8 @@
 - The mossy_cobblestone and the mossy_stone_bricks are processed from the cobblestone and the stone_bricks, so they can not be transformed into each other.
 - The stone-cutter can only process solid articles and articles without NBT label.
 
-### 木制物品加工图 Wooden Crafting Tree
+<h3 id="Wooden-Crafting-Tree">木制物品加工图 Wooden Crafting Tree</h3>
+
 ~~~~
 ------------------------------------------------------------------
 
@@ -279,15 +290,16 @@ copper_block -->>  copper_ingot [4] <<---- cut_copper
 
 <h2 id="Update">更新内容 Update</h2>
 
-- 模组支持测试
-- 页内链接测试
+- 链接测试
 - 更新 README.md。
 
-## 计划更新 Update Plan
-- 等待1.18更新。
-- 对部分开源模组的支持。
+<h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-## 使用方式 Usage
+- 对匠魂3更多的支持
+- 等待1.18更新。
+
+<h2 id="Usage">使用方式 Usage</h2>
+
 - Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**"。
 - Gitee: 右上角点击**橙色**的 "**克隆/下载**" 再点击 "**下载ZIP**"。
 
@@ -306,7 +318,8 @@ copper_block -->>  copper_ingot [4] <<---- cut_copper
 - If you plan to load into a game or server that has already started, please type "/reload" from the console or as a level 3 operator.
 - For questions, please check the Minecraft Wiki.
 
-## 注意 Warming
+<h2 id="Warming">注意 Warming</h2>
+
 - 该数据包兼容旧版本，但是不会专门针对旧版本进行维护。
 - 请勿添加功能类似或相同的数据包。
 - 合成配方可以通过JSON文件修改，但不推荐这么做。
@@ -321,5 +334,4 @@ copper_block -->>  copper_ingot [4] <<---- cut_copper
 - When the datapack is successfully loaded, the game will prompt "[ datapack name ] Loading Successful !".
 - The prompt message cannot be displayed in versions lower than "1.15.2". Please type the command "/datapack list" as an administrator to view the datapack information.
 
-
-<a href="">Back to the top</a>
+<a href="#Top">回到顶部 Back to top</a>
