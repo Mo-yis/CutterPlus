@@ -1,6 +1,6 @@
 ## 切石机增强 Cutter Plus
 - 作者 Author: 莫yis
-- 版本 Version: 2.2
+- 版本 Version: 2.3
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -16,7 +16,7 @@
 - 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方。
 - 你甚至可以用切石机切木头！ Emmm... 在生活中是可以的。
 
-<p>
+<br>
 
 - A lightweight datapack that uses only one processing tool to facilitate processing.
 - Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
@@ -27,7 +27,7 @@
 - 苔石和苔石砖是由圆石和石砖加工而来，故不能相互转化。
 - 切石机只能加工固态物品和没有NBT标签的物品。
 
-<p>
+<br>
 
 - Blocks that can only be obtained by burning cannot be obtained from a stone cutter, such as the smooth_stones.
 - The mossy_cobblestone and the mossy_stone_bricks are processed from the cobblestone and the stone_bricks, so they can not be transformed into each other.
@@ -129,7 +129,7 @@
 闪长岩 <======>  磨制闪长岩
 安山岩 <======>  磨制安山岩
 黑石 <========>  磨制黑石 <===>  磨制黑石砖
-深板岩圆石 <==>  錾制深板岩 <==>  磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
+深板岩圆石 <===>  錾制深板岩 <==>  磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
 (墙)
 
@@ -145,16 +145,18 @@
 黑石 ----------->>  磨制黑石按钮  <<----- 磨制黑石
 紫水晶块 -------->>  紫水晶碎片
 紫水晶簇 -------->>  紫水晶碎片 [3]
+蓝冰 ----------->>  浮冰 ------------>>  冰
+石英块 --------->>  下界石英
 
-下界砖台阶 ------>>  下界砖 [2]   <<----- 下界砖楼梯
-下界砖块 -------->>  下界砖 [4]
+下界砖台阶 ----->>  下界砖 [2]   <<----- 下界砖楼梯
+下界砖块 ------->>  下界砖 [4]
 砖台阶 --------->>  红砖 [2]   <<------- 砖楼梯
 砖块 ----------->>  红砖 [4]
 
 铁块 ----------->>  铁锭 [9] -------->> 铁粒 [9]
 金块 ----------->>  金锭 [9] -------->> 金粒[9]
 下界合金块 ------>>  下界合金锭 [9]
-钻石块 --------->>  钻石 [9]
+钻石块 ---------->>  钻石 [9]
 绿宝石块 -------->>  绿宝石 [9]
 青金石块 -------->>  青金石 [9]
 
@@ -214,6 +216,8 @@ stone ----------------->>  stone_button
 blackstone ------------>>  polished_blackstone_button <<-- polished_blackstone
 amethyst_block -------->>  amethyst_shard
 amethyst_cluster ------>>  amethyst_shard [3]
+blue_ice -------------->>  packed_ice ----------->> ice
+quartz_block ---------->>  quartz
 
 nether_brick_slab ----->>  nether_brick [2]  <<---- nether_brick_stairs
 nether_bricks --------->>  nether_brick [4]
@@ -261,6 +265,8 @@ copper_block -->>  copper_ingot [4] <<---- cut_copper
 ~~~~
 
 ## 更新内容 Update
+- 蓝冰 -->> 浮冰 -->> 冰
+- 石英块 -->> 下界石英
 - 更新 README.md。
 
 ## 计划更新 Update Plan
@@ -270,14 +276,14 @@ copper_block -->>  copper_ingot [4] <<---- cut_copper
 - Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**"。
 - Gitee: 右上角点击**橙色**的 "**克隆/下载**" 再点击 "**下载ZIP**"。
 
-<p>
+<br>
 
 - 如果你打算将数据包放入存档中，请解压在 ".minecraft\ saves\ (存档名称)\ datapacks\ " 目录下。
 - 如果你正准备新建世界，请将解压出的文件夹添加到游戏中。
 - 如果你打算加载到已经启动的游戏或服务器中，请在后台或以3级操作员身份键入 "/reload" 以加载数据包。
 - 相关疑问请查询 Minecraft Wiki。
 
-<p>
+<br>
 
 - Github: Click the **green** "**Code**" in the upper right corner and then click "**Download ZIP**".
 - If you plan to put the datapack into the archive, please unzip it in the ".minecraft\ saves\ (archive name)\ datapacks\ " directory.
@@ -292,7 +298,7 @@ copper_block -->>  copper_ingot [4] <<---- cut_copper
 - 当数据包成功加载时，游戏中会提示 "[ 数据包名称 ] Loading Successful !"。
 - 版本低于1.15.2无法显示提示信息，请以管理员身份键入命令 "/datapack list" 查看数据包信息。
 
-<p>
+<br>
 
 - The datapack is compatible with the new version and the old version, but it will not be maintained specifically for the old version.
 - Do not add datapack with similar or identical functions.
