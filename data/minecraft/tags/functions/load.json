@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "datapack-cutter_plus:init"
+        "datapack-cutter_plus:init",
+        "support-tconstruct:init"
     ]
 }
