@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.4-test3
+- 版本 Version: 2.4
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -41,7 +41,7 @@
 - 一个轻量级数据包，仅使用一个加工工具，方便加工。
 - 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方。
 - 你甚至可以用切石机切木头！ Emmm... 在生活中是可以的。
-- 从版本 “2.4” 开始，支持模组《匠魂3》。
+- 从版本 “2.4” 开始，支持模组《匠魂》。
 
 <br>
 
@@ -299,14 +299,13 @@ blazewood -->> blazewood_slab [2]
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
-
+- 更新匠魂支持的工作配方。
 - 更新 README.md。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 对匠魂3更多的支持。
+- 对匠魂更多的支持。
 - 支持更多开源模组。
-- 等待1.18更新。
 
 <h2 id="Usage">使用方式 Usage</h2>
 
