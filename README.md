@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.4-test2
+- 版本 Version: 2.4-test3
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -19,9 +19,15 @@
     <li>
         <a href="#Features">特性 Features</a>
         <ol>
-            <li><a href="#Wooden-Crafting-Tree">木制物品加工图 Wooden Crafting Tree</a></li>
-            <li><a href="#Stony-Crafting-Tree">石质物品加工图 Stony Crafting Tree</a></li>
-            <li><a href="#Coppery-Crafting-Tree">铜质物品加工图 Coppery Crafting Tree</a></li>
+            <li>
+            <a href="#Vanilla-Support">原版支持 Vanilla Support</a>
+                <ol>
+                    <li><a href="#Wooden-Crafting-Tree">木制物品加工图 Wooden Crafting Tree</a></li>
+                    <li><a href="#Stony-Crafting-Tree">石质物品加工图 Stony Crafting Tree</a></li>
+                    <li><a href="#Coppery-Crafting-Tree">铜质物品加工图 Coppery Crafting Tree</a></li>
+                </ol>
+            </li>
+            <li><a href="#tconstruct">匠魂支持 Tinkers' Construct Support</a></li>
         </ol>
     </li>
     <li><a href="#Update">更新内容 Update</a></li>
@@ -35,12 +41,14 @@
 - 一个轻量级数据包，仅使用一个加工工具，方便加工。
 - 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方。
 - 你甚至可以用切石机切木头！ Emmm... 在生活中是可以的。
+- 从版本 “2.4” 开始，支持模组《匠魂3》。
 
 <br>
 
 - A lightweight datapack that uses only one processing tool to facilitate processing.
 - Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
 - You can even cut wood with a stone-cutter! Emmm... It's OK in life.
+- Starting from version "2.4", the Mod "Tinkers' Construct" is supported.
 
 <h2 id="Features">特性 Features</h2>
 
@@ -54,11 +62,12 @@
 - The mossy_cobblestone and the mossy_stone_bricks are processed from the cobblestone and the stone_bricks, so they can not be transformed into each other.
 - The stone-cutter can only process solid articles and articles without NBT label.
 
-<h3 id="Wooden-Crafting-Tree">木制物品加工图 Wooden Crafting Tree</h3>
+<a href="#Contents">回到目录 Back to contents</a>
+<h3 id="Vanilla-Support">原版支持 Vanilla Support</h3>
+<h4 id="Wooden-Crafting-Tree">木制物品加工图 Wooden Crafting Tree</h4>
 
-~~~~
+```
 ------------------------------------------------------------------
-
 木头种类 wooden_type
     |-- 原木 log (菌柄 stem)
         |-- 木头 wood (菌核 hyphae)
@@ -76,9 +85,7 @@
         |-- 按钮 button
         |-- 楼梯 stairs
             |-- 台阶 slab
-
 ------------------------------------------------------------------
-
         分解成 1 个木棍 Break it down into a sticks
 
 木台阶 wooden_slab                    木楼梯 wooden_stairs
@@ -115,19 +122,16 @@
 去皮原木 stripped_log (去皮菌柄 stripped_stem)
 木头 wood (菌核 hyphae)
 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
-
 ------------------------------------------------------------------
-~~~~
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Stony-Crafting-Tree">石质物品加工图 Stony Crafting Tree</h4>
 
-<h3 id="Stony-Crafting-Tree">石质物品加工图 Stony Crafting Tree</h3>
-
-~~~~
+```
 ------------------------------------------------------------------
-
 - 相互转化
 
 (方块)
-
 紫珀块 <=========>  紫珀柱
 花岗岩 <=========>  磨制花岗岩
 闪长岩 <=========>  磨制闪长岩
@@ -146,7 +150,6 @@
 深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
 (台阶 / 楼梯)
-
 石头 <========>  石砖
 花岗岩 <======>  磨制花岗岩
 闪长岩 <======>  磨制闪长岩
@@ -155,7 +158,6 @@
 深板岩圆石 <===>  錾制深板岩 <==>  磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
 (墙)
-
 黑石墙 <=====>  磨制黑石墙 <==>  磨制黑石砖墙
 
 - 单向转化
@@ -186,12 +188,10 @@
 海晶石砖台阶 ----->>  海晶石台阶
 海晶石砖楼梯 ----->>  海晶石楼梯
 海晶石砖 -------->>  海晶石 ---->>  海晶石碎片 <<------ 海晶灯
-
-
+------------------------------------------------------------------
 - Exchange
 
 (Block)
-
 purpur_block <=====>  purpur_pillar
 granite <==========>  polished_granite
 diorite <==========>  polished_diorite
@@ -215,7 +215,6 @@ cobbled_deepslate <==> chiseled_deepslate <======>
 polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
 (Slab / stairs)
-
 stone <=======>  stone_brick
 granite <=====>  polished_granite
 diorite <=====>  polished_diorite
@@ -226,7 +225,6 @@ cobbled_deepslate <==> chiseled_deepslate <==>
 polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
 (wall)
-
 blackstone_wall <==> polished_blackstone_wall <==> polished_blackstone_brick_wall
 
 - Transform to
@@ -257,45 +255,57 @@ lapis_block ----------->>  lapis_lazuli [9]
 prismarine_brick_slab --->>  prismarine_slab
 prismarine_brick_stairs ->>  prismarine_stairs
 prismarine_bricks ----->>  prismarine --->>  prismarine_shard <<-- sea_lantern
-
 ------------------------------------------------------------------
-~~~~
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Coppery-Crafting-Tree">铜质物品加工图 Coppery Crafting Tree</h4>
 
-<h3 id="Coppery-Crafting-Tree">铜质物品加工图 Coppery Crafting Tree</h3>
-
-~~~~
+```
 ------------------------------------------------------------------
-
 (先) 打蜡的 -->>  未打蜡的
 (后) 氧化的 -->>  锈蚀的 -->> 斑驳的 -->> 新的
-
 块状的 <======>  切制的
-
 楼梯 -->>  台阶 ------>> 铜锭 [4]
 楼梯 -->>  铜锭 [4]
 铜块 -->>  铜锭 [9] <<---- 切制铜块
 
-
 (first) waxed ------>>  unwaxed
 (second) oxidized -->>  weathered -->> exposed -->> new
-
 block <=========>  cut
-
 stairs -------->>  slab ------>> copper_ingot [4]
 stairs -------->>  copper_ingot [4]
 copper_block -->>  copper_ingot [4] <<---- cut_copper
-
 ------------------------------------------------------------------
-~~~~
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h3 id="tconstruct">匠魂支持 Tinkers' Construct Support</h3>
 
+```
+------------------------------------------------------------------
+Tinkers' General Items
+
+(mud_bricks)
+mud_bricks -->> mud_bricks_stairs -->> mud_bricks_slab
+mud_bricks -->> mud_bricks_slab [2]
+
+(lavawood)
+lavawood -->> lavawood_stairs -->> lavawood_slab
+lavawood -->> lava_slab [2]
+
+(blazewood)
+blazewood -->> blazewood_stairs -->> blazewood_slab
+blazewood -->> blazewood_slab [2]
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 链接测试
 - 更新 README.md。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 对匠魂3更多的支持
+- 对匠魂3更多的支持。
+- 支持更多开源模组。
 - 等待1.18更新。
 
 <h2 id="Usage">使用方式 Usage</h2>
@@ -334,4 +344,4 @@ copper_block -->>  copper_ingot [4] <<---- cut_copper
 - When the datapack is successfully loaded, the game will prompt "[ datapack name ] Loading Successful !".
 - The prompt message cannot be displayed in versions lower than "1.15.2". Please type the command "/datapack list" as an administrator to view the datapack information.
 
-<a href="#Top">回到顶部 Back to top</a>
+<a href="#Contents">回到目录 Back to contents</a>

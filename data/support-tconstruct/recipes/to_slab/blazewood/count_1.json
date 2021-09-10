@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:blazewood_stairs"
+    },
+    "result": "tconstruct:blazewood_slab",
+    "count": 1
+}
