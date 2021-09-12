@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:slimesteel_block"
+    },
+    "result": "tconstruct:slimesteel_ingot",
+    "count": 9
+}

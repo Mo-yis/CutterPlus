@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:rose_gold_block"
+    },
+    "result": "tconstruct:rose_gold_ingot",
+    "count": 9
+}

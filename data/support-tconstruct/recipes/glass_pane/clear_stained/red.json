@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:red_clear_stained_glass"
+    },
+    "result": "tconstruct:red_clear_stained_glass_pane",
+    "count": 3
+}

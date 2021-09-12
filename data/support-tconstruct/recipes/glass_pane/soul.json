@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:soul_glass"
+    },
+    "result": "tconstruct:soul_glass_pane",
+    "count": 3
+}

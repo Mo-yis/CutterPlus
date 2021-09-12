@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "forge:storage_blocks/copper"
+    },
+    "result": "tconstruct:copper_block",
+    "count": 1
+}

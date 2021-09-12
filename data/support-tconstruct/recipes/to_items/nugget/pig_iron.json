@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:pig_iron_ingot"
+    },
+    "result": "tconstruct:pig_iron_nugget",
+    "count": 9
+}
