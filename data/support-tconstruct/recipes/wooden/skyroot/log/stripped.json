@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:skyroot_log"
+    },
+    "result": "tconstruct:stripped_skyroot_log",
+    "count": 1
+}

@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.6
+- 版本 Version: 2.7
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -277,22 +277,15 @@ copper_block ------->>  copper_ingot [4] <<---- cut_copper
 
 ```
 ------------------------------------------------------------------
-(mud_bricks)
-mud_bricks -->> mud_bricks_stairs -->> mud_bricks_slab
-mud_bricks -->> mud_bricks_slab [2]
-
-(lavawood)
-lavawood -->> lavawood_stairs -->> lavawood_slab
-lavawood -->> lava_slab [2]
-
-(blazewood)
-blazewood -->> blazewood_stairs -->> blazewood_slab
-blazewood -->> blazewood_slab [2]
-
-(nahuatl)
-nahuatl -->> nahuatl_stairs -->> nahuatl_slab
-nahuatl -->> nahuatl_slab [2]
-nahuatl -->> nahuatl_fence
+mud_bricks -->>  mud_bricks_stairs --->> mud_bricks_slab
+mud_bricks -->>  mud_bricks_slab [2]
+lavawood ---->>  lavawood_stairs ----->> lavawood_slab
+lavawood ---->>  lava_slab [2]
+blazewood --->>  blazewood_stairs ---->> blazewood_slab
+blazewood --->>  blazewood_slab [2]
+nahuatl ----->>  nahuatl_stairs ------>> nahuatl_slab
+nahuatl ----->>  nahuatl_slab [2]
+nahuatl ----->>  nahuatl_fence
 
 (glass)
 clear_glass -->> clear_glass_pane [3]
@@ -338,8 +331,25 @@ scorched_glass ---------->>  scorched_glass_pane [3]
 
 ```
 ------------------------------------------------------------------
+木头种类 wooden_type
+    |-- 原木 log (菌柄 stem)
+        |-- 木头 wood (菌核 hyphae)
+        |-- 木板 planks [4]
+        |-- 去皮原木 stripped_log (去皮菌柄 stripped_stem)
+            |-- 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
+            |-- 木板 planks [4]
+    |-- 木头 wood (菌核 hyphae)
+        |-- 木板 planks [4]
+        |-- 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
+            |-- 木板 planks [4]
+    |-- 木板 planks
+        |-- 栅栏 fence
+        |-- 台阶 slab [2]
+        |-- 按钮 button
+        |-- 楼梯 stairs
+            |-- 台阶 slab
 
-
+wooden_sign -->> stick [4] <<-- wooden_fence_gate
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -357,12 +367,11 @@ obsidian(minecraft) -->> obsidian_pane
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 完成对 Tinkers' Smeltery 内容的支持。
-- 更新 README.md。
+- 完成对 Tinkers' World 内容的支持。
+- 更新 README。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 对匠魂更多的支持。
 - 支持机械动力。
 - 支持暮色森林。
 - 支持更多1.16.5的开源模组。

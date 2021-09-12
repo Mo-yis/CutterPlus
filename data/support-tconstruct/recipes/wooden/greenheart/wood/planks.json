@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:greenheart_wood"
+    },
+    "result": "tconstruct:greenheart_planks",
+    "count": 4
+}
