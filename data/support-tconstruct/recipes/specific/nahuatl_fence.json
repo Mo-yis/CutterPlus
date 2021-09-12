@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:nahuatl"
+    },
+    "result": "tconstruct:nahuatl_fence",
+    "count": 1
+}

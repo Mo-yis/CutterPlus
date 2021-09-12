@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "item": "tconstruct:greenheart_fence_gate"
+        },{
+            "item": "tconstruct:skyroot_fence_gate"
+        },{
+            "item": "tconstruct:bloodshroom_fence_gate"
+        },{
+            "item": "tconstruct:greenheart_sign"
+        },{
+            "item": "tconstruct:skyroot_sign"
+        },{
+            "item": "tconstruct:bloodshroom_sign"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 4
+}

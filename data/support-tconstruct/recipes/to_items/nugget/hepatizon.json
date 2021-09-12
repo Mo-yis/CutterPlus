@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:hepatizon_ingot"
+    },
+    "result": "tconstruct:hepatizon_nugget",
+    "count": 9
+}

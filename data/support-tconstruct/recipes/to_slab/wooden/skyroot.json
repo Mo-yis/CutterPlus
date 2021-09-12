@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:skyroot_planks_stairs"
+    },
+    "result": "tconstruct:skyroot_planks_slab",
+    "count": 1
+}

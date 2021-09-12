@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:nahuatl_stairs"
+    },
+    "result": "tconstruct:nahuatl_slab",
+    "count": 1
+}

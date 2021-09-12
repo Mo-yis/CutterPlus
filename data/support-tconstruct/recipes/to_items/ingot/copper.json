@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:copper_block"
+    },
+    "result": "tconstruct:copper_ingot",
+    "count": 9
+}
