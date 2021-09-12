@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:seared_glass"
+    },
+    "result": "tconstruct:seared_glass_pane",
+    "count": 3
+}

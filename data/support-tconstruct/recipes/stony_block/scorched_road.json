@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "tconstruct:scorched_bricks"
+    },{
+        "item": "tconstruct:chiseled_scorched_bricks"
+    },{
+        "item": "tconstruct:polished_scorched_stone"
+    },{
+        "item": "tconstruct:scorched_stone"
+    }],
+    "result": "tconstruct:scorched_road",
+    "count": 1
+}

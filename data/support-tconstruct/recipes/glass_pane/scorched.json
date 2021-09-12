@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "tconstruct:scorched_glass"
+    },
+    "result": "tconstruct:scorched_glass_pane",
+    "count": 3
+}

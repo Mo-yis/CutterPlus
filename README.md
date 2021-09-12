@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.5
+- 版本 Version: 2.6
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/Cutter_Plus
 - Gitee: https://gitee.com/Mo-yis/Cutter_Plus
@@ -29,7 +29,9 @@
             <li>
             <a href="#tconstruct">匠魂支持 Tinkers' Construct Support</a>
                 <ol>
-                    <li><a href="#Tinkers-General-Items">Tinkers General Items</a></li>
+                    <li><a href="#Tinkers-General-Items">Tinkers' General Items</a></li>
+                    <li><a href="#Tinkers-Smeltery">Tinkers' Smeltery</a></li>
+                    <li><a href="#Tinkers-World">Tinkers' World</a></li>
                     <li><a href="#Mod-Compatibility">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
@@ -303,6 +305,40 @@ slimesteet          tinkers_bronze
 rose_gold           pig_iron
 queens_slime        manyullyn
 hepatizon
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Tinkers-Smeltery">Tinkers' Smeltery</h4>
+
+```
+------------------------------------------------------------------
+seared_stone <=====> seared_bricks <=======> 
+    seared_fancy_bricks <==> seared_triangle_bricks
+
+seared_bricks_stairs -->>  seared_brick_slab
+seared_bricks --------->>  seared_brick [4]
+seared_bricks_stairs -->>  seared_brick [2] <<-- seared_bricks_slab
+seared_glass ---------->>  seared_glass_pane [3]
+
+scorched_bricks <==> chiseled_scorched_bricks <==>
+    polished_scorched_stone <==> scorched_stone <==> scorched_road
+scorched_bricks_slab <==> scorched_road_slab
+scorched_bricks_stairs <==> scorched_road_stairs
+
+scorched_bricks --------->>  scorched_bricks_fence
+scorched_bricks_stairs -->>  scorched_bricks_slab
+scorched_road_stairs ---->>  scorched_road_slab
+scorched_bricks --------->>  scorched_brick [4]
+scorched_bricks_stairs -->>  scorched_brick [2] <<-- scorched_bricks_slab
+scorched_glass ---------->>  scorched_glass_pane [3]
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Tinkers-World">Tinkers' World</h4>
+
+```
+------------------------------------------------------------------
+
 
 ------------------------------------------------------------------
 ```
@@ -321,11 +357,7 @@ obsidian(minecraft) -->> obsidian_pane
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 匠魂支持：  
-    完成 Tinkers' General Items 内容的支持。  
-    完成匠魂兼容。
-- 修改文件夹结构。
-- 修改函数延时。
+- 完成对 Tinkers' Smeltery 内容的支持。
 - 更新 README.md。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
