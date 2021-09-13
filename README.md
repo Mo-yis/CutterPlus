@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.8.0
+- 版本 Version: 2.8.1
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -52,7 +52,6 @@
 - 分支选择：
     - main: 默认版（含forge）
     - vanilla: 原版
-    - forge: forge的模组
     - dev-: 开发版，请勿选择
 
 <br>
@@ -64,7 +63,6 @@
 - Select branch:
     - main: Default version (including forge version).
     - vanilla: None mods.
-    - forge: The mods of forge.
     - dev-: Development version, please do not select.
 
 <h2 id="Features">特性 Features</h2>
@@ -377,7 +375,6 @@ obsidian(minecraft) -->> obsidian_pane
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 调整了一些原版物品加工成木棍的数量。
 - 更新 README。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
