@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.8.1
+- 版本 Version: 2.8.2
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -399,7 +399,7 @@ obsidian(minecraft) -->> obsidian_pane
 
 <br>
 
-- First, select the branch to download in the upper left corner. The default branch is "main".
+- First, select the branch to download in the upper left corner. The default branch is "**main**".
 - Github: Click the **green** "**Code**" in the upper right corner and then click "**Download ZIP**".
 - If you plan to put the datapack into the archive, please unzip it in the ".minecraft\\saves\\(save name)\\datapacks\\" directory.
 - If you are preparing to create a new world, please add the extracted folder to the game.
