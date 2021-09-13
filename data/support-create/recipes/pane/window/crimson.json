@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:crimson_window"
+    },
+    "result": "create:crimson_window_pane",
+    "count": 3
+}

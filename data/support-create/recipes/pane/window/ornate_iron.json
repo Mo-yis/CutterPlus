@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:ornate_iron_window"
+    },
+    "result": "create:ornate_iron_window_pane",
+    "count": 3
+}

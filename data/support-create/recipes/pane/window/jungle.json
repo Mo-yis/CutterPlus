@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:jungle_window"
+    },
+    "result": "create:jungle_window_pane",
+    "count": 3
+}

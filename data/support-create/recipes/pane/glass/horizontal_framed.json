@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:horizontal_framed_glass"
+    },
+    "result": "create:horizontal_framed_glass_pane",
+    "count": 3
+}

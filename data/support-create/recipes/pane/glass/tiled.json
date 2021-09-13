@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:tiled_glass"
+    },
+    "result": "create:tiled_glass_pane",
+    "count": 3
+}

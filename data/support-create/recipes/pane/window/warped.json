@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:warped_window"
+    },
+    "result": "create:warped_window_pane",
+    "count": 3
+}

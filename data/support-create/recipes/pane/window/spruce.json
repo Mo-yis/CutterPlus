@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:spruce_window"
+    },
+    "result": "create:spruce_window_pane",
+    "count": 3
+}

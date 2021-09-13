@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:dark_oak_window"
+    },
+    "result": "create:dark_oak_window_pane",
+    "count": 3
+}

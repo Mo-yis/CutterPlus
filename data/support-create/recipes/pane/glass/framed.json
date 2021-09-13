@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:framed_glass"
+    },
+    "result": "create:framed_glass_pane",
+    "count": 3
+}

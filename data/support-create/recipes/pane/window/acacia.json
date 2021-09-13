@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:acacia_window"
+    },
+    "result": "create:acacia_window_pane",
+    "count": 3
+}

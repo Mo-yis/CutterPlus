@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:birch_window"
+    },
+    "result": "create:birch_window_pane",
+    "count": 3
+}

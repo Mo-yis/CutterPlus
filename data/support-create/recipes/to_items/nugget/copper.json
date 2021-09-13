@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:copper_ingot"
+    },
+    "result": "create:copper_nugget",
+    "count": 9
+}

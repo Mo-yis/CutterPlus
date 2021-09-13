@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
         "datapack-cutter_plus:init",
-        "support-tconstruct:init"
+        "support-tconstruct:init",
+        "support-create:init"
     ]
 }
