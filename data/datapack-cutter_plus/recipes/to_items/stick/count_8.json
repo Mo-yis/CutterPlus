@@ -2,21 +2,14 @@
     "type": "minecraft:stonecutting",
     "ingredient": [
         {
-            "tag": "minecraft:boats"
-        },
-        {
             "tag": "minecraft:logs"
-        },
-        {
+        },{
             "item": "minecraft:jukebox"
-        },
-        {
+        },{
             "item": "minecraft:chest"
-        },
-        {
+        },{
             "item": "minecraft:trapped_chest"
-        },
-        {
+        },{
             "item": "minecraft:note_block"
         }
     ],

@@ -3,23 +3,17 @@
     "ingredient": [
         {
             "tag": "minecraft:wooden_slabs"
-        },
-        {
+        },{
             "tag": "minecraft:wooden_stairs"
-        },
-        {
+        },{
             "tag": "minecraft:saplings"
-        },
-        {
+        },{
             "tag": "minecraft:leaves"
-        },
-        {
+        },{
             "item": "minecraft:bamboo"
-        },
-        {
+        },{
             "item": "minecraft:scaffolding"
-        },
-        {
+        },{
             "item": "minecraft:dead_bush"
         }
     ],

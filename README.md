@@ -1,10 +1,10 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.7
+- 版本 Version: 2.8.0
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
-- Github: https://github.com/Mo-yis/Cutter_Plus
-- Gitee: https://gitee.com/Mo-yis/Cutter_Plus
+- Github: https://github.com/Mo-yis/CutterPlus
+- Gitee: https://gitee.com/Mo-yis/CutterPlus
 
 <h2>献辞 Dedication</h2>
 
@@ -49,6 +49,11 @@
 - 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方。
 - 你甚至可以用切石机切木头！ Emmm... 在生活中是可以的。
 - 从版本 “2.4” 开始，支持模组《匠魂 - 1.16.5》。
+- 分支选择：
+    - main: 默认版（含forge）
+    - vanilla: 原版
+    - forge: forge的模组
+    - dev-: 开发版，请勿选择
 
 <br>
 
@@ -56,22 +61,27 @@
 - Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
 - You can even cut wood with a stone-cutter! Emmm... It's OK in life.
 - Starting from version "2.4", the Mod "Tinkers' Construct - 1.16.5" is supported.
+- Select branch:
+    - main: Default version (including forge version).
+    - vanilla: None mods.
+    - forge: The mods of forge.
+    - dev-: Development version, please do not select.
 
 <h2 id="Features">特性 Features</h2>
 
 - 要经过烧炼才能获得的方块无法从切石机获得，如平滑石头。
 - 苔石和苔石砖是由圆石和石砖加工而来，故不能相互转化。
-- 切石机只能加工固态物品和没有NBT标签的物品。
+- 切石机只能加工固态物品和没有NBT标签的物品（从设计的角度上来看）。
 - 使用Forge的通用矿物词典标签。
-- 不存在的配方使用 “空气” 填充，保证多个Mod之间兼容。
+- 未加载的配方使用 “空气” 填充，保证多个Mod之间兼容。
 
 <br>
 
 - Blocks that can only be obtained by burning cannot be obtained from a stone cutter, such as the smooth_stones.
 - The mossy_cobblestone and the mossy_stone_bricks are processed from the cobblestone and the stone_bricks, so they can not be transformed into each other.
-- The stone-cutter can only process solid articles and articles without NBT label.
+- The stone-cutter can only process solid articles and articles without NBT label.(From the design point of view.)
 - Use forge's generic mineral dictionary label.
-- Nonexistent recipes use "air" filling to ensure compatibility between multiple mods.
+- Unloaded recipes are filled with "air" to ensure compatibility between multiple mods.
 
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="Vanilla-Support">原版支持 Vanilla Support</h3>
@@ -97,36 +107,36 @@
         |-- 楼梯 stairs
             |-- 台阶 slab
 ------------------------------------------------------------------
-        分解成 1 个木棍 Break it down into a sticks
-木台阶 wooden_slab                    木楼梯 wooden_stairs
-树苗 sapling                          树叶 leaves
-竹子 bamboo                           脚手架 scaffolding
+(物品 items ------->> 木棍 stick [1])
+木台阶 wooden_slab                 木楼梯 wooden_stairs
+树苗 sapling                       树叶 leaves
+竹子 bamboo                        脚手架 scaffolding
 枯萎的灌木 dead_bush
 
-        分解成 2 个木棍 Break it down into two sticks
-木栅栏 wooden_fence                   梯子 ladder
-织布机 loom                           木板 planks
+(物品 items ------->> 木棍 stick [2])
+木栅栏 wooden_fence                梯子 ladder
+织布机 loom                        木板 planks
+木压力板 wooden_pressure_plate      画 painting
+物品展示框 item_frame
 
-        分解成 4 个木棍 Break it down into four sticks
-木门 wooden_door                      木栅栏门 wooden_fence_gate
-木告示牌 wooden_sign                  木压力板 wooden_pressure_plate
-画 painting                           物品展示框 item_frame
-讲台 lectern                          制图台 cartography_table
-制箭台 fletching_table                锻造台 smithing_table
-工作台 crafting_table
+(物品 items ------->> 木棍 stick [4])
+木门 wooden_door                   木栅栏门 wooden_fence_gate
+木告示牌 wooden_sign               木活板门 wooden_trapdoor
+讲台 lectern                       制图台 cartography_table
+制箭台 fletching_table             锻造台 smithing_table
+工作台 crafting_table              (灵魂)营火 (soul)campfire
+床 beds
 
-        分解成 6 个木棍 Break it down into six sticks
-活板门 trapdoor                       堆肥桶 composter
-营火 campfire                         灵魂营火 soul_campfire
-盔甲架 armor_stand                    木桶 barrel
-蜂箱 beehive                          书架 bookshelf
+(物品 items ------->> 木棍 stick [6])
+船 boat                           堆肥桶 composter
+盔甲架 armor_stand                 木桶 barrel
+蜂箱 beehive                       书架 bookshelf
 
-        分解成 8 个木棍 Break it down into eight sticks
-船 boat                               唱片机 jukebox
-箱子 chest                            陷阱箱 trapped_chest
-音符盒 note_block                     原木 log (菌柄 stem)
+(物品 items ------->> 木棍 stick [8])
+木头 wood (菌核 hyphae)            唱片机 jukebox
+箱子 chest                         陷阱箱 trapped_chest
+音符盒 note_block                  原木 log (菌柄 stem)
 去皮原木 stripped_log (去皮菌柄 stripped_stem)
-木头 wood (菌核 hyphae)
 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
 ------------------------------------------------------------------
 ```
@@ -367,7 +377,7 @@ obsidian(minecraft) -->> obsidian_pane
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 完成对 Tinkers' World 内容的支持。
+- 调整了一些原版物品加工成木棍的数量。
 - 更新 README。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
@@ -379,6 +389,7 @@ obsidian(minecraft) -->> obsidian_pane
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Usage">使用方式 Usage</h2>
 
+- 首先，请在左上角选择需要下载的分支，默认 “**main**” 分支。
 - Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**"。
 - Gitee: 右上角点击**橙色**的 "**克隆/下载**" 再点击 "**下载ZIP**"。
 
@@ -391,6 +402,7 @@ obsidian(minecraft) -->> obsidian_pane
 
 <br>
 
+- First, select the branch to download in the upper left corner. The default branch is "main".
 - Github: Click the **green** "**Code**" in the upper right corner and then click "**Download ZIP**".
 - If you plan to put the datapack into the archive, please unzip it in the ".minecraft\\saves\\(save name)\\datapacks\\" directory.
 - If you are preparing to create a new world, please add the extracted folder to the game.
