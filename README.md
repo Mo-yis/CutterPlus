@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.9 - main
+- 版本 Version: 2.9.1 - main
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -39,7 +39,7 @@
             <a href="#create">机械动力支持 Create Support</a>
             <ol>
             <li><a href="#Create-Palettes">机械动力建筑方块 Create Palettes</a></li>
-            <li><a href="#Create">机械动力 Create</a></li>
+            <li><a href="#Create-items">机械动力 Create</a></li>
             <li><a href="#Mod-Compatibility-create">模组兼容 Mod Compatibility</a></li>
             </ol>
             </li>
@@ -424,7 +424,7 @@ warped_window ------------->>  warped_window_pane [3]
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
-<h4 id="Create">机械动力 Create</h4>
+<h4 id="Create-items">机械动力 Create</h4>
 
 ```
 ------------------------------------------------------------------
