@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.8.2
+- 版本 Version: 2.9 - main
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -32,8 +32,16 @@
                     <li><a href="#Tinkers-General-Items">Tinkers' General Items</a></li>
                     <li><a href="#Tinkers-Smeltery">Tinkers' Smeltery</a></li>
                     <li><a href="#Tinkers-World">Tinkers' World</a></li>
-                    <li><a href="#Mod-Compatibility">模组兼容 Mod Compatibility</a></li>
+                    <li><a href="#Mod-Compatibility-tconstruct">模组兼容 Mod Compatibility</a></li>
                 </ol>
+            </li>
+            <li>
+            <a href="#create">机械动力支持 Create Support</a>
+            <ol>
+            <li><a href="#Create-Palettes">机械动力建筑方块 Create Palettes</a></li>
+            <li><a href="#Create">机械动力 Create</a></li>
+            <li><a href="#Mod-Compatibility-create">模组兼容 Mod Compatibility</a></li>
+            </ol>
             </li>
         </ol>
     </li>
@@ -49,6 +57,7 @@
 - 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方。
 - 你甚至可以用切石机切木头！ Emmm... 在生活中是可以的。
 - 从版本 “2.4” 开始，支持模组《匠魂 - 1.16.5》。
+- 从版本 “2.9” 开始，支持模组《机械动力 - 1.16.5》。
 - 分支选择：
     - main: 默认版（含forge）
     - vanilla: 原版
@@ -60,6 +69,7 @@
 - Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
 - You can even cut wood with a stone-cutter! Emmm... It's OK in life.
 - Starting from version "2.4", the Mod "Tinkers' Construct - 1.16.5" is supported.
+- Starting from version "2.9", the Mod "Create - 1.16.5" is supported.
 - Select branch:
     - main: Default version (including forge version).
     - vanilla: None mods.
@@ -315,11 +325,15 @@ hepatizon
 ------------------------------------------------------------------
 seared_stone <=====> seared_bricks <=======> 
     seared_fancy_bricks <==> seared_triangle_bricks
+seared_bricks_stairs <===> seared_stone_stairs
+seared_bricks_slab <====> seared_stone_slab
 
-seared_bricks_stairs -->>  seared_brick_slab
-seared_bricks --------->>  seared_brick [4]
-seared_bricks_stairs -->>  seared_brick [2] <<-- seared_bricks_slab
-seared_glass ---------->>  seared_glass_pane [3]
+seared_bricks_stairs ---->>  seared_brick_slab
+seared_paver_stairs ----->>  seared_paver_slab
+seared_cobble_stairs ---->>  seared_cobble_slab
+seared_bricks ----------->>  seared_brick [4]
+seared_bricks_stairs ---->>  seared_brick [2] <<-- seared_bricks_slab
+seared_glass ------------>>  seared_glass_pane [3]
 
 scorched_bricks <==> chiseled_scorched_bricks <==>
     polished_scorched_stone <==> scorched_stone <==> scorched_road
@@ -361,25 +375,88 @@ wooden_sign -->> stick [4] <<-- wooden_fence_gate
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
-<h4 id="Mod-Compatibility">模组兼容 Mod Compatibility</h4>
+<h4 id="Mod-Compatibility-tconstruct">模组兼容 Mod Compatibility</h4>
 
 ```
 ------------------------------------------------------------------
-(item swap)
-forge:copper(ingot/nugget/ore/block)
+(物品交换 item swap)
+铜 forge:copper(锭ingot/粒nugget/矿石ore/块storage_block)
 
-netherite_ingot(minecraft) -->> netherite_nugget
-obsidian(minecraft) -->> obsidian_pane
+下界合金锭 netherite_ingot(minecraft) -->> netherite_nugget
+黑曜石 obsidian(minecraft) -->> obsidian_pane
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h3 id="create">机械动力支持 Create Support</h3>
+<h4 id="Create-Palettes">机械动力建筑方块 Create Palettes</h4>
+
+```
+------------------------------------------------------------------
+(板)
+十字玻璃窗 ----------->>  十字玻璃窗户板 [3]
+边框玻璃 ------------->>  边框玻璃板 [3]
+竖直边框玻璃(竖) ------>>  竖直边框玻璃板(竖) [3]
+竖直边框玻璃(横) ------>>  竖直边框玻璃板(横) [3]
+金合欢窗户 ----------->>  金合欢窗户板 [3]
+白桦窗户 ------------->>  白桦窗户板 [3]
+绯红窗户 ------------->>  绯红窗户板 [3]
+深色橡木窗户 ---------->>  深色橡木窗户板 [3]
+丛林窗户 ------------->>  丛林窗户板 [3]
+橡木窗户 ------------->>  橡木窗户板 [3]
+华丽铁窗户 ----------->>  华丽铁窗户板 [3]
+云杉窗户 ------------->>  云杉窗户板 [3]
+诡异木窗户 ----------->>  诡异木窗户板 [3]
+
+(pane)
+tiled_glass --------------->>  tiled_glass_pane [3]
+framed_glass -------------->>  framed_glass_pane [3]
+vertical_framed_glass ----->>  vertical_framed_glass_pane [3]
+horizontal_framed_glass --->>  horizontal_framed_glass_pane [3]
+acacia_window ------------->>  acacia_window_pane [3]
+birch_window -------------->>  birch_window_pane [3]
+crimson_window ------------>>  crimson_window_pane [3]
+dark_oak_window ----------->>  dark_oak_window_pane [3]
+jungle_window ------------->>  jungle_window_pane [3]
+oak_window ---------------->>  oak_window_pane [3]
+ornate_iron_window -------->>  ornate_iron_window_pane [3]
+spruce_window ------------->>  spruce_window_pane [3]
+warped_window ------------->>  warped_window_pane [3]
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Create">机械动力 Create</h4>
+
+```
+------------------------------------------------------------------
+(块 block -->> 锭 ingot [9] -->> 粒 nugget [9])
+铜 copper           锌 zinc
+黄铜 brass
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Mod-Compatibility-create">模组兼容 Mod Compatibility</h4>
+
+```
+------------------------------------------------------------------
+(物品交换 item swap)
+铜 forge:copper(锭ingot/粒nugget/矿石ore/块storage_block)
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
+- 机械动力：机械动力建筑方块 方块 -->> 板
+- 完成对机械动力（物品栏名称）内容的支持。
+- 匠魂：
+    - seared_bricks_stairs <===> seared_stone_stairs
+    - seared_bricks_slab <====> seared_stone_slab
+    - seared_paver_stairs ----->>  seared_paver_slab
+    - seared_cobble_stairs ---->>  seared_cobble_slab
 - 更新 README。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 支持机械动力。
+- 完全支持机械动力的内容。
 - 支持暮色森林。
 - 支持更多1.16.5的开源模组。
 
