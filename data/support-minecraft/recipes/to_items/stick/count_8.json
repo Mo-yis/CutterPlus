@@ -2,8 +2,6 @@
     "type": "minecraft:stonecutting",
     "ingredient": [
         {
-            "tag": "minecraft:logs"
-        },{
             "item": "minecraft:jukebox"
         },{
             "item": "minecraft:chest"

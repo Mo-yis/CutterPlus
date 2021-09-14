@@ -6,15 +6,7 @@
         },{
             "tag": "minecraft:planks"
         },{
-            "item": "minecraft:ladder"
-        },{
-            "item": "minecraft:loom"
-        },{
             "tag": "minecraft:wooden_pressure_plates"
-        },{
-            "item": "minecraft:painting"
-        },{
-            "item": "minecraft:item_frame"
         }
     ],
     "result": "minecraft:stick",

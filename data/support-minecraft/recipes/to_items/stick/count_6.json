@@ -2,8 +2,6 @@
     "type": "minecraft:stonecutting",
     "ingredient": [
         {
-            "tag": "minecraft:boats"
-        },{
             "item": "minecraft:composter"
         },{
             "item": "minecraft:armor_stand"

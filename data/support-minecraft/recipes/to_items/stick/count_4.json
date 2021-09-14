@@ -2,13 +2,9 @@
     "type": "minecraft:stonecutting",
     "ingredient": [
         {
-            "tag": "minecraft:wooden_doors"
+            "tag": "support-minecraft:wooden_fence_gates"
         },{
-            "tag": "datapack-cutter_plus:wooden_fence_gates"
-        },{
-            "tag": "datapack-cutter_plus:wooden_signs"
-        },{
-            "tag": "minecraft:beds"
+            "tag": "support-minecraft:wooden_signs"
         },{
             "item": "minecraft:lectern"
         },{
@@ -23,8 +19,6 @@
             "item": "minecraft:campfire"
         },{
             "item": "minecraft:soul_campfire"
-        },{
-            "tag": "minecraft:wooden_trapdoors"
         }
     ],
     "result": "minecraft:stick",

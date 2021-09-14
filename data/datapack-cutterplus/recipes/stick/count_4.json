@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "tag": "minecraft:wooden_doors"
+        },{
+            "tag": "minecraft:wooden_trapdoors"
+        },{
+            "tag": "minecraft:beds"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 4
+}

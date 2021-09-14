@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "item": "minecraft:ladder"
+        },{
+            "item": "minecraft:loom"
+        },{
+            "item": "minecraft:painting"
+        },{
+            "item": "minecraft:item_frame"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 2
+}
