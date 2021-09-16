@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_scoria_wall",
+        "create:scoria_bricks_wall",
+        "create:fancy_scoria_bricks_wall",
+        "create:paved_scoria_wall"
+    ]
+}

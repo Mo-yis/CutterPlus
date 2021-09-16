@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "item": "minecraft:composter"
+        },{
+            "item": "minecraft:armor_stand"
+        },{
+            "item": "minecraft:barrel"
+        },{
+            "item": "minecraft:beehive"
+        },{
+            "item": "minecraft:bookshelf"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 6
+}

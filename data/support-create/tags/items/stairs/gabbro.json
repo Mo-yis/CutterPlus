@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_gabbro_stairs",
+        "create:gabbro_bricks_stairs",
+        "create:fancy_gabbro_bricks_stairs",
+        "create:paved_gabbro_stairs"
+    ]
+}

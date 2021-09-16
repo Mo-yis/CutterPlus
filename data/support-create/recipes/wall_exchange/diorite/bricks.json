@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:wall/diorite"
+    },
+    "result": "create:diorite_bricks_wall",
+    "count": 1
+}

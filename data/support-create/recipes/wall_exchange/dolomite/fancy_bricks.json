@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:wall/dolomite"
+    },
+    "result": "create:fancy_dolomite_bricks_wall",
+    "count": 1
+}

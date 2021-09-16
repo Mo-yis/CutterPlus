@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_gabbro_wall",
+        "create:gabbro_bricks_wall",
+        "create:fancy_gabbro_bricks_wall",
+        "create:paved_gabbro_wall"
+    ]
+}

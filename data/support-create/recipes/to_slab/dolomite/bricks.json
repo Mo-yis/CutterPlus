@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "tag": "support-create:slab/dolomite"
+    },{
+        "item": "create:dolomite_bricks_stairs"
+    }],
+    "result": "create:dolomite_bricks_slab",
+    "count": 1
+}

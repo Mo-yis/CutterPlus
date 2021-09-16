@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "create:diorite_bricks",
+        "create:fancy_diorite_bricks",
+        "create:diorite_pillar",
+        "create:paved_diorite",
+        "create:layered_diorite",
+        "create:mossy_diorite",
+        "create:overgrown_diorite"
+    ]
+}

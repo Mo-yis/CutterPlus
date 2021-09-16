@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "create:andesite_bricks",
+        "create:fancy_andesite_bricks",
+        "create:andesite_pillar",
+        "create:paved_andesite",
+        "create:layered_andesite",
+        "create:mossy_andesite",
+        "create:overgrown_andesite"
+    ]
+}

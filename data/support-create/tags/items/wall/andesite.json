@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "create:andesite_bricks_wall",
+        "create:fancy_andesite_bricks_wall",
+        "create:paved_andesite_wall"
+    ]
+}

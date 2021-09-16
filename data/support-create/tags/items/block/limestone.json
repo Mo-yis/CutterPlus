@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_limestone",
+        "create:limestone_bricks",
+        "create:fancy_limestone_bricks",
+        "create:limestone_pillar",
+        "create:paved_limestone",
+        "create:layered_limestone",
+        "create:chiseled_limestone",
+        "create:mossy_limestone",
+        "create:overgrown_limestone"
+    ]
+}

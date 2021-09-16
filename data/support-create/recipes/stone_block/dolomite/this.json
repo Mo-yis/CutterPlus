@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:block/dolomite"
+    },
+    "result": "create:dolomite",
+    "count": 1
+}

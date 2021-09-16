@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "item": "minecraft:bamboo"
+        },{
+            "item": "minecraft:scaffolding"
+        },{
+            "item": "minecraft:dead_bush"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 1
+}

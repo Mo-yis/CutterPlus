@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_gabbro",
+        "create:gabbro_bricks",
+        "create:fancy_gabbro_bricks",
+        "create:gabbro_pillar",
+        "create:paved_gabbro",
+        "create:layered_gabbro",
+        "create:chiseled_gabbro",
+        "create:mossy_gabbro",
+        "create:overgrown_gabbro"
+    ]
+}

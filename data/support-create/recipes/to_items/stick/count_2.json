@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+    {
+        "item": "create:large_cogwheel"
+    },{
+        "item": "create:water_wheel"
+    },{
+        "item": "create:andesite_casing"
+    },{
+        "item": "create:brass_casing"
+    },{
+        "item": "create:copper_casing"
+    },{
+        "item": "create:shadow_steel_casing"
+    },{
+        "item": "create:refined_radiance_casing"
+    }],
+    "result": "minecraft:stick",
+    "count": 2
+}

@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "tag": "support-create:slab/diorite"
+    },{
+        "item": "create:diorite_bricks_stairs"
+    }],
+    "result": "create:diorite_bricks_slab",
+    "count": 1
+}

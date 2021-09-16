@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_dolomite",
+        "create:dolomite_bricks",
+        "create:fancy_dolomite_bricks",
+        "create:dolomite_pillar",
+        "create:paved_dolomite",
+        "create:layered_dolomite",
+        "create:chiseled_dolomite",
+        "create:mossy_dolomite",
+        "create:overgrown_dolomite"
+    ]
+}

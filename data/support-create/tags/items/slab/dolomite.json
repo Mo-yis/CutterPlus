@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_dolomite_slab",
+        "create:dolomite_bricks_slab",
+        "create:fancy_dolomite_bricks_slab",
+        "create:paved_dolomite_slab"
+    ]
+}

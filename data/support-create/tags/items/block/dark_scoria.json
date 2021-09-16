@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_dark_scoria",
+        "create:dark_scoria_bricks",
+        "create:fancy_dark_scoria_bricks",
+        "create:dark_scoria_pillar",
+        "create:paved_dark_scoria",
+        "create:layered_dark_scoria",
+        "create:chiseled_dark_scoria",
+        "create:mossy_dark_scoria",
+        "create:overgrown_dark_scoria"
+    ]
+}

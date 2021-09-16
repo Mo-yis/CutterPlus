@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "item": "minecraft:jukebox"
+        },{
+            "item": "minecraft:chest"
+        },{
+            "item": "minecraft:trapped_chest"
+        },{
+            "item": "minecraft:note_block"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 8
+}

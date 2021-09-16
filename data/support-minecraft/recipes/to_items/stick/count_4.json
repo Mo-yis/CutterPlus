@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "tag": "support-minecraft:wooden_fence_gates"
+        },{
+            "tag": "support-minecraft:wooden_signs"
+        },{
+            "item": "minecraft:lectern"
+        },{
+            "item": "minecraft:cartography_table"
+        },{
+            "item": "minecraft:fletching_table"
+        },{
+            "item": "minecraft:smithing_table"
+        },{
+            "item": "minecraft:crafting_table"
+        },{
+            "item": "minecraft:campfire"
+        },{
+            "item": "minecraft:soul_campfire"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 4
+}
