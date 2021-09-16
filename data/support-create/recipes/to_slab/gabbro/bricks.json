@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "tag": "support-create:slab/gabbro"
+    },{
+        "item": "create:gabbro_bricks_stairs"
+    }],
+    "result": "create:gabbro_bricks_slab",
+    "count": 1
+}

@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "create:granite_bricks",
+        "create:fancy_granite_bricks",
+        "create:granite_pillar",
+        "create:paved_granite",
+        "create:layered_granite",
+        "create:mossy_granite",
+        "create:overgrown_granite"
+    ]
+}

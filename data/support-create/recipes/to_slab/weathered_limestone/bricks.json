@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "tag": "support-create:slab/weathered_limestone"
+    },{
+        "item": "create:weathered_limestone_bricks_stairs"
+    }],
+    "result": "create:weathered_limestone_bricks_slab",
+    "count": 1
+}

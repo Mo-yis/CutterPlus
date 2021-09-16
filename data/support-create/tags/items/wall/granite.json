@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "create:granite_bricks_wall",
+        "create:fancy_granite_bricks_wall",
+        "create:paved_granite_wall"
+    ]
+}

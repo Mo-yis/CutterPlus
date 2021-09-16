@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_limestone_slab",
+        "create:limestone_bricks_slab",
+        "create:fancy_limestone_bricks_slab",
+        "create:paved_limestone_slab"
+    ]
+}

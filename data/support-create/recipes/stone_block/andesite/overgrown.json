@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:block/andesite"
+    },
+    "result": "create:overgrown_andesite",
+    "count": 1
+}

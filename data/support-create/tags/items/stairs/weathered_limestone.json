@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_weathered_limestone_stairs",
+        "create:weathered_limestone_bricks_stairs",
+        "create:fancy_weathered_limestone_bricks_stairs",
+        "create:paved_weathered_limestone_stairs"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:block/diorite"
+    },
+    "result": "create:paved_diorite",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "create:diorite_bricks_slab",
+        "create:fancy_diorite_bricks_slab",
+        "create:paved_diorite_slab"
+    ]
+}

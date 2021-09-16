@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:wall/limestone"
+    },
+    "result": "create:paved_limestone_wall",
+    "count": 1
+}

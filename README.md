@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.9.2 - main
+- 版本 Version: 2.9.3
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -55,14 +55,13 @@
 
 <h2 id="Explain">说明 Explain</h2>
 
-- 一个轻量级数据包，仅使用一个加工工具，方便加工。
-- 在不破坏原版游戏平衡的情况下添加大量切石机的工作配方。
+- 一个轻量级数据包，添加了大量切石机的工作配方。
 - 你甚至可以用切石机切木头！ Emmm... 在生活中是可以的。
 - 从版本 “2.4” 开始，使用 “Forge” 的通用矿物词典标签。
 - 未加载的配方使用 “空气” 填充，保证多个模组之间兼容。
 - “模组兼容” 是指从其他模组的物品加工到本模组时使用的配方。
 - 在 “特性” 目录中，除 “模组兼容” 外，都代表了每个模组的物品栏的名称。
-- 如果你觉得空气配方碍眼，可以将未安装的模组对应的以 “support” 开头的文件夹删除：
+- 如果觉得空气配方碍眼，可以将没有的模组对应的以 “support” 开头的文件夹删除：
     - minecraft: 《Minecraft》是最早支持的内容。
     - tconstruct: 《匠魂 - 1.16.5》从版本 “2.4” 开始支持。
     - create: 《机械动力 - 1.16.5》从版本 “2.9” 开始支持。
@@ -70,11 +69,11 @@
     - <==>：代表两边都能加工。
     - -->>：代表只能向右边加工。
     - <<--：代表只能向左边加工。
+    -   ◻ ：代表一个词。
 
 <br>
 
-- A lightweight datapack that uses only one processing tool to facilitate processing.
-- Blocks that need to be burned cannot be obtained from stone-cutter, such as smooth stones.
+- A lightweight data package that adds a large number of working formulas for stone-cutter.
 - You can even cut wood with a stone-cutter! Emmm... It's OK in life.
 - Starting with version "2.4", use the general mineral dictionary label of "Forge".
 - Unloaded recipes are filled with "air" to ensure compatibility between multiple mods.
@@ -88,6 +87,7 @@
     - <==>: It means that both sides can be processed.
     - -->>: It means that it can only be processed to the right.
     - <<--: It means that it can only be processed to the left.
+    -   ◻ : It means that a word.
 
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Features">特性 Features</h2>
@@ -321,7 +321,19 @@ trapped_chest ------>> stick [8] <<-- note_block
 
 ```
 ------------------------------------------------------------------
+(◻ = 花岗岩 / 闪长岩 / 安山岩)
+(机械动力 ---->> ◻)
+◻砖          方纹◻砖
+竖纹◻         ◻铺路石
+层叠◻         生苔◻
+生草◻
 
+(◻ = granite / diorite / andesite)
+(Create -------->> ◻)
+◻_bricks        fancy_◻_bricks
+◻_pillar        paved_◻
+layered_◻       mossy_◻
+overgrown_◻
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -396,12 +408,21 @@ wooden_sign -->> stick [4] <<-- wooden_fence_gate
 
 ```
 ------------------------------------------------------------------
-(物品交换 item swap)
-铜 forge:copper(锭ingot/粒nugget/矿石ore/块storage_block)
+(◻ = 铜)
+(forge ----->> ◻)
+◻锭    ◻粒    ◻矿石    ◻块
 
-(原版 Vanilla)
-下界合金锭 netherite_ingot -->> netherite_nugget
-黑曜石 obsidian -->> obsidian_pane
+(原版)
+下界合金锭 -->> netherite_nugget
+黑曜石 -->> obsidian_pane
+
+(◻ = copper)
+(forge ----->> ◻)
+◻_ingot    ◻_nugget    ◻_ore    ◻_block
+
+(Vanilla)
+netherite_ingot -->> netherite_nugget
+obsidian -->> obsidian_pane
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -425,6 +446,19 @@ wooden_sign -->> stick [4] <<-- wooden_fence_gate
 云杉窗户 ------------->>  云杉窗户板 [3]
 诡异木窗户 ----------->>  诡异木窗户板 [3]
 
+(块 / 楼梯 / 台阶 / 墙)
+
+(◻ = 花岗岩 / 闪长岩 / 安山岩)
+◻砖 <======>  方纹◻砖 <=======>  竖纹◻
+    <======>  ◻铺路石 <=======>  层叠◻
+    <======>  生苔◻ <========>  生草◻
+(◻ = 石灰岩 / 风化石灰岩 / 白云岩 / 辉长岩 / 熔渣 / 深色熔渣)
+◻ <========>  磨制◻ <==========>  ◻砖
+    <======>  方纹◻砖 <========>  竖纹◻
+    <======>  ◻铺路石 <========>  层叠◻
+    <======>  錾制◻ <==========>  生苔◻
+    <======>  生草◻
+
 (pane)
 tiled_glass --------------->>  tiled_glass_pane [3]
 framed_glass -------------->>  framed_glass_pane [3]
@@ -439,6 +473,19 @@ oak_window ---------------->>  oak_window_pane [3]
 ornate_iron_window -------->>  ornate_iron_window_pane [3]
 spruce_window ------------->>  spruce_window_pane [3]
 warped_window ------------->>  warped_window_pane [3]
+
+(block / stairs / slab / wall)
+
+(◻ = granite / diorite / andesite)
+◻_bricks <===>  fancy_◻_bricks <===>  ◻_pillar
+    <========>  paved_◻ <==========>  layered_◻
+    <========>  mossy_◻ <==========>  overgrown_◻
+(◻ = limestone / weathered_limestone / dolomite / gabbro / scoria / dark_scoria)
+ <=========>  polished_◻ <========>  ◻_bricks
+    <======>  fancy_◻_bricks <====>  ◻_pillar
+    <======>  paved_◻ <===========>  layered_◻
+    <======>  chiseled_◻ <========>  mossy_◻
+    <======>  overgrown_◻
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -446,9 +493,21 @@ warped_window ------------->>  warped_window_pane [3]
 
 ```
 ------------------------------------------------------------------
-(块 block -->> 锭 ingot [9] -->> 粒 nugget [9])
-铜 copper           锌 zinc
-黄铜 brass
+(块 -->> 锭 [9] -->> 粒 [9])
+铜     锌     黄铜
+(物品 ------->> 木棍 [2])
+大齿轮       水车
+安山机壳     黄铜机壳
+铜机壳       暗影机壳
+光辉机壳
+
+(block -->> ingot [9] -->> nugget [9])
+copper         zinc        brass
+(items ------>> stick [2])
+large_cogwheel         water_wheel
+andesite_casing        brass_casing
+copper_casing          shadow_steel_casing
+refined_radiance_casing
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -456,21 +515,27 @@ warped_window ------------->>  warped_window_pane [3]
 
 ```
 ------------------------------------------------------------------
-(物品交换 item swap)
-铜 forge:copper(锭ingot/粒nugget/矿石ore/块storage_block)
+(◻ = 铜)
+(forge ----->> ◻)
+◻锭    ◻粒    ◻矿石    ◻块
+
+(◻ = copper)
+(forge ----->> ◻)
+◻_ingot    ◻_nugget    ◻_ore    ◻_block
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 大幅调整文件目录结构。
-- 大幅调整README文件结构。
-- 将原版与数据包分离，数据包设为通用和显示。
+- 简化调试输出信息。
+- 补充 机械动力 的加工。
+- 完成 机械动力建筑方块 内容的支持。
+- 增加原版对机械动力部分方块的兼容。
+- 完成对机械动力模组的支持。
 - 更新 README。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 完全支持机械动力的内容。
 - 支持 暮色森林 The Twilight Forest
 - 支持 超多生物群系 Biomes O' Plenty
 - 支持 凿子 Chisel

@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "create:polished_scoria",
+        "create:scoria_bricks",
+        "create:fancy_scoria_bricks",
+        "create:scoria_pillar",
+        "create:paved_scoria",
+        "create:layered_scoria",
+        "create:chiseled_scoria",
+        "create:mossy_scoria",
+        "create:overgrown_scoria"
+    ]
+}

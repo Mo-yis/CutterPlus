@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:block/gabbro"
+    },
+    "result": "create:gabbro",
+    "count": 1
+}
