@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:dark_stairs"
+    },
+    "result": "twilightforest:dark_slab",
+    "count": 1
+}

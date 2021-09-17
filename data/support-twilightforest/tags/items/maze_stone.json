@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "twilightforest:maze_stone_brick",
+        "twilightforest:maze_stone_decorative",
+        "twilightforest:maze_stone_chiseled",
+        "twilightforest:maze_stone_border",
+        "twilightforest:maze_stone_mosaic"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:sorting_wood"
+    },
+    "result": "twilightforest:sort_planks",
+    "count": 4
+}

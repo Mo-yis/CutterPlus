@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:trans_stairs"
+    },
+    "result": "twilightforest:trans_slab",
+    "count": 1
+}

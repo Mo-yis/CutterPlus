@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:stripped_twilight_oak_wood"
+    },
+    "result": "twilightforest:twilight_oak_planks",
+    "count": 4
+}

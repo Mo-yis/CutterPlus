@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:mine_planks"
+    },
+    "result": "twilightforest:mine_button",
+    "count": 1
+}

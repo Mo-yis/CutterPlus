@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:stairs/andesite"
+    },
+    "result": "minecraft:polished_andesite_stairs",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:stripped_canopy_wood"
+    },
+    "result": "twilightforest:canopy_planks",
+    "count": 4
+}

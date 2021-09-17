@@ -7,6 +7,7 @@ tellraw @a {"text": "[ Cutter Plus ]","color": "yellow"}
 function support-minecraft:info
 function support-tconstruct:info
 function support-create:info
+function support-twilightforest:info
 
 # End of the infomation.
 tellraw @a {"text": "Loading Successful !","color": "green"}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:time_stairs"
+    },
+    "result": "twilightforest:time_slab",
+    "count": 1
+}

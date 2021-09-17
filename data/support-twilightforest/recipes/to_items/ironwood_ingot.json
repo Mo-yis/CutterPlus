@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:ironwood_block"
+    },
+    "result": "twilightforest:ironwood_ingot",
+    "count": 9
+}

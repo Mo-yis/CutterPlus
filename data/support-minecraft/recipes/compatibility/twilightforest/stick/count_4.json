@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "tag": "support-twilightforest:wooden_fence_gates"
+        },{
+            "tag": "support-twilightforest:wooden_signs"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 4
+}

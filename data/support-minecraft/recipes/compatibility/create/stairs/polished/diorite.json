@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:stairs/diorite"
+    },
+    "result": "minecraft:polished_diorite_stairs",
+    "count": 1
+}

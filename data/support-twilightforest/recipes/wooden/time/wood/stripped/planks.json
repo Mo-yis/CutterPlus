@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:stripped_time_wood"
+    },
+    "result": "twilightforest:time_planks",
+    "count": 4
+}
