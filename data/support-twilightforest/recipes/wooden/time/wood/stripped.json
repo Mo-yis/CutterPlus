@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:time_wood"
+    },
+    "result": "twilightforest:stripped_time_wood",
+    "count": 1
+}

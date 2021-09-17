@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "tag": "support-tconstruct:wooden_fence_gates"
+        },{
+            "tag": "support-tconstruct:wooden_signs"
+        }
+    ],
+    "result": "minecraft:stick",
+    "count": 4
+}

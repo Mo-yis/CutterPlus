@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.9.3
+- 版本 Version: 2.10
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -33,7 +33,6 @@
                 <ol>
                     <li><a href="#Tinkers-General-Items">Tinkers' General Items</a></li>
                     <li><a href="#Tinkers-Smeltery">Tinkers' Smeltery</a></li>
-                    <li><a href="#Tinkers-World">Tinkers' World</a></li>
                     <li><a href="#Mod-Compatibility-tconstruct">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
@@ -43,6 +42,13 @@
                     <li><a href="#Create-Palettes">机械动力建筑方块 Create Palettes</a></li>
                     <li><a href="#Create-items">机械动力 Create</a></li>
                     <li><a href="#Mod-Compatibility-create">模组兼容 Mod Compatibility</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#twilightforest">暮色森林支持 The Twilight Forest Support</a>
+                <ol>
+                    <li><a href="#Twilight-Forest">暮色森林 Twilight Forest</a></li>
+                    <li><a href="#Mod-Compatibility-twilightforest">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
         </ol>
@@ -65,6 +71,7 @@
     - minecraft: 《Minecraft》是最早支持的内容。
     - tconstruct: 《匠魂 - 1.16.5》从版本 “2.4” 开始支持。
     - create: 《机械动力 - 1.16.5》从版本 “2.9” 开始支持。
+    - twilightforest: 《暮色森林 - 1.16.5》从版本 “2.10” 开始支持。
 - 符号说明：
     - <==>：代表两边都能加工。
     - -->>：代表只能向右边加工。
@@ -83,6 +90,7 @@
     - minecraft: "Minecraft" was the first supported content.
     - tconstruct: "Tinkers' Construct - 1.16.5" is supported from version "2.4".
     - create: "Create - 1.16.5" is supported from version "2.9".
+    - twilightforest： "The Twilight Forest - 1.16.5" is supported from version "2.10".
 - Symbol description:
     - <==>: It means that both sides can be processed.
     - -->>: It means that it can only be processed to the right.
@@ -95,7 +103,7 @@
 - 要经过烧炼才能获得的方块无法从切石机获得，如平滑石头。
 - 切石机只能加工固态物品和没有NBT标签的物品（从设计的角度上来看）。
 - 同一类的方块（材质不同）之间可以相互转化（方块，楼梯，台阶，墙）。
-- 苔石和苔石砖是由圆石和石砖加工而来，故不能相互转化。
+- 苔石和苔石砖是由圆石和石砖加工而来，故不能相互转化。其他情况类似。
 - 楼梯可以加工成对应的台阶。
 
 <br>
@@ -103,7 +111,7 @@
 - Blocks that can only be obtained by burning cannot be obtained from a stone cutter, such as the smooth_stones.
 - The stone-cutter can only process solid articles and articles without NBT label.(From the design point of view.)
 - Blocks of the same type (with different appearance) can be transformed into each other (block, stair, slab, wall).
-- The mossy_cobblestone and the mossy_stone_bricks are processed from the cobblestone and the stone_bricks, so they can not be transformed into each other.
+- The mossy_cobblestone and the mossy_stone_bricks are processed from the cobblestone and the stone_bricks, so they can not be transformed into each other.Other situations are similar.
 - Stairs can be processed into corresponding slab.
 
 <a href="#Contents">回到目录 Back to contents</a>
@@ -128,15 +136,15 @@
         |-- 按钮 button
         |-- 楼梯 stairs
 ------------------------------------------------------------------
-木台阶 ----------->>  木棍 [1] <<----- 木楼梯
-树叶 ------------->>  木棍 [1] <<----- 树苗
-木栅栏 ----------->>  木棍 [2] <<----- 木压力板
-木板 ------------->>  木棍 [2]
-木门 ------------->>  木棍 [4] <<----- 木活板门
-床 --------------->>  木棍 [4]
-船 --------------->>  木棍 [6]
-木头(菌核) -------->>  木棍 [8] <<----- 原木(菌柄)
-去皮原木(去皮菌柄) -->>  木棍 [8] <<----- 去皮木头(去皮菌核)
+木台阶 ------------>>  木棍 [1] <<---- 木楼梯
+树叶 -------------->>  木棍 [1] <<---- 树苗
+木栅栏 ------------>>  木棍 [2] <<---- 木压力板
+木板 -------------->>  木棍 [2]
+木门 -------------->>  木棍 [4] <<---- 木活板门
+床 ---------------->>  木棍 [4]
+船 ---------------->>  木棍 [6]
+木头(菌核) --------->>  木棍 [8] <<---- 原木(菌柄)
+去皮原木(去皮菌柄) -->>  木棍 [8] <<---- 去皮木头(去皮菌核)
 
 wooden_slab ------------------>>  stick [1] <<-- wooden_stairs
 leaves ----------------------->>  stick [1] <<-- sapling
@@ -322,18 +330,50 @@ trapped_chest ------>> stick [8] <<-- note_block
 ```
 ------------------------------------------------------------------
 (◻ = 花岗岩 / 闪长岩 / 安山岩)
-(机械动力 ---->> ◻)
+(机械动力 ---->> (磨制)◻)
 ◻砖          方纹◻砖
 竖纹◻         ◻铺路石
 层叠◻         生苔◻
-生草◻
+生草◻         ◻砖楼梯
+方纹◻砖楼梯    ◻铺路石楼梯
+◻砖台阶       方纹◻砖台阶
+◻铺路石台阶    ◻砖墙
+方纹◻砖墙      ◻铺路石墙
+
+(机械动力 ------->> 木棍 [2])
+大齿轮       水车
+安山机壳     黄铜机壳
+铜机壳       暗影机壳
+光辉机壳
+
+(匠魂 ------->> 木棍 [4])
+wooden_sign      wooden_fence_gate
+
+(暮色森林 ------->> 木棍 [4])
+木告示牌        木栅栏门
 
 (◻ = granite / diorite / andesite)
-(Create -------->> ◻)
-◻_bricks        fancy_◻_bricks
-◻_pillar        paved_◻
-layered_◻       mossy_◻
-overgrown_◻
+(Create -------->> (polished)◻)
+◻_bricks                   fancy_◻_bricks
+◻_pillar                   paved_◻
+layered_◻                  mossy_◻
+overgrown_◻                ◻_bricks_stairs
+fancy_◻_bricks_stairs      paved_◻_stairs
+◻_bricks_slab              fancy_◻_bricks_slab
+paved_◻_slab               ◻_bricks_wall
+fancy_◻_bricks_wall        paved_◻_wall
+
+(Create ------>> stick [2])
+large_cogwheel         water_wheel
+andesite_casing        brass_casing
+copper_casing          shadow_steel_casing
+refined_radiance_casing
+
+(Tinkers' Construct ------>> stick [4])
+wooden_sign      wooden_fence_gate
+
+(The Twilight Forest ------>> stick [4])
+wooden_sign      wooden_fence_gate
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -393,14 +433,6 @@ scorched_road_stairs ---->>  scorched_road_slab
 scorched_bricks --------->>  scorched_brick [4]
 scorched_bricks_stairs -->>  scorched_brick [2] <<-- scorched_bricks_slab
 scorched_glass ---------->>  scorched_glass_pane [3]
-------------------------------------------------------------------
-```
-<a href="#Contents">回到目录 Back to contents</a>
-<h4 id="Tinkers-World">Tinkers' World</h4>
-
-```
-------------------------------------------------------------------
-wooden_sign -->> stick [4] <<-- wooden_fence_gate
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -495,19 +527,9 @@ warped_window ------------->>  warped_window_pane [3]
 ------------------------------------------------------------------
 (块 -->> 锭 [9] -->> 粒 [9])
 铜     锌     黄铜
-(物品 ------->> 木棍 [2])
-大齿轮       水车
-安山机壳     黄铜机壳
-铜机壳       暗影机壳
-光辉机壳
 
 (block -->> ingot [9] -->> nugget [9])
 copper         zinc        brass
-(items ------>> stick [2])
-large_cogwheel         water_wheel
-andesite_casing        brass_casing
-copper_casing          shadow_steel_casing
-refined_radiance_casing
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -519,19 +541,74 @@ refined_radiance_casing
 (forge ----->> ◻)
 ◻锭    ◻粒    ◻矿石    ◻块
 
+(◻ = (磨制)花岗岩 / (磨制)闪长岩 / (磨制)安山岩)
+(原版)
+◻砖楼梯
+方纹◻砖楼梯    ◻铺路石楼梯
+◻砖台阶       方纹◻砖台阶
+◻铺路石台阶    ◻砖墙
+方纹◻砖墙      ◻铺路石墙
+
 (◻ = copper)
 (forge ----->> ◻)
 ◻_ingot    ◻_nugget    ◻_ore    ◻_block
+
+(◻ = (polished)granite / (polished)diorite / (polished)andesite)
+(Vanilla)
+◻_bricks_stairs
+fancy_◻_bricks_stairs      paved_◻_stairs
+◻_bricks_slab              fancy_◻_bricks_slab
+paved_◻_slab               ◻_bricks_wall
+fancy_◻_bricks_wall        paved_◻_wall
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h3 id="twilightforest">暮色森林支持 The Twilight Forest Support</h3>
+<h4 id="Twilight-Forest">暮色森林 Twilight Forest</h4>
+
+```
+------------------------------------------------------------------
+铁木块 ------->>  铁木锭
+炽铁块 ------->>  炽铁锭
+骑士金属块 ---->>  骑士金属锭
+
+城堡砖 <================>  磨损城堡砖
+黑纹城堡砖瓦 <===========>  黑纹城堡砖柱
+粗纹城堡砖瓦 <===========>  粗纹城堡砖柱
+娜迦石楼梯（左） <========>  娜迦石楼梯（右）
+风化的娜迦石楼梯（左） <===>  风化的娜迦石楼梯（右）
+娜迦苔石楼梯（左） <======>  娜迦苔石楼梯（右）
+迷宫石头 <==> 迷宫石砖 <==>  装饰迷宫石砖
+    <==> 錾制迷宫石头 <==>  迷宫石沿 <==> 迷宫镶石
+
+ironwood_block ------->>  ironwood_ingot
+fiery_block ---------->>  fiery_ingot
+knightmetal_block ---->>  knightmetal_ingot
+
+castle_brick <======================>  castle_brick_worn
+castle_pillar_encased <=============>  castle_pillar_encased_tile
+castle_pillar_bold <================>  castle_pillar_bold_tile
+nagastone_stairs_left <=============>  nagastone_stairs_right
+nagastone_stairs_weathered_left <===>  nagastone_stairs_right
+nagastone_stairs_mossy_left <=======>  nagastone_stairs_mossy_right
+maze_stone <==> maze_stone_brick <==>  maze_stone_decorative
+    <==> maze_stone_chiseled <==> maze_stone_border <==> maze_stone_mosaic
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Mod-Compatibility-twilightforest">模组兼容 Mod Compatibility</h4>
+
+```
+------------------------------------------------------------------
+
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 简化调试输出信息。
-- 补充 机械动力 的加工。
-- 完成 机械动力建筑方块 内容的支持。
-- 增加原版对机械动力部分方块的兼容。
-- 完成对机械动力模组的支持。
+- 修改目录部分结构。
+- 补充原版和机械动力兼容性内容。
+- 完成对 暮色森林 的支持。
 - 更新 README。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

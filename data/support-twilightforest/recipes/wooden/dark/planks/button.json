@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:dark_planks"
+    },
+    "result": "twilightforest:dark_button",
+    "count": 1
+}

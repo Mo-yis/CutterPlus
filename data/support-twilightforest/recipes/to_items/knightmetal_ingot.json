@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:knightmetal_block"
+    },
+    "result": "twilightforest:knightmetal_ingot",
+    "count": 9
+}

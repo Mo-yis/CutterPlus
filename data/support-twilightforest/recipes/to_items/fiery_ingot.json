@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:fiery_block"
+    },
+    "result": "twilightforest:fiery_ingot",
+    "count": 9
+}

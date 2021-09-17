@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-create:slab/granite"
+    },
+    "result": "minecraft:polished_granite_slab",
+    "count": 1
+}

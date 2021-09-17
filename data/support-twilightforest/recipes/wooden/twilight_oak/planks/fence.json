@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:twilight_oak_planks"
+    },
+    "result": "twilightforest:twilight_oak_fence",
+    "count": 1
+}

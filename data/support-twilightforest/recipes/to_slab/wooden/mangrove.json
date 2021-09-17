@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:mangrove_stairs"
+    },
+    "result": "twilightforest:mangrove_slab",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "twilightforest:sort_stairs"
+    },
+    "result": "twilightforest:sort_slab",
+    "count": 1
+}
