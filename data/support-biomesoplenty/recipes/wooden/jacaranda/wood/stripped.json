@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:jacaranda_wood"
+    },
+    "result": "biomesoplenty:stripped_jacaranda_wood",
+    "count": 1
+}

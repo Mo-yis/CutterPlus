@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:palm_log"
+    },
+    "result": "biomesoplenty:palm_wood",
+    "count": 1
+}

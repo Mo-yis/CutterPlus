@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:dead_planks"
+    },
+    "result": "biomesoplenty:dead_fence",
+    "count": 1
+}

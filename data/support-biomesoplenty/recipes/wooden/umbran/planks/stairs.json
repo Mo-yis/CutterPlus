@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:umbran_planks"
+    },
+    "result": "biomesoplenty:umbran_stairs",
+    "count": 1
+}

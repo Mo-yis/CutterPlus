@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+            "tag": "support-biomesoplenty:wooden_fence_gates"
+        },
+    "result": "minecraft:stick",
+    "count": 4
+}
