@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:willow_stairs"
+    },
+    "result": "biomesoplenty:willow_slab",
+    "count": 1
+}

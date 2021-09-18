@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:umbran_log"
+    },
+    "result": "biomesoplenty:umbran_wood",
+    "count": 1
+}

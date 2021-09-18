@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:nether_crystal_block"
+    },
+    "result": "biomesoplenty:nether_crystal",
+    "count": 1
+}

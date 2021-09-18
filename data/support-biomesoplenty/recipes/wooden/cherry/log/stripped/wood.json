@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:stripped_cherry_log"
+    },
+    "result": "biomesoplenty:stripped_cherry_wood",
+    "count": 1
+}

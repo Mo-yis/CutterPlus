@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "item": "biomesoplenty:reed"
+        },{
+            "item": "biomesoplenty:mangrove_root"
+        },{
+            "item": "biomesoplenty:dead_branch"
+        },{
+            "item": "biomesoplenty:bramble"
+        }],
+    "result": "minecraft:stick",
+    "count": 1
+}

@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.10
+- 版本 Version: 2.11
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -51,6 +51,13 @@
                     <li><a href="#Mod-Compatibility-twilightforest">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
+            <li>
+                <a href="#biomesoplenty">超多生物群系支持 Biomes O' Plenty Support</a>
+                <ol>
+                    <li><a href="#Biomes-O-Plenty">Biomes O' Plenty</a></li>
+                    <li><a href="#Mod-Compatibility-biomesoplenty">模组兼容 Mod Compatibility</a></li>
+                </ol>
+            </li>
         </ol>
     </li>
     <li><a href="#Update">更新内容 Update</a></li>
@@ -72,6 +79,7 @@
     - tconstruct: 《匠魂 - 1.16.5》从版本 “2.4” 开始支持。
     - create: 《机械动力 - 1.16.5》从版本 “2.9” 开始支持。
     - twilightforest: 《暮色森林 - 1.16.5》从版本 “2.10” 开始支持。
+    - biomesoplenty: 《超多生物群系 - 1.16.5》从版本 “2.11” 开始支持。
 - 符号说明：
     - <==>：代表两边都能加工。
     - -->>：代表只能向右边加工。
@@ -91,6 +99,7 @@
     - tconstruct: "Tinkers' Construct - 1.16.5" is supported from version "2.4".
     - create: "Create - 1.16.5" is supported from version "2.9".
     - twilightforest： "The Twilight Forest - 1.16.5" is supported from version "2.10".
+    - biomesoplenty: "Biomes O' Plenty - 1.16.5" is supported from version "2.11".
 - Symbol description:
     - <==>: It means that both sides can be processed.
     - -->>: It means that it can only be processed to the right.
@@ -135,13 +144,15 @@
         |-- 台阶 slab [2]
         |-- 按钮 button
         |-- 楼梯 stairs
+            |-- 台阶 slab
 ------------------------------------------------------------------
 木台阶 ------------>>  木棍 [1] <<---- 木楼梯
 树叶 -------------->>  木棍 [1] <<---- 树苗
 木栅栏 ------------>>  木棍 [2] <<---- 木压力板
 木板 -------------->>  木棍 [2]
 木门 -------------->>  木棍 [4] <<---- 木活板门
-床 ---------------->>  木棍 [4]
+床 ---------------->>  木棍 [4] <<---- 木栅栏门
+木告示牌------------>>  木棍 [4]
 船 ---------------->>  木棍 [6]
 木头(菌核) --------->>  木棍 [8] <<---- 原木(菌柄)
 去皮原木(去皮菌柄) -->>  木棍 [8] <<---- 去皮木头(去皮菌核)
@@ -290,7 +301,7 @@ copper_block ------->>  copper_ingot [4] <<---- cut_copper
 枯萎的灌木 --->>  木棍 [1]
 梯子 -------->>  木棍 [2] <<-- 织布机
 画 ---------->>  木棍 [2] <<-- 物品展示框
-木告示牌 ----->>  木棍 [4] <<-- 制图台
+制图台 ------->>  木棍 [4]
 制箭台 ------->>  木棍 [4] <<-- 锻造台
 工作台 ------->>  木棍 [4] <<-- (灵魂)营火
 堆肥桶 ------->>  木棍 [6] <<-- 盔甲架
@@ -317,11 +328,11 @@ jukebox ---------->>  stick [8] <<-- chest
 
 ```
 ------------------------------------------------------------------
-木栅栏门 ----->> 木棍 [4] <<-- 讲台
-陷阱箱 -------->> 木棍 [8] <<-- 音符盒
+讲台 ------->> 木棍 [4]
+陷阱箱 ------>> 木棍 [8] <<-- 音符盒
 
-wooden_fence_gate -->> stick [4] <<-- lectern
-trapped_chest ------>> stick [8] <<-- note_block
+lectern ----------->> stick [4]
+trapped_chest ----->> stick [8] <<-- note_block
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -331,14 +342,14 @@ trapped_chest ------>> stick [8] <<-- note_block
 ------------------------------------------------------------------
 (◻ = 花岗岩 / 闪长岩 / 安山岩)
 (机械动力 ---->> (磨制)◻)
-◻砖          方纹◻砖
-竖纹◻         ◻铺路石
-层叠◻         生苔◻
-生草◻         ◻砖楼梯
-方纹◻砖楼梯    ◻铺路石楼梯
-◻砖台阶       方纹◻砖台阶
-◻铺路石台阶    ◻砖墙
-方纹◻砖墙      ◻铺路石墙
+◻砖           方纹◻砖
+竖纹◻          ◻铺路石
+层叠◻          生苔◻
+生草◻          ◻砖楼梯
+方纹◻砖楼梯     ◻铺路石楼梯
+◻砖台阶        方纹◻砖台阶
+◻铺路石台阶     ◻砖墙
+方纹◻砖墙       ◻铺路石墙
 
 (机械动力 ------->> 木棍 [2])
 大齿轮       水车
@@ -346,11 +357,9 @@ trapped_chest ------>> stick [8] <<-- note_block
 铜机壳       暗影机壳
 光辉机壳
 
-(匠魂 ------->> 木棍 [4])
-wooden_sign      wooden_fence_gate
-
-(暮色森林 ------->> 木棍 [4])
-木告示牌        木栅栏门
+(超多生物群系 ----->> 木棍 [1])
+芦苇          红树根
+垂死木树枝     荆棘
 
 (◻ = granite / diorite / andesite)
 (Create -------->> (polished)◻)
@@ -364,16 +373,14 @@ paved_◻_slab               ◻_bricks_wall
 fancy_◻_bricks_wall        paved_◻_wall
 
 (Create ------>> stick [2])
-large_cogwheel         water_wheel
-andesite_casing        brass_casing
-copper_casing          shadow_steel_casing
+large_cogwheel           water_wheel
+andesite_casing          brass_casing
+copper_casing            shadow_steel_casing
 refined_radiance_casing
 
-(Tinkers' Construct ------>> stick [4])
-wooden_sign      wooden_fence_gate
-
-(The Twilight Forest ------>> stick [4])
-wooden_sign      wooden_fence_gate
+(Biomes O' Plenty ------>> stick [1])
+reed               mangrove_root
+dead_branch        bramble
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -448,6 +455,8 @@ scorched_glass ---------->>  scorched_glass_pane [3]
 下界合金锭 -->> netherite_nugget
 黑曜石 -->> obsidian_pane
 
+(超多生物群系) 泥巴 <==> mud_bricks
+
 (◻ = copper)
 (forge ----->> ◻)
 ◻_ingot    ◻_nugget    ◻_ore    ◻_block
@@ -455,6 +464,8 @@ scorched_glass ---------->>  scorched_glass_pane [3]
 (Vanilla)
 netherite_ingot -->> netherite_nugget
 obsidian -->> obsidian_pane
+
+(Biomes O' Plenty) mud <==> mud_bricks
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -572,6 +583,7 @@ fancy_◻_bricks_wall        paved_◻_wall
 炽铁块 ------->>  炽铁锭
 骑士金属块 ---->>  骑士金属锭
 
+磨损城堡砖楼梯 <=========>  城堡砖楼梯
 城堡砖 <================>  磨损城堡砖
 黑纹城堡砖瓦 <===========>  黑纹城堡砖柱
 粗纹城堡砖瓦 <===========>  粗纹城堡砖柱
@@ -585,6 +597,7 @@ ironwood_block ------->>  ironwood_ingot
 fiery_block ---------->>  fiery_ingot
 knightmetal_block ---->>  knightmetal_ingot
 
+castle_stairs_worn <================>  castle_stairs_brick
 castle_brick <======================>  castle_brick_worn
 castle_pillar_encased <=============>  castle_pillar_encased_tile
 castle_pillar_bold <================>  castle_pillar_bold_tile
@@ -604,17 +617,56 @@ maze_stone <==> maze_stone_brick <==>  maze_stone_decorative
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
+<h3 id="biomesoplenty">超多生物群系支持 Biomes O' Plenty Support</h3>
+<h4 id="Biomes-O-Plenty">Biomes O' Plenty</h4>
+
+```
+------------------------------------------------------------------
+白砂岩 <======> 切制白砂岩 <=======> 錾制白砂岩
+橙色砂岩 <====> 切割的橙色砂岩 <====> 凿过的橙色砂岩
+黑砂岩 <======> 切割的黑色砂岩 <====> 凿过的黑色砂岩
+白砂岩台阶 <======> 切制白砂岩台阶
+橙色砂岩台阶 <====> 切割的橙色砂岩台阶
+黑砂岩台阶 <======> 切割的黑色砂岩台阶
+
+泥砖楼梯 <<------  泥砖 --------->> 泥砖台阶
+泥砖楼梯 ------>>  泥砖(砖) [2] <<---- 泥砖台阶
+泥砖 --------->>  泥砖(砖) [4]
+下界水晶块 ---->> 下界水晶
+
+white_sandstone <====> cut_white_sandstone <====> chiseled_white_sandstone
+orange_sandstone <===> cut_orange_sandstone <===> chiseled_orange_sandstone
+black_sandstone <====> cut_black_sandstone <====> chiseled_black_sandstone
+white_sandstone_slab <====> cut_white_sandstone_slab
+orange_sandstone_slab <===> cut_orange_sandstone_slab
+black_sandstone_slab <====> cut_black_sandstone_slab
+
+mud_brick_stairs <<------  mud_bricks ---->> mud_brick_slab
+mud_brick_stairs ------>>  mud_brick [2] <<---- mud_brick_slab
+mud_bricks ------------>>  mud_brick [4]
+nether_crystal_block -->>  nether_crystal
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Mod-Compatibility-biomesoplenty">模组兼容 Mod Compatibility</h4>
+
+```
+------------------------------------------------------------------
+(匠魂) mud_bricks <==> 泥巴
+
+(Tinkers' Construct) mud_bricks <==> mud
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 修改目录部分结构。
-- 补充原版和机械动力兼容性内容。
-- 完成对 暮色森林 的支持。
+- 调整目录结构。
+- 补充 磨损城堡砖楼梯 <==>  城堡砖楼梯。
+- 完成 超多生物群系 模组内容的兼容和支持。
 - 更新 README。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 支持 暮色森林 The Twilight Forest
-- 支持 超多生物群系 Biomes O' Plenty
 - 支持 凿子 Chisel
 - 支持 长沼蓝调 Bayou Blues
 - 支持 秋原 Autumnity

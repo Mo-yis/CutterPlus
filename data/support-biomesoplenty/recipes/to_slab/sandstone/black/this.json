@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "biomesoplenty:black_sandstone_stairs"
+    },{
+        "item": "biomesoplenty:cut_black_sandstone_slab"
+    }],
+    "result": "biomesoplenty:black_sandstone_slab",
+    "count": 1
+}

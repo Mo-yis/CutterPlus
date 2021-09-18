@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "biomesoplenty:redwood_log"
+    },
+    "result": "biomesoplenty:redwood_wood",
+    "count": 1
+}
