@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+            "item": "biomesoplenty:flesh"
+        },
+    "result": "minecraft:rotten_flesh",
+    "count": 1
+}

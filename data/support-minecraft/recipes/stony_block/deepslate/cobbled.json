@@ -8,6 +8,8 @@
         "item": "minecraft:deepslate_tiles"
     },{
         "item": "minecraft:polished_deepslate"
+    },{
+        "item": "minecraft:deepslate"
     }],
     "result": "minecraft:cobbled_deepslate",
     "count": 1
