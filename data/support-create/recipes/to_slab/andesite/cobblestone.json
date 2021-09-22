@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "create:andesite_cobblestone_stairs"
+    },
+    "result": "create:andesite_cobblestone_slab",
+    "count": 1
+}
