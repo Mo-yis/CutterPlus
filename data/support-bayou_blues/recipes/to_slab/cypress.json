@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "bayou_blues:cypress_stairs"
+    },
+    "result": "bayou_blues:cypress_slab",
+    "count": 1
+}

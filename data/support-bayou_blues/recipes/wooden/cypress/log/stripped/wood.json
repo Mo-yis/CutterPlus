@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "bayou_blues:stripped_cypress_log"
+    },
+    "result": "bayou_blues:stripped_cypress_wood",
+    "count": 1
+}

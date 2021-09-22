@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "item": "bayou_blues:cypress_knee"
+        },{
+            "item": "bayou_blues:large_cypress_knee"
+        },{
+            "item": "bayou_blues:cypress_branch"
+        }],
+    "result": "minecraft:stick",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "bayou_blues:algae_thatch"
+    },
+    "result": "bayou_blues:algae_thatch_stairs",
+    "count": 1
+}
