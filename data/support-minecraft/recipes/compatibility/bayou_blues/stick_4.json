@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [
+        {
+            "item": "bayou_blues:cypress_fence_gate"
+        },{
+            "item": "bayou_blues:cypress_sign"
+        }],
+    "result": "minecraft:stick",
+    "count": 4
+}

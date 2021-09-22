@@ -1,7 +1,7 @@
 <h1 id="Top">切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.11.1
+- 版本 Version: 2.12
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -20,11 +20,11 @@
         <ol>
             <li><a href="#General-Crafting-Tree">通用加工图 General Crafting Tree</a></li>
             <li>
-            <a href="#Vanilla-Support">原版支持 Vanilla Support</a>
+            <a href="#minecraft">原版支持 Vanilla Support</a>
                 <ol>
-                    <li><a href="#Building-Blocks">建筑方块 Building Blocks</a></li>
-                    <li><a href="#Decoration-Blocks">装饰性方块 Decoration Blocks</a></li>
-                    <li><a href="#Redstone">红石 Redstone</a></li>
+                    <li><a href="#Building-Blocks-minecraft">建筑方块 Building Blocks</a></li>
+                    <li><a href="#Decoration-Blocks-minecraft">装饰性方块 Decoration Blocks</a></li>
+                    <li><a href="#Redstone-minecraft">红石 Redstone</a></li>
                     <li><a href="#Mod-Compatibility-minecraft">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
@@ -58,6 +58,13 @@
                     <li><a href="#Mod-Compatibility-biomesoplenty">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
+            <li>
+                <a href="#bayou_blues">长沼蓝调支持 Bayou Blues Support</a>
+                <ol>
+                    <li><a href="#Building-Blocks-bayou_blues">建筑方块 Building Blocks</a></li>
+                    <li><a href="#Mod-Compatibility-bayou_blues">模组兼容 Mod Compatibility</a></li>
+                </ol>
+            </li>
         </ol>
     </li>
     <li><a href="#Update">更新内容 Update</a></li>
@@ -75,11 +82,12 @@
 - “模组兼容” 是指从其他模组的物品加工到本模组时使用的配方。
 - 在 “特性” 目录中，除 “模组兼容” 外，都代表了每个模组的物品栏的名称。
 - 如果觉得空气配方碍眼，可以将没有的模组对应的以 “support” 开头的文件夹删除：
-    - minecraft: 《Minecraft》是最早支持的内容。
-    - tconstruct: 《匠魂 - 1.16.5》从版本 “2.4” 开始支持。
-    - create: 《机械动力 - 1.16.5》从版本 “2.9” 开始支持。
-    - twilightforest: 《暮色森林 - 1.16.5》从版本 “2.10” 开始支持。
-    - biomesoplenty: 《超多生物群系 - 1.16.5》从版本 “2.11” 开始支持。
+    1. minecraft: 《Minecraft》是最早支持的内容。
+    2. tconstruct: 《匠魂 - 1.16.5》从版本 “2.4” 开始支持。
+    3. create: 《机械动力 - 1.16.5》从版本 “2.9” 开始支持。
+    4. twilightforest: 《暮色森林 - 1.16.5》从版本 “2.10” 开始支持。
+    5. biomesoplenty: 《超多生物群系 - 1.16.5》从版本 “2.11” 开始支持。
+    6. bayou_blues: 《长沼蓝调 - 1.16.5》从版本 “2.12” 开始支持。
 - 符号说明：
     - <==>：代表两边都能加工。
     - -->>：代表只能向右边加工。
@@ -95,11 +103,12 @@
 - "Mod Compatibility" refers to the recipes used when processing from the items of other mods to this mod.
 - In the "Features" directory, except for "Mod Compatibility", it represents the name of the inventory of each mod.
 - If you think the air recipe is eye-catching, you can delete the folder starting with "support" corresponding to the uninstalled mod:
-    - minecraft: "Minecraft" was the first supported content.
-    - tconstruct: "Tinkers' Construct - 1.16.5" is supported from version "2.4".
-    - create: "Create - 1.16.5" is supported from version "2.9".
-    - twilightforest： "The Twilight Forest - 1.16.5" is supported from version "2.10".
-    - biomesoplenty: "Biomes O' Plenty - 1.16.5" is supported from version "2.11".
+    1. minecraft: "Minecraft" was the first supported content.
+    2. tconstruct: "Tinkers' Construct - 1.16.5" is supported from version "2.4".
+    3. create: "Create - 1.16.5" is supported from version "2.9".
+    4. twilightforest： "The Twilight Forest - 1.16.5" is supported from version "2.10".
+    5. biomesoplenty: "Biomes O' Plenty - 1.16.5" is supported from version "2.11".
+    6. bayou_blues: "Bayou Blues - 1.16.5" is supported from version "2.12".
 - Symbol description:
     - <==>: It means that both sides can be processed.
     - -->>: It means that it can only be processed to the right.
@@ -168,8 +177,8 @@ stripped_log(stripped_stem) -->>  stick [8] <<-- stripped_wood(stripped_hyphae)
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
-<h3 id="Vanilla-Support">原版支持 Vanilla Support</h3>
-<h4 id="Building-Blocks">建筑方块 Building Blocks</h4>
+<h3 id="minecraft">原版支持 Vanilla Support</h3>
+<h4 id="Building-Blocks-minecraft">建筑方块 Building Blocks</h4>
 
 ```
 ------------------------------------------------------------------
@@ -296,7 +305,7 @@ copper_block -->>  copper_ingot [9] <<-- cut_copper
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
-<h4 id="Decoration-Blocks">装饰性方块 Decoration Blocks</h4>
+<h4 id="Decoration-Blocks-minecraft">装饰性方块 Decoration Blocks</h4>
 
 ```
 ------------------------------------------------------------------
@@ -329,7 +338,7 @@ jukebox ---------->>  stick [8] <<-- chest
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
-<h4 id="Redstone">红石 Redstone</h4>
+<h4 id="Redstone-minecraft">红石 Redstone</h4>
 
 ```
 ------------------------------------------------------------------
@@ -361,15 +370,16 @@ trapped_chest ----->> stick [8] <<-- note_block
 铜机壳       暗影机壳
 光辉机壳
 
-(超多生物群系 ----->> 木棍 [1])
-芦苇          红树根
-垂死木树枝     荆棘
-
-(超多生物群系) 肉块 -->>  腐肉
-(原版) 巨型树叶 ----->>  木棍 [64]
-(原版) 巨型原木 ----->>  橡木木板 [64]
-(原版) 巨型圆石 ----->>  圆石 [64]
-(原版) 巨型黑曜石 --->>  黑曜石 [64]
+(超多生物群系) 肉块 ------->>  腐肉
+(超多生物群系) 芦苇 ------->>  木棍 [1] <<-- 红树根
+(超多生物群系) 垂死木树枝 -->>  木棍 [1] <<-- 荆棘
+(原版) 巨型树叶 ---------->>  木棍 [64]
+(原版) 巨型原木 ---------->>  橡木木板 [64]
+(原版) 巨型圆石 ---------->>  圆石 [64]
+(原版) 巨型黑曜石 -------->>  黑曜石 [64]
+(长沼蓝调) 丝柏膝根 ------->>  木棍 [1] <<-- 大型丝柏膝根
+(长沼蓝调) 丝柏树枝 ------->>  木棍 [1]
+(长沼蓝调) 丝柏木告示牌 ---->>  木棍 [4] <<-- 丝柏木栅栏门
 
 (◻ = granite / diorite / andesite) (Create -->> (polished)◻)
 ◻_bricks                   fancy_◻_bricks
@@ -387,15 +397,16 @@ andesite_casing          brass_casing
 copper_casing            shadow_steel_casing
 refined_radiance_casing
 
-(Biomes O' Plenty ------>> stick [1])
-reed               mangrove_root
-dead_branch        bramble
-
-(Biomes O' Plenty) flesh ----->>  rotten_flesh
-(Vanilla) giant_leaves ------->>  stick [64]
-(Vanilla) giant_log ---------->>  oak_planks [64]
-(Vanilla) giant_cobblestone -->>  cobblestone [64]
-(Vanilla) giant_obsidian ----->>  obsidian [64]
+(Biomes O' Plenty) flesh ---------->>  rotten_flesh
+(Biomes O' Plenty) reed ----------->>  stick [1] <<-- mangrove_root
+(Biomes O' Plenty) dead_branch ---->>  stick [1] <<-- bramble
+(Vanilla) giant_leaves ------------>>  stick [64]
+(Vanilla) giant_log --------------->>  oak_planks [64]
+(Vanilla) giant_cobblestone ------->>  cobblestone [64]
+(Vanilla) giant_obsidian ---------->>  obsidian [64]
+(Bayou Blues) cypress_knee -------->>  stick [1] <<-- large_cypress_knee
+(Bayou Blues) cypress_branch ------>>  stick [1]
+(Bayou Blues) cypress_fence_gate -->>  stick [4] <<-- large_sign
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -459,7 +470,6 @@ scorched_glass ---------->>  scorched_glass_pane [3]
 ------------------------------------------------------------------
 (◻ = 铜) (forge ----->> ◻)
 ◻锭    ◻粒    ◻矿石    ◻块
-
 
 (原版)下界合金锭 ----->>  netherite_nugget
 (原版)黑曜石 -------->>  obsidian_pane
@@ -667,9 +677,29 @@ nether_crystal_block -->>  nether_crystal
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
+<h3 id="bayou_blues">长沼蓝调支持 Bayou Blues Support</h3>
+<h4 id="Building-Blocks-bayou_blues">建筑方块 Building Blocks</h4>
+
+```
+------------------------------------------------------------------
+水藻团台阶 [2] <<-- 水藻团 -->> 水藻团楼梯
+须松罗块 -->> 须松罗
+
+algae_thatch_slab [2] <<-- algae_thatch -->> algae_thatch_stairs
+beard_moss_block -->> beard_moss
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Mod-Compatibility-bayou_blues">模组兼容 Mod Compatibility</h4>
+
+```
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 添加大量遗漏的配方。
 - 更新 README。
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

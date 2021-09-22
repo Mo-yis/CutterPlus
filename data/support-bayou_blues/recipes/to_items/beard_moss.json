@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "bayou_blues:beard_moss_block"
+    },
+    "result": "bayou_blues:beard_moss",
+    "count": 1
+}
