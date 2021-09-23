@@ -10,6 +10,7 @@ function support-create:info
 function support-twilightforest:info
 function support-biomesoplenty:info
 function support-bayou_blues:info
+function support-autumnity:info
 
 # End of the infomation.
 tellraw @a {"text": "Loading Successful !","color": "green"}
