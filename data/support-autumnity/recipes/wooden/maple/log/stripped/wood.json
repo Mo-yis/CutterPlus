@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "autumnity:stripped_maple_log"
+    },
+    "result": "autumnity:stripped_maple_wood",
+    "count": 1
+}

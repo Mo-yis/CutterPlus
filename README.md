@@ -1,7 +1,7 @@
-<h1 id="Top">切石机增强 Cutter Plus</h1>
+<h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.12
+- 版本 Version: 2.13
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -65,6 +65,13 @@
                     <li><a href="#Mod-Compatibility-bayou_blues">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
+            <li>
+                <a href="#autumnity">秋原支持 Autumnity Support</a>
+                <ol>
+                    <li><a href="#Building-Blocks-autumnity">建筑方块 Building Blocks</a></li>
+                    <li><a href="#Mod-Compatibility-autumnity">模组兼容 Mod Compatibility</a></li>
+                </ol>
+            </li>
         </ol>
     </li>
     <li><a href="#Update">更新内容 Update</a></li>
@@ -88,6 +95,7 @@
     4. twilightforest: 《暮色森林 - 1.16.5》从版本 “2.10” 开始支持。
     5. biomesoplenty: 《超多生物群系 - 1.16.5》从版本 “2.11” 开始支持。
     6. bayou_blues: 《长沼蓝调 - 1.16.5》从版本 “2.12” 开始支持。
+    7. autumnity: 《秋原 - 1.16.5》从版本 “2.13” 开始支持。
 - 符号说明：
     - <==>：代表两边都能加工。
     - -->>：代表只能向右边加工。
@@ -109,6 +117,7 @@
     4. twilightforest： "The Twilight Forest - 1.16.5" is supported from version "2.10".
     5. biomesoplenty: "Biomes O' Plenty - 1.16.5" is supported from version "2.11".
     6. bayou_blues: "Bayou Blues - 1.16.5" is supported from version "2.12".
+    7. autumnity： "Autumnity - 1.16.5" is supported from version "2.13".
 - Symbol description:
     - <==>: It means that both sides can be processed.
     - -->>: It means that it can only be processed to the right.
@@ -698,18 +707,36 @@ beard_moss_block -->> beard_moss
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
+<h3 id="autumnity">秋原支持 Autumnity Support</h3>
+<h4 id="Building-Blocks-autumnity">建筑方块 Building Blocks</h4>
+
+```
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Mod-Compatibility-autumnity">模组兼容 Mod Compatibility</h4>
+
+```
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 更新 README。
+- 支持 秋原 Autumnity 通用内容的部分
+- 调整目录结构
+- 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 支持 长沼蓝调 Bayou Blues
-- 支持 秋原 Autumnity
+- 碧海新生 Upgrade Aquatic
 - 支持 Supplementaries
 - 支持 夸克 Quark
 - 支持 凿子 Chisel
-- 支持更多1.16.5的模组。
+- 支持更多1.16.5的模组
 
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Usage">使用方式 Usage</h2>
