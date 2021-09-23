@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.13
+- 版本 Version: 2.13.1
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -69,6 +69,7 @@
                 <a href="#autumnity">秋原支持 Autumnity Support</a>
                 <ol>
                     <li><a href="#Building-Blocks-autumnity">建筑方块 Building Blocks</a></li>
+                    <li><a href="#Decoration-Blocks-autumnity">装饰性方块 Decoration Blocks</a></li>
                     <li><a href="#Mod-Compatibility-autumnity">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
@@ -385,10 +386,11 @@ trapped_chest ----->> stick [8] <<-- note_block
 (原版) 巨型树叶 ---------->>  木棍 [64]
 (原版) 巨型原木 ---------->>  橡木木板 [64]
 (原版) 巨型圆石 ---------->>  圆石 [64]
-(原版) 巨型黑曜石 -------->>  黑曜石 [64]
+(原版) 巨型黑曜石 --------->>  黑曜石 [64]
 (长沼蓝调) 丝柏膝根 ------->>  木棍 [1] <<-- 大型丝柏膝根
 (长沼蓝调) 丝柏树枝 ------->>  木棍 [1]
 (长沼蓝调) 丝柏木告示牌 ---->>  木棍 [4] <<-- 丝柏木栅栏门
+(秋原) 枫木告示牌 --------->>  木棍 [4] <<-- 枫木栅栏门
 
 (◻ = granite / diorite / andesite) (Create -->> (polished)◻)
 ◻_bricks                   fancy_◻_bricks
@@ -416,6 +418,7 @@ refined_radiance_casing
 (Bayou Blues) cypress_knee -------->>  stick [1] <<-- large_cypress_knee
 (Bayou Blues) cypress_branch ------>>  stick [1]
 (Bayou Blues) cypress_fence_gate -->>  stick [4] <<-- large_sign
+(Autumnity) maple_fence_gate ------>>  stick [4] <<-- maple_sign
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -712,7 +715,27 @@ beard_moss_block -->> beard_moss
 
 ```
 ------------------------------------------------------------------
+蜗牛壳砖块 <====>  錾制蜗牛壳砖 <==> 蜗牛壳瓦块
+蜗牛壳砖楼梯 <==>  蜗牛壳瓦楼梯
+蜗牛壳砖台阶 <==>  蜗牛壳瓦台阶
 
+溢满树液的枫木原木 -->> 枫木木板 [4] <<-- 溢满树液的枫木
+
+snail_shell_bricks <========>  chiseled_snail_shell_bricks <==> snail_shell_tiles
+snail_shell_brick_stairs <==>  snail_shell_tile_stairs
+snail_shell_brick_slab <====>  snail_shell_tile_slab
+
+sappy_maple_log -->> maple_planks [4] <<-- sappy_maple_wood
+------------------------------------------------------------------
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Decoration-Blocks-autumnity">装饰性方块 Building Blocks</h4>
+
+```
+------------------------------------------------------------------
+蜗牛壳砖墙 <==> 蜗牛壳瓦墙
+
+snail_shell_brick_wall <==> snail_shell_tile_wall
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -726,13 +749,12 @@ beard_moss_block -->> beard_moss
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 支持 秋原 Autumnity 通用内容的部分
-- 调整目录结构
+- 完成支持 秋原 的所有内容
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 碧海新生 Upgrade Aquatic
+- 支持 碧海新生 Upgrade Aquatic
 - 支持 Supplementaries
 - 支持 夸克 Quark
 - 支持 凿子 Chisel
