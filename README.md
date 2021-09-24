@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.13.1
+- 版本 Version: 2.13.2
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -720,12 +720,14 @@ beard_moss_block -->> beard_moss
 蜗牛壳砖台阶 <==>  蜗牛壳瓦台阶
 
 溢满树液的枫木原木 -->> 枫木木板 [4] <<-- 溢满树液的枫木
+蜗牛壳方块 -------->> 蜗牛壳碎片 [9]
 
 snail_shell_bricks <========>  chiseled_snail_shell_bricks <==> snail_shell_tiles
 snail_shell_brick_stairs <==>  snail_shell_tile_stairs
 snail_shell_brick_slab <====>  snail_shell_tile_slab
 
-sappy_maple_log -->> maple_planks [4] <<-- sappy_maple_wood
+sappy_maple_log ---->> maple_planks [4] <<-- sappy_maple_wood
+snail_shell_block -->> snail_shell_piece [9]
 ------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
@@ -749,12 +751,11 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 完成支持 秋原 的所有内容
+- 蜗牛壳方块 -------->> 蜗牛壳碎片 [9]
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 支持 碧海新生 Upgrade Aquatic
 - 支持 Supplementaries
 - 支持 夸克 Quark
 - 支持 凿子 Chisel
