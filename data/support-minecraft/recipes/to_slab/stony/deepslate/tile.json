@@ -1,11 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": [{
-        "item": "minecraft:deepslate_brick_slab"
-    },{
-        "item": "minecraft:cobbled_deepslate_slab"
-    },{
-        "item": "minecraft:polished_deepslate_slab"
+        "tag": "support-minecraft:slab/deepslate"
     },{
         "item": "minecraft:deepslate_tile_stairs"
     }],

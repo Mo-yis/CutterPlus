@@ -1,10 +1,8 @@
 {
     "type": "minecraft:stonecutting",
-    "ingredient": [{
-        "item": "minecraft:polished_blackstone_stairs"
-    },{
-        "item": "minecraft:polished_blackstone_brick_stairs"
-    }],
+    "ingredient": {
+        "tag": "support-minecraft:stairs/blackstone"
+    },
     "result": "minecraft:blackstone_stairs",
     "count": 1
 }
