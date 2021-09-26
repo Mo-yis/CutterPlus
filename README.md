@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.13.2
+- 版本 Version: 2.13.3
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -383,10 +383,10 @@ trapped_chest ----->> stick [8] <<-- note_block
 (超多生物群系) 肉块 ------->>  腐肉
 (超多生物群系) 芦苇 ------->>  木棍 [1] <<-- 红树根
 (超多生物群系) 垂死木树枝 -->>  木棍 [1] <<-- 荆棘
-(原版) 巨型树叶 ---------->>  木棍 [64]
-(原版) 巨型原木 ---------->>  橡木木板 [64]
-(原版) 巨型圆石 ---------->>  圆石 [64]
-(原版) 巨型黑曜石 --------->>  黑曜石 [64]
+(暮色森林) 巨型树叶 ------->>  木棍 [64]
+(暮色森林) 巨型原木 ------->>  橡木木板 [64]
+(暮色森林) 巨型圆石 ------->>  圆石 [64]
+(暮色森林) 巨型黑曜石 ------>>  黑曜石 [64]
 (长沼蓝调) 丝柏膝根 ------->>  木棍 [1] <<-- 大型丝柏膝根
 (长沼蓝调) 丝柏树枝 ------->>  木棍 [1]
 (长沼蓝调) 丝柏木告示牌 ---->>  木棍 [4] <<-- 丝柏木栅栏门
@@ -408,13 +408,13 @@ andesite_casing          brass_casing
 copper_casing            shadow_steel_casing
 refined_radiance_casing
 
-(Biomes O' Plenty) flesh ---------->>  rotten_flesh
-(Biomes O' Plenty) reed ----------->>  stick [1] <<-- mangrove_root
-(Biomes O' Plenty) dead_branch ---->>  stick [1] <<-- bramble
-(Vanilla) giant_leaves ------------>>  stick [64]
-(Vanilla) giant_log --------------->>  oak_planks [64]
-(Vanilla) giant_cobblestone ------->>  cobblestone [64]
-(Vanilla) giant_obsidian ---------->>  obsidian [64]
+(Biomes O' Plenty) flesh -------->>  rotten_flesh
+(Biomes O' Plenty) reed --------->>  stick [1] <<-- mangrove_root
+(Biomes O' Plenty) dead_branch -->>  stick [1] <<-- bramble
+(The Twilight Forest) giant_leaves ------->>  stick [64]
+(The Twilight Forest) giant_log ---------->>  oak_planks [64]
+(The Twilight Forest) giant_cobblestone -->>  cobblestone [64]
+(The Twilight Forest) giant_obsidian ----->>  obsidian [64]
 (Bayou Blues) cypress_knee -------->>  stick [1] <<-- large_cypress_knee
 (Bayou Blues) cypress_branch ------>>  stick [1]
 (Bayou Blues) cypress_fence_gate -->>  stick [4] <<-- large_sign
@@ -751,7 +751,6 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 蜗牛壳方块 -------->> 蜗牛壳碎片 [9]
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
