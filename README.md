@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.1
+- 版本 Version: 2.14.2
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -731,15 +731,23 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 
 ```
 <a href="#Contents">回到目录 Back to contents</a>
-<h3 id="quark">夸克支持 Bayou Blues Support</h3>
+<h3 id="quark">夸克支持 Quark Support</h3>
 <h4 id="Building-Blocks-quark">建筑方块 Building Blocks</h4>
 
 ```
 镶框玻璃(染色) ---->> 镶框玻璃板(染色) [3]
+楼梯 ---->> 竖直台阶
+
+远古海晶石砖(台阶/楼梯) <====> 远古海晶石(台阶/楼梯)
+台阶 <====> 竖直台阶
 
 ------------------------------------------------------------------
 
 framed_glass(stained) ---->> framed_glass_pane(stained) [3]
+stairs ---->> vertical_slabs
+
+elder_prismarine_bricks(slab/stairs) <====> elder_prismarine(slab/stairs)
+slab <====> vertical_slab
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
@@ -755,13 +763,17 @@ crystal(colored) ---->> crystal_pane(colored) [2]
 <h4 id="Mod-Compatibility-quark">模组兼容 Mod Compatibility</h4>
 
 ```
+(原版) 木(菌核) ---->> 木柱 [3]
 
+------------------------------------------------------------------
+
+(Vanilla) wood(hyphae) ---->> wood_post [3]
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 镶框玻璃(染色) ---->> 镶框玻璃板(染色) [3]
-- 刚玉(彩色) ---->> 刚玉板(彩色) [2]
+- 远古海晶石砖(台阶/楼梯) <====> 远古海晶石(台阶/楼梯)
+- (原版) 木(菌核) ---->> 木柱 [3]
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

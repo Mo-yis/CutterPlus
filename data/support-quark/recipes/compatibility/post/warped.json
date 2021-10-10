@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:warped_hyphae"
+    },
+    "result": "quark:warped_post",
+    "count": 3
+}

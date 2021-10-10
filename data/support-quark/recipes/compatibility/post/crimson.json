@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:crimson_hyphae"
+    },
+    "result": "quark:crimson_post",
+    "count": 3
+}
