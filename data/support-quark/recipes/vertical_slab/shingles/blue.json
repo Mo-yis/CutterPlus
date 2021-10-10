@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:blue_shingles_slab"
+    },{
+        "item": "quark:blue_shingles_stairs"
+    }],
+    "result": "quark:blue_shingles_vertical_slab",
+    "count": 1
+}

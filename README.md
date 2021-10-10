@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.2
+- 版本 Version: 2.14.3
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -405,6 +405,8 @@ trapped_chest ----->> stick [8] <<-- note_block
 (长沼蓝调) 丝柏木告示牌 ---->>  木棍 [4] <<-- 丝柏木栅栏门
 (秋原) 枫木告示牌 --------->>  木棍 [4] <<-- 枫木栅栏门
 
+(夸克) 陶瓦片(彩色) <====> 陶瓦(彩色)
+
 ------------------------------------------------------------------
 
 (◻ = granite / diorite / andesite) (Create -->> (polished)◻)
@@ -434,6 +436,8 @@ refined_radiance_casing
 (Bayou Blues) cypress_branch ------>>  stick [1]
 (Bayou Blues) cypress_fence_gate -->>  stick [4] <<-- large_sign
 (Autumnity) maple_fence_gate ------>>  stick [4] <<-- maple_sign
+
+(Quark) shingles(colored) <====> terracotta(colored)
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="tconstruct">匠魂支持 Tinkers' Construct Support</h3>
@@ -772,8 +776,7 @@ crystal(colored) ---->> crystal_pane(colored) [2]
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 远古海晶石砖(台阶/楼梯) <====> 远古海晶石(台阶/楼梯)
-- (原版) 木(菌核) ---->> 木柱 [3]
+- 夸克陶瓦台阶楼梯部分补充
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

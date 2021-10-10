@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:lime_shingles"
+    },
+    "result": "minecraft:lime_terracotta",
+    "count": 1
+}
