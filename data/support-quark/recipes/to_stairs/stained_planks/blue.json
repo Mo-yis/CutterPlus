@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:blue_stained_planks"
+    },
+    "result": "quark:blue_stained_planks_stairs",
+    "count": 1
+}

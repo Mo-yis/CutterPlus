@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        "quark:oak_post",
+        "quark:stripped_oak_post",
+        "quark:spruce_post",
+        "quark:stripped_spruce_post",
+        "quark:birch_post",
+        "quark:stripped_birch_post",
+        "quark:jungle_post",
+        "quark:stripped_jungle_post",
+        "quark:acacia_post",
+        "quark:stripped_acacia_post",
+        "quark:dark_oak_post",
+        "quark:stripped_dark_oak_post",
+        "quark:crimson_post",
+        "quark:stripped_crimson_post",
+        "quark:warped_post",
+        "quark:stripped_warped_post"
+    ]
+}

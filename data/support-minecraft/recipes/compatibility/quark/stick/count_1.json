@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:post"
+    },
+    "result": "minecraft:stick",
+    "count": 1
+}

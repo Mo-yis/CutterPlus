@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.3
+- 版本 Version: 2.14.4
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -404,6 +404,7 @@ trapped_chest ----->> stick [8] <<-- note_block
 (长沼蓝调) 丝柏树枝 ------->>  木棍 [1]
 (长沼蓝调) 丝柏木告示牌 ---->>  木棍 [4] <<-- 丝柏木栅栏门
 (秋原) 枫木告示牌 --------->>  木棍 [4] <<-- 枫木栅栏门
+(夸克) 木柱 -------------->>  木棍 [1]
 
 (夸克) 陶瓦片(彩色) <====> 陶瓦(彩色)
 
@@ -739,19 +740,23 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 <h4 id="Building-Blocks-quark">建筑方块 Building Blocks</h4>
 
 ```
-镶框玻璃(染色) ---->> 镶框玻璃板(染色) [3]
 楼梯 ---->> 竖直台阶
+镶框玻璃(染色) ---->> 镶框玻璃板(染色) [3]
 
-远古海晶石砖(台阶/楼梯) <====> 远古海晶石(台阶/楼梯)
 台阶 <====> 竖直台阶
+
+(台阶 / 楼梯 / 竖直台阶)
+远古海晶石砖 <====> 远古海晶石
 
 ------------------------------------------------------------------
 
-framed_glass(stained) ---->> framed_glass_pane(stained) [3]
 stairs ---->> vertical_slabs
+framed_glass(stained) ---->> framed_glass_pane(stained) [3]
 
-elder_prismarine_bricks(slab/stairs) <====> elder_prismarine(slab/stairs)
 slab <====> vertical_slab
+
+(slab / stairs / vertical_slab)
+elder_prismarine_bricks <====> elder_prismarine
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
@@ -776,13 +781,13 @@ crystal(colored) ---->> crystal_pane(colored) [2]
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 夸克陶瓦台阶楼梯部分补充
+- (夸克) 木柱 --->>  木棍 [1]
+- 补全了夸克中与染色木板相关的配方
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
 - 支持 夸克 Quark 所有内容
-- 支持 凿子 Chisel
 - 支持更多1.16.5的模组
 
 <a href="#Contents">回到目录 Back to contents</a>

@@ -4,6 +4,8 @@
         "item": "quark:elder_prismarine_stairs"
     },{
         "item": "quark:elder_prismarine_slab"
+    },{
+        "item": "quark:elder_prismarine_bricks_vertical_slab"
     }],
     "result": "quark:elder_prismarine_vertical_slab",
     "count": 1

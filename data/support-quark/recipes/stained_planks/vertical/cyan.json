@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:cyan_stained_planks"
+    },
+    "result": "quark:vertical_cyan_stained_planks",
+    "count": 1
+}
