@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.4
+- 版本 Version: 2.14.5
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -407,6 +407,7 @@ trapped_chest ----->> stick [8] <<-- note_block
 (夸克) 木柱 -------------->>  木棍 [1]
 
 (夸克) 陶瓦片(彩色) <====> 陶瓦(彩色)
+(夸克) 竖直木板 <==> 木板
 
 ------------------------------------------------------------------
 
@@ -439,6 +440,7 @@ refined_radiance_casing
 (Autumnity) maple_fence_gate ------>>  stick [4] <<-- maple_sign
 
 (Quark) shingles(colored) <====> terracotta(colored)
+(Quark) vertical_planks <==> planks
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="tconstruct">匠魂支持 Tinkers' Construct Support</h3>
@@ -742,21 +744,33 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 ```
 楼梯 ---->> 竖直台阶
 镶框玻璃(染色) ---->> 镶框玻璃板(染色) [3]
+染色台阶 [2] <<-- 染色木板 -->> 竖直染色台阶 [2]
+草块台阶 [2] <<-- 草块 -->> 竖直草块台阶 [2]
+草块 -->> 草块楼梯
 
 台阶 <====> 竖直台阶
+染色木板 <====> 竖直染色木板
+硫磺石 <==> 硫磺石砖
 
 (台阶 / 楼梯 / 竖直台阶)
 远古海晶石砖 <====> 远古海晶石
+硫磺石 <==> 硫磺石砖
 
 ------------------------------------------------------------------
 
 stairs ---->> vertical_slabs
 framed_glass(stained) ---->> framed_glass_pane(stained) [3]
+stained_slab [2] <<-- stained_planks -->> stained_vertical_slab [2]
+turf_slab [2] <<-- turf -->> turf_vertical_slab [2]
+turf -->> turf_stairs
 
 slab <====> vertical_slab
+stained_planks <====> vertical_stained_planks
+brimstone <==> brimstone_bricks
 
 (slab / stairs / vertical_slab)
 elder_prismarine_bricks <====> elder_prismarine
+brimstone <==> brimstone_bricks
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
@@ -773,16 +787,17 @@ crystal(colored) ---->> crystal_pane(colored) [2]
 
 ```
 (原版) 木(菌核) ---->> 木柱 [3]
+(原版) 木板 <==> 竖直木板
 
 ------------------------------------------------------------------
 
 (Vanilla) wood(hyphae) ---->> wood_post [3]
+(Vanilla) planks <==> vertical_planks
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- (夸克) 木柱 --->>  木棍 [1]
-- 补全了夸克中与染色木板相关的配方
+- 补充 草块、硫磺石、竖直木板 相关内容
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:brimstone_bricks_slab"
+    },{
+        "item": "quark:brimstone_bricks_stairs"
+    },{
+        "item": "quark:brimstone_vertical_slab"
+    }],
+    "result": "quark:brimstone_bricks_vertical_slab",
+    "count": 1
+}

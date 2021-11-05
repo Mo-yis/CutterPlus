@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:vertical_spruce_planks"
+    },
+    "result": "minecraft:spruce_planks",
+    "count": 1
+}
