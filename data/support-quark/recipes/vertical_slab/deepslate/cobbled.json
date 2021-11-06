@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "tag": "support-quark:deepslate/vertical_slab"
+    },{
+        "item": "quark:cobbled_deepslate_slab"
+    },{
+        "item": "quark:cobbled_deepslate_stairs"
+    }],
+    "result": "quark:cobbled_deepslate_vertical_slab",
+    "count": 1
+}

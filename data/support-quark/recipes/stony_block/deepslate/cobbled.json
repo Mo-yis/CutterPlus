@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:chiseled_deepslate"
+    },{
+        "item": "quark:deepslate_bricks"
+    },{
+        "item": "quark:deepslate_tiles"
+    },{
+        "item": "quark:polished_deepslate"
+    },{
+        "item": "quark:deepslate"
+    }],
+    "result": "quark:cobbled_deepslate",
+    "count": 1
+}

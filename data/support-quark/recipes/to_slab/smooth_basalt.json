@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:smooth_basalt_stairs"
+    },{
+        "item": "quark:smooth_basalt_vertical_slab"
+    }],
+    "result": "quark:smooth_basalt_slab",
+    "count": 1
+}

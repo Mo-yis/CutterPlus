@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.5
+- 版本 Version: 2.14.6
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -751,10 +751,12 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 台阶 <====> 竖直台阶
 染色木板 <====> 竖直染色木板
 硫磺石 <==> 硫磺石砖
+深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
-(台阶 / 楼梯 / 竖直台阶)
-远古海晶石砖 <====> 远古海晶石
-硫磺石 <==> 硫磺石砖
+(◻ = 台阶 / 楼梯 / 竖直台阶)
+远古海晶石砖◻ <====> 远古海晶石◻
+硫磺石◻ <==> 硫磺石砖◻
+深板岩圆石◻ <===>  磨制深板岩◻ <==> 深板岩砖◻ <==> 深板岩瓦◻
 
 ------------------------------------------------------------------
 
@@ -767,20 +769,27 @@ turf -->> turf_stairs
 slab <====> vertical_slab
 stained_planks <====> vertical_stained_planks
 brimstone <==> brimstone_bricks
+cobbled_deepslate <==> chiseled_deepslate <======>
+    polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
-(slab / stairs / vertical_slab)
-elder_prismarine_bricks <====> elder_prismarine
-brimstone <==> brimstone_bricks
+(◻ = slab / stairs / vertical_slab)
+elder_prismarine_bricks_◻ <====> elder_prismarine_◻
+brimstone_◻ <==> brimstone_bricks_◻
+cobbled_deepslate_◻ <=====> polished_deepslate_◻
+    <===> deepslate_brick_◻ <===> deepslate_tile_◻
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
 
 ```
 刚玉(彩色) ---->> 刚玉板(彩色) [2]
+深板岩圆石墙 <==> 深板岩瓦墙 <==> 深板岩砖墙 <==> 磨制深板岩墙
 
 ------------------------------------------------------------------
 
 crystal(colored) ---->> crystal_pane(colored) [2]
+cobbled_deepslate_wall <==> deepslate_tile_wall
+    <=======> deepslate_brick_wall <==> polished_deepslate_wall
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-quark">模组兼容 Mod Compatibility</h4>
@@ -797,7 +806,7 @@ crystal(colored) ---->> crystal_pane(colored) [2]
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 补充 草块、硫磺石、竖直木板 相关内容
+- 补充夸克 深板岩 和 平滑玄武岩 相关内容
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
