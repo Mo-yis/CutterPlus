@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.6
+- 版本 Version: 2.14.7
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -753,10 +753,15 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 硫磺石 <==> 硫磺石砖
 深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
+(◻ = 大理石)
+◻ <====> 磨制◻ <=======> 磨制◻砖
+    <==> 錾制磨制◻砖 <==> 磨制◻铺路石 <==> 磨制◻柱
+
 (◻ = 台阶 / 楼梯 / 竖直台阶)
 远古海晶石砖◻ <====> 远古海晶石◻
 硫磺石◻ <==> 硫磺石砖◻
 深板岩圆石◻ <===>  磨制深板岩◻ <==> 深板岩砖◻ <==> 深板岩瓦◻
+大理石◻ <==> 磨制大理石◻ <==> 磨制大理石砖◻
 
 ------------------------------------------------------------------
 
@@ -772,11 +777,16 @@ brimstone <==> brimstone_bricks
 cobbled_deepslate <==> chiseled_deepslate <======>
     polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
+(◻ = marble)
+◻ <====> polished_◻ <=========> ◻_bricks
+    <==> chiseled_◻_bricks <==> ◻_pavement <==> ◻_pillar
+
 (◻ = slab / stairs / vertical_slab)
 elder_prismarine_bricks_◻ <====> elder_prismarine_◻
 brimstone_◻ <==> brimstone_bricks_◻
 cobbled_deepslate_◻ <=====> polished_deepslate_◻
     <===> deepslate_brick_◻ <===> deepslate_tile_◻
+marble_◻ <==> polished_marble_◻ <==> marble_bricks_◻
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
@@ -806,12 +816,14 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 补充夸克 深板岩 和 平滑玄武岩 相关内容
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
 - 支持 夸克 Quark 所有内容
+- 更新模组内容支持
+- 添加更多模组间兼容性配方
+- 调整文件夹结构、规范文件命名
 - 支持更多1.16.5的模组
 
 <a href="#Contents">回到目录 Back to contents</a>
