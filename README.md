@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.7
+- 版本 Version: 2.14.8
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -112,7 +112,7 @@
     - <==>：代表两边都能加工。
     - -->>：代表只能向右边加工。
     - <<--：代表只能向左边加工。
-    -   ◻ ：代表一个词。
+    - ◻ @ ：代表一个词。
 
 <br>
 
@@ -521,17 +521,16 @@ scorched_glass ---------->>  scorched_glass_pane [3]
 窗户 ------->>  窗户板 [3]
 
 (块 / 楼梯 / 台阶 / 墙)
-
-(◻ = 花岗岩 / 闪长岩 / 安山岩)
-◻砖 <======>  方纹◻砖 <=======>  竖纹◻
-    <======>  ◻铺路石 <=======>  层叠◻
-    <======>  生苔◻ <========>  生草◻
-(◻ = 石灰岩 / 风化石灰岩 / 白云岩 / 辉长岩 / 熔渣 / 深色熔渣)
-◻ <========>  磨制◻ <==========>  ◻砖
-    <======>  方纹◻砖 <========>  竖纹◻
-    <======>  ◻铺路石 <========>  层叠◻
-    <======>  錾制◻ <==========>  生苔◻
-    <======>  生草◻
+    (◻ = 花岗岩 / 闪长岩 / 安山岩)
+    ◻砖 <======>  方纹◻砖 <=======>  竖纹◻
+        <======>  ◻铺路石 <=======>  层叠◻
+        <======>  生苔◻ <========>  生草◻
+    (◻ = 石灰岩 / 风化石灰岩 / 白云岩 / 辉长岩 / 熔渣 / 深色熔渣)
+    ◻ <========>  磨制◻ <==========>  ◻砖
+        <======>  方纹◻砖 <========>  竖纹◻
+        <======>  ◻铺路石 <========>  层叠◻
+        <======>  錾制◻ <==========>  生苔◻
+        <======>  生草◻
 
 ------------------------------------------------------------------
 
@@ -539,17 +538,16 @@ glass ----------->>  glass_pane [3]
 window ---------->>  window_pane [3]
 
 (block / stairs / slab / wall)
-
-(◻ = granite / diorite / andesite)
-◻_bricks <===>  fancy_◻_bricks <===>  ◻_pillar
-    <========>  paved_◻ <==========>  layered_◻
-    <========>  mossy_◻ <==========>  overgrown_◻
-(◻ = limestone / weathered_limestone / dolomite / gabbro / scoria / dark_scoria)
- <=========>  polished_◻ <========>  ◻_bricks
-    <======>  fancy_◻_bricks <====>  ◻_pillar
-    <======>  paved_◻ <===========>  layered_◻
-    <======>  chiseled_◻ <========>  mossy_◻
-    <======>  overgrown_◻
+    (◻ = granite / diorite / andesite)
+    ◻_bricks <===>  fancy_◻_bricks <===>  ◻_pillar
+        <========>  paved_◻ <==========>  layered_◻
+        <========>  mossy_◻ <==========>  overgrown_◻
+    (◻ = limestone / weathered_limestone / dolomite / gabbro / scoria / dark_scoria)
+    ◻ <========>  polished_◻ <========>  ◻_bricks
+        <======>  fancy_◻_bricks <====>  ◻_pillar
+        <======>  paved_◻ <===========>  layered_◻
+        <======>  chiseled_◻ <========>  mossy_◻
+        <======>  overgrown_◻
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Create-items">机械动力 Create</h4>
@@ -753,7 +751,7 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 硫磺石 <==> 硫磺石砖
 深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
-(◻ = 大理石)
+(◻ = 大理石 / 石灰石 / 碧玉石 / 板岩 / 虚空石 / 幻境石)
 ◻ <====> 磨制◻ <=======> 磨制◻砖
     <==> 錾制磨制◻砖 <==> 磨制◻铺路石 <==> 磨制◻柱
 
@@ -761,7 +759,8 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 远古海晶石砖◻ <====> 远古海晶石◻
 硫磺石◻ <==> 硫磺石砖◻
 深板岩圆石◻ <===>  磨制深板岩◻ <==> 深板岩砖◻ <==> 深板岩瓦◻
-大理石◻ <==> 磨制大理石◻ <==> 磨制大理石砖◻
+    (@ = 大理石 / 石灰石 / 碧玉石 / 板岩 / 虚空石 / 幻境石)
+    @◻ <==> 磨制@◻ <==> 磨制@砖◻
 
 ------------------------------------------------------------------
 
@@ -777,16 +776,16 @@ brimstone <==> brimstone_bricks
 cobbled_deepslate <==> chiseled_deepslate <======>
     polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
-(◻ = marble)
+(◻ = marble / limestone / jasper / slate / basalt / myalite)
 ◻ <====> polished_◻ <=========> ◻_bricks
     <==> chiseled_◻_bricks <==> ◻_pavement <==> ◻_pillar
 
 (◻ = slab / stairs / vertical_slab)
 elder_prismarine_bricks_◻ <====> elder_prismarine_◻
 brimstone_◻ <==> brimstone_bricks_◻
-cobbled_deepslate_◻ <=====> polished_deepslate_◻
-    <===> deepslate_brick_◻ <===> deepslate_tile_◻
-marble_◻ <==> polished_marble_◻ <==> marble_bricks_◻
+cobbled_deepslate_◻ <==> polished_deepslate_◻ <==> deepslate_brick_◻ <==> deepslate_tile_◻
+    (@ = marble / limestone / jasper / slate / basalt / myalite)
+    @_◻ <==> polished_@_◻ <==> @_bricks_◻
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
@@ -816,11 +815,13 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
+- 补充完夸克模组中与 大理石 石灰石 碧玉石 板岩 虚空石 幻境石 相关的配方
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
 - 支持 夸克 Quark 所有内容
+- 将数据包对应游戏版本提升至1.18
 - 更新模组内容支持
 - 添加更多模组间兼容性配方
 - 调整文件夹结构、规范文件命名
@@ -865,5 +866,6 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 - Synthetic recipes can be modified through JSON files, but this is not recommended.
 - When the datapack is successfully loaded, the game will prompt "[ datapack name ] Loading Successful !".
 - The prompt message cannot be displayed in versions lower than "1.15.2". Please type the command "/datapack list" as an administrator to view the datapack information.
+- Extremely sorry for my bad English.
 
 <a href="#Contents">回到目录 Back to contents</a>

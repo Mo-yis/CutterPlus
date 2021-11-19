@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:block/cutting_basalt"
+    },
+    "result": "quark:polished_basalt",
+    "count": 1
+}

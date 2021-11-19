@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:block/cutting_slate"
+    },
+    "result": "quark:slate_pillar",
+    "count": 1
+}

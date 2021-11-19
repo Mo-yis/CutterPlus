@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:limestone_bricks_stairs"
+    },{
+        "item": "quark:limestone_bricks_vertical_slab"
+    },{
+        "item": "quark:limestone_slab"
+    },{
+        "item": "quark:polished_limestone_slab"
+    }],
+    "result": "quark:limestone_bricks_slab",
+    "count": 1
+}

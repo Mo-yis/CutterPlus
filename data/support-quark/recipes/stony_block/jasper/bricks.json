@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:chiseled_jasper_bricks"
+    },{
+        "item": "quark:jasper_pavement"
+    },{
+        "item": "quark:jasper_pillar"
+    }],
+    "result": "quark:jasper_bricks",
+    "count": 1
+}

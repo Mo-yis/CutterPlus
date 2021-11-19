@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:block/cutting_basalt"
+    },
+    "result": "quark:basalt_pavement",
+    "count": 1
+}

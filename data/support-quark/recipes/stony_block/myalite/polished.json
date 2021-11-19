@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:block/cutting_myalite"
+    },
+    "result": "quark:polished_myalite",
+    "count": 1
+}

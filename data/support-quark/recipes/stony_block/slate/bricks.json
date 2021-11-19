@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:chiseled_slate_bricks"
+    },{
+        "item": "quark:slate_pavement"
+    },{
+        "item": "quark:slate_pillar"
+    }],
+    "result": "quark:slate_bricks",
+    "count": 1
+}
