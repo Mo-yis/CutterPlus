@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:biotite_block"
+    },
+    "result": "quark:biotite",
+    "count": 1
+}

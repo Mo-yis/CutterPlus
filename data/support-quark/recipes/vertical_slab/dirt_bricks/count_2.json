@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:dirt_bricks"
+    },
+    "result": "quark:dirt_bricks_vertical_slab",
+    "count": 2
+}

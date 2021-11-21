@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:permafrost_stairs"
+    },{
+        "item": "quark:permafrost_bricks_slab"
+    },{
+        "item": "quark:permafrost_vertical_slab"
+    }],
+    "result": "quark:permafrost_slab",
+    "count": 1
+}

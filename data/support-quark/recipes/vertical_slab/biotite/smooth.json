@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:smooth_biotite_stairs"
+    },{
+        "item": "quark:smooth_biotite_slab"
+    }],
+    "result": "quark:smooth_biotite_vertical_slab",
+    "count": 1
+}

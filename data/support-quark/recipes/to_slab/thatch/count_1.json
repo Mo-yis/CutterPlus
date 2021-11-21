@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:thatch_stairs"
+    },{
+        "item": "quark:thatch_vertical_slab"
+    }],
+    "result": "quark:thatch_slab",
+    "count": 1
+}

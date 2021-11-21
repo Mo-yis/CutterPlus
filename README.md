@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.8
+- 版本 Version: 2.14.9
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -137,7 +137,7 @@
     - <==>: It means that both sides can be processed.
     - -->>: It means that it can only be processed to the right.
     - <<--: It means that it can only be processed to the left.
-    -   ◻ : It means that a word.
+    - ◻ @ : It means that a word.
 
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Features">特性 Features</h2>
@@ -160,7 +160,7 @@
 <h3 id="General-Crafting-Tree">通用加工图 General Crafting Tree</h3>
 
 ```
-木头种类 wooden_type
+种类 type
     |-- 原木 log (菌柄 stem)
         |-- 木头 wood (菌核 hyphae)
         |-- 木板 planks [4]
@@ -408,6 +408,7 @@ trapped_chest ----->> stick [8] <<-- note_block
 
 (夸克) 陶瓦片(彩色) <====> 陶瓦(彩色)
 (夸克) 竖直木板 <==> 木板
+(夸克) 岩浆砖 <==> 岩浆块
 
 ------------------------------------------------------------------
 
@@ -441,6 +442,7 @@ refined_radiance_casing
 
 (Quark) shingles(colored) <====> terracotta(colored)
 (Quark) vertical_planks <==> planks
+(Quark) magma_bricks <==> magma_block
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="tconstruct">匠魂支持 Tinkers' Construct Support</h3>
@@ -743,13 +745,19 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 楼梯 ---->> 竖直台阶
 镶框玻璃(染色) ---->> 镶框玻璃板(染色) [3]
 染色台阶 [2] <<-- 染色木板 -->> 竖直染色台阶 [2]
-草块台阶 [2] <<-- 草块 -->> 竖直草块台阶 [2]
-草块 -->> 草块楼梯
+黑云母块 -->> 末影黑云母
+
+(◻ = 草块 / 茅草 / 泥土砖 / 黯缚块 / 沙砖 / 雪砖)
+◻台阶 [2] <<-- ◻  -->> 竖直◻台阶 [2]
+◻  -->> ◻楼梯
 
 台阶 <====> 竖直台阶
 染色木板 <====> 竖直染色木板
 硫磺石 <==> 硫磺石砖
 深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
+黑云母块 <==> 錾制黑云母块 <==> 黑云母支柱 <==> 黑云母砖
+冻土 <==> 冻土砖
+灵魂砂岩 <==> 灵魂砂岩砖 <==> 錾制灵魂砂岩 <==> 切制灵魂砂岩
 
 (◻ = 大理石 / 石灰石 / 碧玉石 / 板岩 / 虚空石 / 幻境石)
 ◻ <====> 磨制◻ <=======> 磨制◻砖
@@ -761,20 +769,28 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 深板岩圆石◻ <===>  磨制深板岩◻ <==> 深板岩砖◻ <==> 深板岩瓦◻
     (@ = 大理石 / 石灰石 / 碧玉石 / 板岩 / 虚空石 / 幻境石)
     @◻ <==> 磨制@◻ <==> 磨制@砖◻
+冻土◻ <==> 冻土砖◻
+灵魂砂岩◻ <==> 灵魂砂岩砖◻ <==> 切制灵魂砂岩◻
 
 ------------------------------------------------------------------
 
 stairs ---->> vertical_slabs
 framed_glass(stained) ---->> framed_glass_pane(stained) [3]
 stained_slab [2] <<-- stained_planks -->> stained_vertical_slab [2]
-turf_slab [2] <<-- turf -->> turf_vertical_slab [2]
-turf -->> turf_stairs
+biotite_block -->> biotite
+
+(◻ = turf / thatch / dirt_bricks / duskbound_block / sandy_bricks / snow_bricks)
+◻_slab [2] <<-- ◻  -->> ◻_vertical_slab [2]
+◻  -->> ◻_stairs
 
 slab <====> vertical_slab
 stained_planks <====> vertical_stained_planks
 brimstone <==> brimstone_bricks
 cobbled_deepslate <==> chiseled_deepslate <======>
     polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
+biotite_block <==> chiseled_biotite_block <==> biotite_pillar <==> biotite_bricks
+permafrost <==> permafrost_bricks
+soul_sandstone <==> soul_sandstone_bricks <==> chiseled_soul_sandstone <==> cut_soul_sandstone
 
 (◻ = marble / limestone / jasper / slate / basalt / myalite)
 ◻ <====> polished_◻ <=========> ◻_bricks
@@ -786,6 +802,8 @@ brimstone_◻ <==> brimstone_bricks_◻
 cobbled_deepslate_◻ <==> polished_deepslate_◻ <==> deepslate_brick_◻ <==> deepslate_tile_◻
     (@ = marble / limestone / jasper / slate / basalt / myalite)
     @_◻ <==> polished_@_◻ <==> @_bricks_◻
+permafrost_◻ <==> permafrost_bricks_◻
+soul_sandstone_◻ <==> soul_sandstone_bricks_◻ <==> cut_soul_sandstone_◻
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
@@ -806,16 +824,18 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 ```
 (原版) 木(菌核) ---->> 木柱 [3]
 (原版) 木板 <==> 竖直木板
+(原版) 岩浆块 <==> 岩浆砖
 
 ------------------------------------------------------------------
 
 (Vanilla) wood(hyphae) ---->> wood_post [3]
 (Vanilla) planks <==> vertical_planks
+(Vanilla) magma_block <==> magma_bricks
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 补充完夸克模组中与 大理石 石灰石 碧玉石 板岩 虚空石 幻境石 相关的配方
+- 夸克：补充大量配方
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

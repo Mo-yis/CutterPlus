@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:cobblestone_bricks_stairs"
+    },{
+        "item": "quark:cobblestone_bricks_vertical_slab"
+    }],
+    "result": "quark:cobblestone_bricks_slab",
+    "count": 1
+}
