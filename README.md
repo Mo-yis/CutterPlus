@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.9
+- 版本 Version: 2.14.10
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -746,8 +746,9 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 镶框玻璃(染色) ---->> 镶框玻璃板(染色) [3]
 染色台阶 [2] <<-- 染色木板 -->> 竖直染色台阶 [2]
 黑云母块 -->> 末影黑云母
+锈化铁板块 -->> 铁板块
 
-(◻ = 草块 / 茅草 / 泥土砖 / 黯缚块 / 沙砖 / 雪砖)
+(◻ = 草块 / 茅草 / 泥土砖 / 黯缚块 / 沙砖 / 雪砖 / 仙人掌绿块)
 ◻台阶 [2] <<-- ◻  -->> 竖直◻台阶 [2]
 ◻  -->> ◻楼梯
 
@@ -758,6 +759,7 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 黑云母块 <==> 錾制黑云母块 <==> 黑云母支柱 <==> 黑云母砖
 冻土 <==> 冻土砖
 灵魂砂岩 <==> 灵魂砂岩砖 <==> 錾制灵魂砂岩 <==> 切制灵魂砂岩
+仙人掌绿块 <==> 仙人掌绿支柱
 
 (◻ = 大理石 / 石灰石 / 碧玉石 / 板岩 / 虚空石 / 幻境石)
 ◻ <====> 磨制◻ <=======> 磨制◻砖
@@ -771,6 +773,7 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
     @◻ <==> 磨制@◻ <==> 磨制@砖◻
 冻土◻ <==> 冻土砖◻
 灵魂砂岩◻ <==> 灵魂砂岩砖◻ <==> 切制灵魂砂岩◻
+锈化铁板块◻ -->> 铁板块◻
 
 ------------------------------------------------------------------
 
@@ -778,8 +781,9 @@ stairs ---->> vertical_slabs
 framed_glass(stained) ---->> framed_glass_pane(stained) [3]
 stained_slab [2] <<-- stained_planks -->> stained_vertical_slab [2]
 biotite_block -->> biotite
+rusty_iron_plate -->> iron_plate
 
-(◻ = turf / thatch / dirt_bricks / duskbound_block / sandy_bricks / snow_bricks)
+(◻ = turf / thatch / dirt_bricks / duskbound_block / sandy_bricks / snow_bricks / midori_block)
 ◻_slab [2] <<-- ◻  -->> ◻_vertical_slab [2]
 ◻  -->> ◻_stairs
 
@@ -791,6 +795,7 @@ cobbled_deepslate <==> chiseled_deepslate <======>
 biotite_block <==> chiseled_biotite_block <==> biotite_pillar <==> biotite_bricks
 permafrost <==> permafrost_bricks
 soul_sandstone <==> soul_sandstone_bricks <==> chiseled_soul_sandstone <==> cut_soul_sandstone
+midori_block <==> midori_pillar
 
 (◻ = marble / limestone / jasper / slate / basalt / myalite)
 ◻ <====> polished_◻ <=========> ◻_bricks
@@ -804,6 +809,7 @@ cobbled_deepslate_◻ <==> polished_deepslate_◻ <==> deepslate_brick_◻ <==> 
     @_◻ <==> polished_@_◻ <==> @_bricks_◻
 permafrost_◻ <==> permafrost_bricks_◻
 soul_sandstone_◻ <==> soul_sandstone_bricks_◻ <==> cut_soul_sandstone_◻
+rusty_iron_plate_◻ -->> iron_plate_◻
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
@@ -835,7 +841,7 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 夸克：补充大量配方
+- 夸克：更新仙人掌绿相关配方
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

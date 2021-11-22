@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:rusty_iron_plate"
+    },
+    "result": "quark:iron_plate",
+    "count": 1
+}

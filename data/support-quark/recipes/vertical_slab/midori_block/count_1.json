@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:midori_block_stairs"
+    },{
+        "item": "quark:midori_block_slab"
+    }],
+    "result": "quark:midori_block_vertical_slab",
+    "count": 1
+}

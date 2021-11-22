@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:rusty_iron_plate_stairs"
+    },{
+        "item": "quark:rusty_iron_plate_slab"
+    }],
+    "result": "quark:rusty_iron_plate_vertical_slab",
+    "count": 1
+}
