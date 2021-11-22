@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:sandy_bricks_stairs"
+    },{
+        "item": "quark:sandy_bricks_slab"
+    }],
+    "result": "quark:sandy_bricks_vertical_slab",
+    "count": 1
+}

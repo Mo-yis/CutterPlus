@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:turf_slab"
+    },{
+        "item": "quark:turf_stairs"
+    }],
+    "result": "quark:turf_vertical_slab",
+    "count": 1
+}

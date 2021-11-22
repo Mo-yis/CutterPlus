@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "quark:cobbled_deepslate_wall",
+        "quark:deepslate_tiles_wall",
+        "quark:deepslate_bricks_wall",
+        "quark:polished_deepslate_wall"
+    ]
+}

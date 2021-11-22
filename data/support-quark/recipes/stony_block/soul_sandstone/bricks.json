@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:chiseled_soul_sandstone"
+    },
+    "result": "quark:soul_sandstone_bricks",
+    "count": 1
+}

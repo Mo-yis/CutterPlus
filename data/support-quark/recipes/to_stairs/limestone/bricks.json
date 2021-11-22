@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:limestone_stairs"
+    },{
+        "item": "quark:polished_limestone_stairs"
+    }],
+    "result": "quark:limestone_bricks_stairs",
+    "count": 1
+}

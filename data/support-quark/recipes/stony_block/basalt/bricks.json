@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:chiseled_basalt_bricks"
+    },{
+        "item": "quark:basalt_pavement"
+    },{
+        "item": "quark:basalt_pillar"
+    }],
+    "result": "quark:basalt_bricks",
+    "count": 1
+}

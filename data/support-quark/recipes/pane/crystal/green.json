@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:green_crystal"
+    },
+    "result": "quark:green_crystal_pane",
+    "count": 2
+}

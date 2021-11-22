@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:block/cutting_myalite"
+    },
+    "result": "quark:chiseled_myalite_bricks",
+    "count": 1
+}

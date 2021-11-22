@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:chiseled_myalite_bricks"
+    },{
+        "item": "quark:myalite_pavement"
+    },{
+        "item": "quark:myalite_pillar"
+    }],
+    "result": "quark:myalite_bricks",
+    "count": 1
+}

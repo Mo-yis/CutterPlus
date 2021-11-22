@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.13.3
+- 版本 Version: 2.14.10
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -73,6 +73,14 @@
                     <li><a href="#Mod-Compatibility-autumnity">模组兼容 Mod Compatibility</a></li>
                 </ol>
             </li>
+            <li>
+                <a href="#quark">夸克支持 Quark Support</a>
+                <ol>
+                    <li><a href="#Building-Blocks-quark">建筑方块 Building Blocks</a></li>
+                    <li><a href="#Decoration-Blocks-quark">装饰性方块 Decoration Blocks</a></li>
+                    <li><a href="#Mod-Compatibility-quark">模组兼容 Mod Compatibility</a></li>
+                </ol>
+            </li>
         </ol>
     </li>
     <li><a href="#Update">更新内容 Update</a></li>
@@ -90,18 +98,21 @@
 - “模组兼容” 是指从其他模组的物品加工到本模组时使用的配方。
 - 在 “特性” 目录中，除 “模组兼容” 外，都代表了每个模组的物品栏的名称。
 - 如果觉得空气配方碍眼，可以将没有的模组对应的以 “support” 开头的文件夹删除：
-    1. minecraft: 《Minecraft》是最早支持的内容。
-    2. tconstruct: 《匠魂 - 1.16.5》从版本 “2.4” 开始支持。
-    3. create: 《机械动力 - 1.16.5》从版本 “2.9” 开始支持。
-    4. twilightforest: 《暮色森林 - 1.16.5》从版本 “2.10” 开始支持。
-    5. biomesoplenty: 《超多生物群系 - 1.16.5》从版本 “2.11” 开始支持。
-    6. bayou_blues: 《长沼蓝调 - 1.16.5》从版本 “2.12” 开始支持。
-    7. autumnity: 《秋原 - 1.16.5》从版本 “2.13” 开始支持。
+```
+1. minecraft --------- 《Minecraft》是最早支持的内容。
+2. tconstruct -------- 《匠魂 - 1.16.5》从版本 “2.4” 开始支持。
+3. create ------------ 《机械动力 - 1.16.5》从版本 “2.9” 开始支持。
+4. twilightforest ---- 《暮色森林 - 1.16.5》从版本 “2.10” 开始支持。
+5. biomesoplenty ----- 《超多生物群系 - 1.16.5》从版本 “2.11” 开始支持。
+6. bayou_blues ------- 《长沼蓝调 - 1.16.5》从版本 “2.12” 开始支持。
+7. autumnity --------- 《秋原 - 1.16.5》从版本 “2.13” 开始支持。
+8. quark ------------- 《夸克 - 1.16.5》从版本 “2.14” 开始支持。
+```
 - 符号说明：
     - <==>：代表两边都能加工。
     - -->>：代表只能向右边加工。
     - <<--：代表只能向左边加工。
-    -   ◻ ：代表一个词。
+    - ◻ @ ：代表一个词。
 
 <br>
 
@@ -112,18 +123,21 @@
 - "Mod Compatibility" refers to the recipes used when processing from the items of other mods to this mod.
 - In the "Features" directory, except for "Mod Compatibility", it represents the name of the inventory of each mod.
 - If you think the air recipe is eye-catching, you can delete the folder starting with "support" corresponding to the uninstalled mod:
-    1. minecraft: "Minecraft" was the first supported content.
-    2. tconstruct: "Tinkers' Construct - 1.16.5" is supported from version "2.4".
-    3. create: "Create - 1.16.5" is supported from version "2.9".
-    4. twilightforest： "The Twilight Forest - 1.16.5" is supported from version "2.10".
-    5. biomesoplenty: "Biomes O' Plenty - 1.16.5" is supported from version "2.11".
-    6. bayou_blues: "Bayou Blues - 1.16.5" is supported from version "2.12".
-    7. autumnity： "Autumnity - 1.16.5" is supported from version "2.13".
+```
+1. minecraft --------- "Minecraft" was the first supported content.
+2. tconstruct -------- "Tinkers' Construct - 1.16.5" is supported from version "2.4".
+3. create ------------ "Create - 1.16.5" is supported from version "2.9".
+4. twilightforest ---- "The Twilight Forest - 1.16.5" is supported from version "2.10".
+5. biomesoplenty ----- "Biomes O' Plenty - 1.16.5" is supported from version "2.11".
+6. bayou_blues ------- "Bayou Blues - 1.16.5" is supported from version "2.12".
+7. autumnity --------- "Autumnity - 1.16.5" is supported from version "2.13".
+8. quark ------------- "Quark - 1.16.5" is supported from version "2.14".
+```
 - Symbol description:
     - <==>: It means that both sides can be processed.
     - -->>: It means that it can only be processed to the right.
     - <<--: It means that it can only be processed to the left.
-    -   ◻ : It means that a word.
+    - ◻ @ : It means that a word.
 
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Features">特性 Features</h2>
@@ -146,8 +160,7 @@
 <h3 id="General-Crafting-Tree">通用加工图 General Crafting Tree</h3>
 
 ```
-------------------------------------------------------------------
-木头种类 wooden_type
+种类 type
     |-- 原木 log (菌柄 stem)
         |-- 木头 wood (菌核 hyphae)
         |-- 木板 planks [4]
@@ -163,7 +176,7 @@
         |-- 台阶 slab [2]
         |-- 按钮 button
         |-- 楼梯 stairs
-------------------------------------------------------------------
+
 木台阶 ------------>>  木棍 [1] <<---- 木楼梯
 树叶 -------------->>  木棍 [1] <<---- 树苗
 木栅栏 ------------>>  木棍 [2] <<---- 木压力板
@@ -175,6 +188,8 @@
 木头(菌核) --------->>  木棍 [8] <<---- 原木(菌柄)
 去皮原木(去皮菌柄) -->>  木棍 [8] <<---- 去皮木头(去皮菌核)
 
+------------------------------------------------------------------
+
 wooden_slab ------------------>>  stick [1] <<-- wooden_stairs
 leaves ----------------------->>  stick [1] <<-- sapling
 wooden_fence ----------------->>  stick [2] <<-- wooden_pressure_plate
@@ -184,15 +199,12 @@ beds ------------------------->>  stick [4]
 boat ------------------------->>  stick [6]
 wood(hyphae) ----------------->>  stick [8] <<-- log(stem)
 stripped_log(stripped_stem) -->>  stick [8] <<-- stripped_wood(stripped_hyphae)
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="minecraft">原版支持 Vanilla Support</h3>
 <h4 id="Building-Blocks-minecraft">建筑方块 Building Blocks</h4>
 
 ```
-------------------------------------------------------------------
-(方块)
 紫珀块 <=========>  紫珀柱
 花岗岩 <=========>  磨制花岗岩
 闪长岩 <=========>  磨制闪长岩
@@ -207,13 +219,13 @@ stripped_log(stripped_stem) -->>  stick [8] <<-- stripped_wood(stripped_hyphae)
 石英块 <=========>  石英砖 <=======>  錾制石英块 <====> 石英柱
 深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
 
-(台阶 / 楼梯)
-石头 <========>  石砖
-花岗岩 <======>  磨制花岗岩
-闪长岩 <======>  磨制闪长岩
-安山岩 <======>  磨制安山岩
-黑石 <========>  磨制黑石 <===>  磨制黑石砖
-深板岩圆石 <===>  錾制深板岩 <==>  磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
+(◻ = 台阶 / 楼梯)
+石◻ <=========>  石砖◻
+花岗岩◻ <======>  磨制花岗岩◻
+闪长岩◻ <======>  磨制闪长岩◻
+安山岩◻ <======>  磨制安山岩◻
+黑石◻ <========>  磨制黑石◻ <===>  磨制黑石砖◻
+深板岩圆石◻ <===>  磨制深板岩◻ <==> 深板岩砖◻ <==> 深板岩瓦◻
 
 书架 ----------->>  木棍 [6]
 玻璃(染色) ------>>  玻璃板(染色) [3]
@@ -250,7 +262,7 @@ stripped_log(stripped_stem) -->>  stick [8] <<-- stripped_wood(stripped_hyphae)
 铜块 -->>  铜锭 [9] <<---- 切制铜块
 
 ------------------------------------------------------------------
-(Block)
+
 purpur_block <=====>  purpur_pillar
 granite <==========>  polished_granite
 diorite <==========>  polished_diorite
@@ -268,14 +280,14 @@ quartz_block <=====>  quartz_bricks <============>
 cobbled_deepslate <==> chiseled_deepslate <======>
     polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
 
-(Slab / stairs)
-stone <=======>  stone_brick
-granite <=====>  polished_granite
-diorite <=====>  polished_diorite
-andesite <====>  polished_andesite
-blackstone <==>  polished_blackstone <==> polished_blackstone_brick
-cobbled_deepslate <=====> chiseled_deepslate <=====>
-    polished_deepslate <===> deepslate_bricks <===> deepslate_tiles
+(◻ = slab / stairs)
+stone_◻ <=======>  stone_brick_◻
+granite_◻ <=====>  polished_granite_◻
+diorite_◻ <=====>  polished_diorite_◻
+andesite_◻ <====>  polished_andesite_◻
+blackstone_◻ <==>  polished_blackstone_◻ <==> polished_blackstone_brick_◻
+cobbled_deepslate_◻ <=====> polished_deepslate_◻
+    <===> deepslate_brick_◻ <===> deepslate_tile_◻
 
 bookshelf ------------->>  stick [6]
 glass(stained) -------->>  glass_pane(stained) [3]
@@ -312,14 +324,13 @@ deepslate ----->> cobbled_deepslate
 block <=========>  cut
 slab ---------->>  copper_ingot [4] <<-- stairs
 copper_block -->>  copper_ingot [9] <<-- cut_copper
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-minecraft">装饰性方块 Decoration Blocks</h4>
 
 ```
-------------------------------------------------------------------
-黑石墙 <=====>  磨制黑石墙 <==>  磨制黑石砖墙
+黑石墙 <=======> 磨制黑石墙 <==> 磨制黑石砖墙
+深板岩圆石墙 <==> 深板岩瓦墙 <==> 深板岩砖墙 <==> 磨制深板岩墙
 
 竹子 -------->>  木棍 [1] <<-- 脚手架
 枯萎的灌木 --->>  木棍 [1]
@@ -332,8 +343,12 @@ copper_block -->>  copper_ingot [9] <<-- cut_copper
 木桶 --------->>  木棍 [6] <<-- 蜂箱
 唱片机 ------->>  木棍 [8] <<-- 箱子
 
-blackstone_wall <=====> polished_blackstone_wall
-    <====> polished_blackstone_brick_wall
+------------------------------------------------------------------
+
+blackstone_wall <==> polished_blackstone_wall
+    <=======> polished_blackstone_brick_wall
+cobbled_deepslate_wall <==> deepslate_tile_wall
+    <=======> deepslate_brick_wall <==> polished_deepslate_wall
 
 bamboo ----------->>  stick [1] <<-- scaffolding
 dead_bush -------->>  stick [1]
@@ -345,25 +360,23 @@ crafting_table --->>  stick [4] <<-- (soul)campfire
 composter -------->>  stick [6] <<-- armor_stand
 barrel ----------->>  stick [6] <<-- beehive
 jukebox ---------->>  stick [8] <<-- chest
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Redstone-minecraft">红石 Redstone</h4>
 
 ```
-------------------------------------------------------------------
 讲台 ------->> 木棍 [4]
 陷阱箱 ------>> 木棍 [8] <<-- 音符盒
 
+------------------------------------------------------------------
+
 lectern ----------->> stick [4]
 trapped_chest ----->> stick [8] <<-- note_block
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-minecraft">模组兼容 Mod Compatibility</h4>
 
 ```
-------------------------------------------------------------------
 (◻ = 花岗岩 / 闪长岩 / 安山岩) (机械动力 -->> (磨制)◻)
 ◻砖           方纹◻砖
 竖纹◻          ◻铺路石
@@ -391,6 +404,13 @@ trapped_chest ----->> stick [8] <<-- note_block
 (长沼蓝调) 丝柏树枝 ------->>  木棍 [1]
 (长沼蓝调) 丝柏木告示牌 ---->>  木棍 [4] <<-- 丝柏木栅栏门
 (秋原) 枫木告示牌 --------->>  木棍 [4] <<-- 枫木栅栏门
+(夸克) 木柱 -------------->>  木棍 [1]
+
+(夸克) 陶瓦片(彩色) <====> 陶瓦(彩色)
+(夸克) 竖直木板 <==> 木板
+(夸克) 岩浆砖 <==> 岩浆块
+
+------------------------------------------------------------------
 
 (◻ = granite / diorite / andesite) (Create -->> (polished)◻)
 ◻_bricks                   fancy_◻_bricks
@@ -419,14 +439,16 @@ refined_radiance_casing
 (Bayou Blues) cypress_branch ------>>  stick [1]
 (Bayou Blues) cypress_fence_gate -->>  stick [4] <<-- large_sign
 (Autumnity) maple_fence_gate ------>>  stick [4] <<-- maple_sign
-------------------------------------------------------------------
+
+(Quark) shingles(colored) <====> terracotta(colored)
+(Quark) vertical_planks <==> planks
+(Quark) magma_bricks <==> magma_block
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="tconstruct">匠魂支持 Tinkers' Construct Support</h3>
 <h4 id="Tinkers-General-Items">Tinkers' General Items</h4>
 
 ```
-------------------------------------------------------------------
 mud_bricks ---->>  mud_bricks_stairs
 mud_bricks ---->>  mud_bricks_slab [2]
 lavawood ------>>  lavawood_stairs
@@ -447,13 +469,11 @@ slimesteet          tinkers_bronze
 rose_gold           pig_iron
 queens_slime        manyullyn
 hepatizon
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Tinkers-Smeltery">Tinkers' Smeltery</h4>
 
 ```
-------------------------------------------------------------------
 seared_stone <=====> seared_bricks <=======> 
     seared_fancy_bricks <==> seared_triangle_bricks
 seared_bricks_stairs <===> seared_stone_stairs
@@ -473,106 +493,80 @@ scorched_bricks --------->>  scorched_bricks_fence
 scorched_bricks --------->>  scorched_brick [4]
 scorched_bricks_stairs -->>  scorched_brick [2] <<-- scorched_bricks_slab
 scorched_glass ---------->>  scorched_glass_pane [3]
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-tconstruct">模组兼容 Mod Compatibility</h4>
 
 ```
-------------------------------------------------------------------
 (◻ = 铜) (forge ----->> ◻)
 ◻锭    ◻粒    ◻矿石    ◻块
 
-(原版)下界合金锭 ----->>  netherite_nugget
-(原版)黑曜石 -------->>  obsidian_pane
+(原版) 下界合金锭 ----->>  netherite_nugget
+(原版) 黑曜石 -------->>  obsidian_pane
 (超多生物群系) 泥巴 <==>  mud_bricks
+
+------------------------------------------------------------------
 
 (◻ = copper) (forge ----->> ◻)
 ◻_ingot    ◻_nugget    ◻_ore    ◻_block
 
-(Vanilla)netherite_ingot -->>  netherite_nugget
-(Vanilla)obsidian --------->>  obsidian_pane
+(Vanilla) netherite_ingot -->>  netherite_nugget
+(Vanilla) obsidian --------->>  obsidian_pane
 (Biomes O' Plenty) mud <====>  mud_bricks
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="create">机械动力支持 Create Support</h3>
 <h4 id="Create-Palettes">机械动力建筑方块 Create Palettes</h4>
 
 ```
-------------------------------------------------------------------
-十字玻璃窗 ----------->>  十字玻璃窗户板 [3]
-边框玻璃 ------------->>  边框玻璃板 [3]
-竖直边框玻璃(竖) ------>>  竖直边框玻璃板(竖) [3]
-竖直边框玻璃(横) ------>>  竖直边框玻璃板(横) [3]
-金合欢窗户 ----------->>  金合欢窗户板 [3]
-白桦窗户 ------------->>  白桦窗户板 [3]
-绯红窗户 ------------->>  绯红窗户板 [3]
-深色橡木窗户 ---------->>  深色橡木窗户板 [3]
-丛林窗户 ------------->>  丛林窗户板 [3]
-橡木窗户 ------------->>  橡木窗户板 [3]
-华丽铁窗户 ----------->>  华丽铁窗户板 [3]
-云杉窗户 ------------->>  云杉窗户板 [3]
-诡异木窗户 ----------->>  诡异木窗户板 [3]
+玻璃 ------->>  玻璃板 [3]
+窗户 ------->>  窗户板 [3]
 
 (块 / 楼梯 / 台阶 / 墙)
+    (◻ = 花岗岩 / 闪长岩 / 安山岩)
+    ◻砖 <======>  方纹◻砖 <=======>  竖纹◻
+        <======>  ◻铺路石 <=======>  层叠◻
+        <======>  生苔◻ <========>  生草◻
+    (◻ = 石灰岩 / 风化石灰岩 / 白云岩 / 辉长岩 / 熔渣 / 深色熔渣)
+    ◻ <========>  磨制◻ <==========>  ◻砖
+        <======>  方纹◻砖 <========>  竖纹◻
+        <======>  ◻铺路石 <========>  层叠◻
+        <======>  錾制◻ <==========>  生苔◻
+        <======>  生草◻
 
-(◻ = 花岗岩 / 闪长岩 / 安山岩)
-◻砖 <======>  方纹◻砖 <=======>  竖纹◻
-    <======>  ◻铺路石 <=======>  层叠◻
-    <======>  生苔◻ <========>  生草◻
-(◻ = 石灰岩 / 风化石灰岩 / 白云岩 / 辉长岩 / 熔渣 / 深色熔渣)
-◻ <========>  磨制◻ <==========>  ◻砖
-    <======>  方纹◻砖 <========>  竖纹◻
-    <======>  ◻铺路石 <========>  层叠◻
-    <======>  錾制◻ <==========>  生苔◻
-    <======>  生草◻
+------------------------------------------------------------------
 
-tiled_glass --------------->>  tiled_glass_pane [3]
-framed_glass -------------->>  framed_glass_pane [3]
-vertical_framed_glass ----->>  vertical_framed_glass_pane [3]
-horizontal_framed_glass --->>  horizontal_framed_glass_pane [3]
-acacia_window ------------->>  acacia_window_pane [3]
-birch_window -------------->>  birch_window_pane [3]
-crimson_window ------------>>  crimson_window_pane [3]
-dark_oak_window ----------->>  dark_oak_window_pane [3]
-jungle_window ------------->>  jungle_window_pane [3]
-oak_window ---------------->>  oak_window_pane [3]
-ornate_iron_window -------->>  ornate_iron_window_pane [3]
-spruce_window ------------->>  spruce_window_pane [3]
-warped_window ------------->>  warped_window_pane [3]
+glass ----------->>  glass_pane [3]
+window ---------->>  window_pane [3]
 
 (block / stairs / slab / wall)
-
-(◻ = granite / diorite / andesite)
-◻_bricks <===>  fancy_◻_bricks <===>  ◻_pillar
-    <========>  paved_◻ <==========>  layered_◻
-    <========>  mossy_◻ <==========>  overgrown_◻
-(◻ = limestone / weathered_limestone / dolomite / gabbro / scoria / dark_scoria)
- <=========>  polished_◻ <========>  ◻_bricks
-    <======>  fancy_◻_bricks <====>  ◻_pillar
-    <======>  paved_◻ <===========>  layered_◻
-    <======>  chiseled_◻ <========>  mossy_◻
-    <======>  overgrown_◻
-------------------------------------------------------------------
+    (◻ = granite / diorite / andesite)
+    ◻_bricks <===>  fancy_◻_bricks <===>  ◻_pillar
+        <========>  paved_◻ <==========>  layered_◻
+        <========>  mossy_◻ <==========>  overgrown_◻
+    (◻ = limestone / weathered_limestone / dolomite / gabbro / scoria / dark_scoria)
+    ◻ <========>  polished_◻ <========>  ◻_bricks
+        <======>  fancy_◻_bricks <====>  ◻_pillar
+        <======>  paved_◻ <===========>  layered_◻
+        <======>  chiseled_◻ <========>  mossy_◻
+        <======>  overgrown_◻
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Create-items">机械动力 Create</h4>
 
 ```
-------------------------------------------------------------------
 (块 -->> 锭 [9] -->> 粒 [9])
 铜     锌     黄铜
 
+------------------------------------------------------------------
+
 (block -->> ingot [9] -->> nugget [9])
 copper         zinc        brass
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-create">模组兼容 Mod Compatibility</h4>
 
 ```
-------------------------------------------------------------------
 (◻ = 铜) (forge ----->> ◻)
 ◻锭    ◻粒    ◻矿石    ◻块
 
@@ -588,6 +582,8 @@ copper         zinc        brass
 ◻楼梯 ------>>  ◻圆石楼梯
 ◻墙 -------->>  ◻圆石墙
 
+------------------------------------------------------------------
+
 (◻ = copper) (forge ----->> ◻)
 ◻_ingot    ◻_nugget    ◻_ore    ◻_block
 
@@ -602,14 +598,12 @@ fancy_◻_bricks_wall        paved_◻_wall
 ◻_slab -------->>  ◻_cobblestone_slab
 ◻_stairs ------>>  ◻_cobblestone_stairs
 ◻_wall -------->>  ◻_cobblestone_wall
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="twilightforest">暮色森林支持 The Twilight Forest Support</h3>
 <h4 id="Twilight-Forest">暮色森林 Twilight Forest</h4>
 
 ```
-------------------------------------------------------------------
 铁木块 ------->>  铁木锭
 炽铁块 ------->>  炽铁锭
 骑士金属块 ---->>  骑士金属锭
@@ -624,6 +618,8 @@ fancy_◻_bricks_wall        paved_◻_wall
 迷宫石头 <==> 迷宫石砖 <==>  装饰迷宫石砖
     <==> 錾制迷宫石头 <==>  迷宫石沿 <==> 迷宫镶石
 
+------------------------------------------------------------------
+
 ironwood_block ------->>  ironwood_ingot
 fiery_block ---------->>  fiery_ingot
 knightmetal_block ---->>  knightmetal_ingot
@@ -637,22 +633,18 @@ nagastone_stairs_weathered_left <===>  nagastone_stairs_right
 nagastone_stairs_mossy_left <=======>  nagastone_stairs_mossy_right
 maze_stone <==> maze_stone_brick <==>  maze_stone_decorative
     <==> maze_stone_chiseled <==> maze_stone_border <==> maze_stone_mosaic
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-twilightforest">模组兼容 Mod Compatibility</h4>
 
 ```
-------------------------------------------------------------------
 
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="biomesoplenty">超多生物群系支持 Biomes O' Plenty Support</h3>
 <h4 id="Biomes-O-Plenty">Biomes O' Plenty</h4>
 
 ```
-------------------------------------------------------------------
 白砂岩 <======> 切制白砂岩 <=======> 錾制白砂岩
 橙色砂岩 <====> 切割的橙色砂岩 <====> 凿过的橙色砂岩
 黑砂岩 <======> 切割的黑色砂岩 <====> 凿过的黑色砂岩
@@ -665,6 +657,8 @@ maze_stone <==> maze_stone_brick <==>  maze_stone_decorative
 泥砖 --------->>  泥砖(砖) [4]
 下界水晶块 ---->> 下界水晶
 
+------------------------------------------------------------------
+
 white_sandstone <====> cut_white_sandstone <====> chiseled_white_sandstone
 orange_sandstone <===> cut_orange_sandstone <===> chiseled_orange_sandstone
 black_sandstone <====> cut_black_sandstone <====> chiseled_black_sandstone
@@ -676,45 +670,41 @@ mud_brick_stairs <<------  mud_bricks ---->> mud_brick_slab
 mud_brick_stairs ------>>  mud_brick [2] <<---- mud_brick_slab
 mud_bricks ------------>>  mud_brick [4]
 nether_crystal_block -->>  nether_crystal
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-biomesoplenty">模组兼容 Mod Compatibility</h4>
 
 ```
-------------------------------------------------------------------
 (匠魂) mud_bricks <==> 泥巴
 
-(Tinkers' Construct) mud_bricks <==> mud
 ------------------------------------------------------------------
+
+(Tinkers' Construct) mud_bricks <==> mud
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="bayou_blues">长沼蓝调支持 Bayou Blues Support</h3>
 <h4 id="Building-Blocks-bayou_blues">建筑方块 Building Blocks</h4>
 
 ```
-------------------------------------------------------------------
 水藻团台阶 [2] <<-- 水藻团 -->> 水藻团楼梯
 须松罗块 -->> 须松罗
 
+------------------------------------------------------------------
+
 algae_thatch_slab [2] <<-- algae_thatch -->> algae_thatch_stairs
 beard_moss_block -->> beard_moss
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-bayou_blues">模组兼容 Mod Compatibility</h4>
 
 ```
-------------------------------------------------------------------
 
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="autumnity">秋原支持 Autumnity Support</h3>
 <h4 id="Building-Blocks-autumnity">建筑方块 Building Blocks</h4>
 
 ```
-------------------------------------------------------------------
 蜗牛壳砖块 <====>  錾制蜗牛壳砖 <==> 蜗牛壳瓦块
 蜗牛壳砖楼梯 <==>  蜗牛壳瓦楼梯
 蜗牛壳砖台阶 <==>  蜗牛壳瓦台阶
@@ -722,42 +712,145 @@ beard_moss_block -->> beard_moss
 溢满树液的枫木原木 -->> 枫木木板 [4] <<-- 溢满树液的枫木
 蜗牛壳方块 -------->> 蜗牛壳碎片 [9]
 
+------------------------------------------------------------------
+
 snail_shell_bricks <========>  chiseled_snail_shell_bricks <==> snail_shell_tiles
 snail_shell_brick_stairs <==>  snail_shell_tile_stairs
 snail_shell_brick_slab <====>  snail_shell_tile_slab
 
 sappy_maple_log ---->> maple_planks [4] <<-- sappy_maple_wood
 snail_shell_block -->> snail_shell_piece [9]
-------------------------------------------------------------------
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-autumnity">装饰性方块 Building Blocks</h4>
 
 ```
-------------------------------------------------------------------
 蜗牛壳砖墙 <==> 蜗牛壳瓦墙
 
-snail_shell_brick_wall <==> snail_shell_tile_wall
 ------------------------------------------------------------------
+
+snail_shell_brick_wall <==> snail_shell_tile_wall
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-autumnity">模组兼容 Mod Compatibility</h4>
 
 ```
-------------------------------------------------------------------
+
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h3 id="quark">夸克支持 Quark Support</h3>
+<h4 id="Building-Blocks-quark">建筑方块 Building Blocks</h4>
+
+```
+楼梯 ---->> 竖直台阶
+镶框玻璃(染色) ---->> 镶框玻璃板(染色) [3]
+染色台阶 [2] <<-- 染色木板 -->> 竖直染色台阶 [2]
+黑云母块 -->> 末影黑云母
+锈化铁板块 -->> 铁板块
+
+(◻ = 草块 / 茅草 / 泥土砖 / 黯缚块 / 沙砖 / 雪砖 / 仙人掌绿块)
+◻台阶 [2] <<-- ◻  -->> 竖直◻台阶 [2]
+◻  -->> ◻楼梯
+
+台阶 <====> 竖直台阶
+染色木板 <====> 竖直染色木板
+硫磺石 <==> 硫磺石砖
+深板岩圆石 <==> 錾制深板岩 <==> 磨制深板岩 <==> 深板岩砖 <==> 深板岩瓦
+黑云母块 <==> 錾制黑云母块 <==> 黑云母支柱 <==> 黑云母砖
+冻土 <==> 冻土砖
+灵魂砂岩 <==> 灵魂砂岩砖 <==> 錾制灵魂砂岩 <==> 切制灵魂砂岩
+仙人掌绿块 <==> 仙人掌绿支柱
+
+(◻ = 大理石 / 石灰石 / 碧玉石 / 板岩 / 虚空石 / 幻境石)
+◻ <====> 磨制◻ <=======> 磨制◻砖
+    <==> 錾制磨制◻砖 <==> 磨制◻铺路石 <==> 磨制◻柱
+
+(◻ = 台阶 / 楼梯 / 竖直台阶)
+远古海晶石砖◻ <====> 远古海晶石◻
+硫磺石◻ <==> 硫磺石砖◻
+深板岩圆石◻ <===>  磨制深板岩◻ <==> 深板岩砖◻ <==> 深板岩瓦◻
+    (@ = 大理石 / 石灰石 / 碧玉石 / 板岩 / 虚空石 / 幻境石)
+    @◻ <==> 磨制@◻ <==> 磨制@砖◻
+冻土◻ <==> 冻土砖◻
+灵魂砂岩◻ <==> 灵魂砂岩砖◻ <==> 切制灵魂砂岩◻
+锈化铁板块◻ -->> 铁板块◻
 
 ------------------------------------------------------------------
+
+stairs ---->> vertical_slabs
+framed_glass(stained) ---->> framed_glass_pane(stained) [3]
+stained_slab [2] <<-- stained_planks -->> stained_vertical_slab [2]
+biotite_block -->> biotite
+rusty_iron_plate -->> iron_plate
+
+(◻ = turf / thatch / dirt_bricks / duskbound_block / sandy_bricks / snow_bricks / midori_block)
+◻_slab [2] <<-- ◻  -->> ◻_vertical_slab [2]
+◻  -->> ◻_stairs
+
+slab <====> vertical_slab
+stained_planks <====> vertical_stained_planks
+brimstone <==> brimstone_bricks
+cobbled_deepslate <==> chiseled_deepslate <======>
+    polished_deepslate <==> deepslate_bricks <==> deepslate_tiles
+biotite_block <==> chiseled_biotite_block <==> biotite_pillar <==> biotite_bricks
+permafrost <==> permafrost_bricks
+soul_sandstone <==> soul_sandstone_bricks <==> chiseled_soul_sandstone <==> cut_soul_sandstone
+midori_block <==> midori_pillar
+
+(◻ = marble / limestone / jasper / slate / basalt / myalite)
+◻ <====> polished_◻ <=========> ◻_bricks
+    <==> chiseled_◻_bricks <==> ◻_pavement <==> ◻_pillar
+
+(◻ = slab / stairs / vertical_slab)
+elder_prismarine_bricks_◻ <====> elder_prismarine_◻
+brimstone_◻ <==> brimstone_bricks_◻
+cobbled_deepslate_◻ <==> polished_deepslate_◻ <==> deepslate_brick_◻ <==> deepslate_tile_◻
+    (@ = marble / limestone / jasper / slate / basalt / myalite)
+    @_◻ <==> polished_@_◻ <==> @_bricks_◻
+permafrost_◻ <==> permafrost_bricks_◻
+soul_sandstone_◻ <==> soul_sandstone_bricks_◻ <==> cut_soul_sandstone_◻
+rusty_iron_plate_◻ -->> iron_plate_◻
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Decoration-Blocks-quark">装饰性方块 Building Blocks</h4>
+
+```
+刚玉(彩色) ---->> 刚玉板(彩色) [2]
+深板岩圆石墙 <==> 深板岩瓦墙 <==> 深板岩砖墙 <==> 磨制深板岩墙
+
+------------------------------------------------------------------
+
+crystal(colored) ---->> crystal_pane(colored) [2]
+cobbled_deepslate_wall <==> deepslate_tile_wall
+    <=======> deepslate_brick_wall <==> polished_deepslate_wall
+```
+<a href="#Contents">回到目录 Back to contents</a>
+<h4 id="Mod-Compatibility-quark">模组兼容 Mod Compatibility</h4>
+
+```
+(原版) 木(菌核) ---->> 木柱 [3]
+(原版) 木板 <==> 竖直木板
+(原版) 岩浆块 <==> 岩浆砖
+
+------------------------------------------------------------------
+
+(Vanilla) wood(hyphae) ---->> wood_post [3]
+(Vanilla) planks <==> vertical_planks
+(Vanilla) magma_block <==> magma_bricks
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
+- 夸克：更新仙人掌绿相关配方
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 支持 Supplementaries
-- 支持 夸克 Quark
-- 支持 凿子 Chisel
+- 支持 夸克 Quark 所有内容
+- 将数据包对应游戏版本提升至1.18
+- 更新模组内容支持
+- 添加更多模组间兼容性配方
+- 调整文件夹结构、规范文件命名
 - 支持更多1.16.5的模组
 
 <a href="#Contents">回到目录 Back to contents</a>
@@ -799,5 +892,6 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 - Synthetic recipes can be modified through JSON files, but this is not recommended.
 - When the datapack is successfully loaded, the game will prompt "[ datapack name ] Loading Successful !".
 - The prompt message cannot be displayed in versions lower than "1.15.2". Please type the command "/datapack list" as an administrator to view the datapack information.
+- Extremely sorry for my bad English.
 
 <a href="#Contents">回到目录 Back to contents</a>

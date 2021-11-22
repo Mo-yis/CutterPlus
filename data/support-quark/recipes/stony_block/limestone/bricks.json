@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:chiseled_limestone_bricks"
+    },{
+        "item": "quark:limestone_pavement"
+    },{
+        "item": "quark:limestone_pillar"
+    }],
+    "result": "quark:limestone_bricks",
+    "count": 1
+}

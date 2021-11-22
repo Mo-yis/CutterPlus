@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:myalite_stairs"
+    },{
+        "item": "quark:myalite_slab"
+    },{
+        "item": "quark:polished_myalite_vertical_slab"
+    },{
+        "item": "quark:myalite_bricks_vertical_slab"
+    }],
+    "result": "quark:myalite_vertical_slab",
+    "count": 1
+}

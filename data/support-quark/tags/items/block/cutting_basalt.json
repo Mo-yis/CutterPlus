@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "quark:polished_basalt",
+        "quark:basalt_bricks",
+        "quark:chiseled_basalt_bricks",
+        "quark:basalt_pavement",
+        "quark:basalt_pillar"
+    ]
+}

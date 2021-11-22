@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:dark_elder_prismarine_stairs"
+    },{
+        "item": "quark:dark_elder_prismarine_slab"
+    }],
+    "result": "quark:dark_elder_prismarine_vertical_slab",
+    "count": 1
+}

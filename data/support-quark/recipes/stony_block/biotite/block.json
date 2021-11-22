@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:chiseled_biotite_block"
+    },{
+        "item": "quark:biotite_pillar"
+    },{
+        "item": "quark:biotite_bricks"
+    }],
+    "result": "quark:biotite_block",
+    "count": 1
+}

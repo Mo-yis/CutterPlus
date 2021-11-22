@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:vanilla_basalt_bricks_stairs"
+    },{
+        "item": "quark:vanilla_basalt_bricks_slab"
+    }],
+    "result": "quark:vanilla_basalt_bricks_vertical_slab",
+    "count": 1
+}

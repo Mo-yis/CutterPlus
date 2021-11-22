@@ -1,9 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": [{
-        "item": "minecraft:blackstone_slab"
-    },{
-        "item": "minecraft:polished_blackstone_slab"
+        "tag": "support-minecraft:slab/blackstone"
     },{
         "item": "minecraft:polished_blackstone_brick_stairs"
     }],

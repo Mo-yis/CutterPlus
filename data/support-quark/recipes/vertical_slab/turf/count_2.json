@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:turf"
+    },
+    "result": "quark:turf_vertical_slab",
+    "count": 2
+}

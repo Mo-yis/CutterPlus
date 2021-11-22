@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:weeping_blackstone_bricks_stairs"
+    },{
+        "item": "quark:weeping_blackstone_bricks_vertical_slab"
+    }],
+    "result": "quark:weeping_blackstone_bricks_slab",
+    "count": 1
+}

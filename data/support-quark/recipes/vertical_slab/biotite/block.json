@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:biotite_block_stairs"
+    },{
+        "item": "quark:biotite_block_slab"
+    }],
+    "result": "quark:biotite_block_vertical_slab",
+    "count": 1
+}

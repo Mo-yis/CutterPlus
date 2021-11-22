@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:basalt_stairs"
+    },{
+        "item": "quark:polished_basalt_stairs"
+    }],
+    "result": "quark:basalt_bricks_stairs",
+    "count": 1
+}

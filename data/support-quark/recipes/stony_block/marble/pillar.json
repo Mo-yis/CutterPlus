@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:block/cutting_marble"
+    },
+    "result": "quark:marble_pillar",
+    "count": 1
+}

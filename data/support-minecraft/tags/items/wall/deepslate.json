@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:cobbled_deepslate_wall",
+        "minecraft:deepslate_tile_wall",
+        "minecraft:deepslate_brick_wall",
+        "minecraft:polished_deepslate_wall"
+    ]
+}

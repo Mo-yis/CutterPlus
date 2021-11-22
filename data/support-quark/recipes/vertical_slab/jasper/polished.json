@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:polished_jasper_stairs"
+    },{
+        "item": "quark:polished_jasper_slab"
+    },{
+        "item": "quark:jasper_vertical_slab"
+    },{
+        "item": "quark:jasper_bricks_vertical_slab"
+    }],
+    "result": "quark:polished_jasper_vertical_slab",
+    "count": 1
+}

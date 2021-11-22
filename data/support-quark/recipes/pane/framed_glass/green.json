@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:green_framed_glass"
+    },
+    "result": "quark:green_framed_glass_pane",
+    "count": 3
+}

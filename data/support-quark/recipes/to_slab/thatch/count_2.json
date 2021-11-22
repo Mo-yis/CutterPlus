@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:thatch"
+    },
+    "result": "quark:thatch_slab",
+    "count": 2
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:cut_soul_sandstone_vertical_slab"
+    },{
+        "item": "quark:soul_sandstone_slab"
+    },{
+        "item": "quark:soul_sandstone_bricks_slab"
+    }],
+    "result": "quark:cut_soul_sandstone_slab",
+    "count": 1
+}

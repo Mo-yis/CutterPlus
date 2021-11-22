@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:deepslate/stairs"
+    },
+    "result": "quark:deepslate_tiles_stairs",
+    "count": 1
+}
