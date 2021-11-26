@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "minecraft:dark_oak_slab"
+    },{
+        "item": "minecraft:dark_oak_stairs"
+    }],
+    "result": "quark:dark_oak_vertical_slab",
+    "count": 1
+}

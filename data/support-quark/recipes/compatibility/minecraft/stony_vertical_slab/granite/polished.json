@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "minecraft:polished_granite_stairs"
+    },{
+        "item": "minecraft:polished_granite_slab"
+    }],
+    "result": "quark:polished_granite_vertical_slab",
+    "count": 1
+}

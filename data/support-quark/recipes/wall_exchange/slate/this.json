@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:slate_bricks_wall"
+    },
+    "result": "quark:slate_wall",
+    "count": 1
+}

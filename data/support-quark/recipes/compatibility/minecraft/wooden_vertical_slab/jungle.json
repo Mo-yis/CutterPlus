@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "minecraft:jungle_slab"
+    },{
+        "item": "minecraft:jungle_stairs"
+    }],
+    "result": "quark:jungle_vertical_slab",
+    "count": 1
+}

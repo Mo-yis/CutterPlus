@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:marble_bricks_wall"
+    },
+    "result": "quark:marble_wall",
+    "count": 1
+}

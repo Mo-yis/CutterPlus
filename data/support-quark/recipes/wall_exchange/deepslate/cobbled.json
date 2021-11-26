@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "tag": "support-quark:deepslate/wall"
+        "tag": "support-quark:stony_block/deepslate/wall"
     },
     "result": "quark:cobbled_deepslate_wall",
     "count": 1
