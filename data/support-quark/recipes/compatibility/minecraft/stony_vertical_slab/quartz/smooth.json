@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "minecraft:smooth_quartz_stairs"
+    },{
+        "item": "minecraft:smooth_quartz_slab"
+    }],
+    "result": "quark:smooth_quartz_vertical_slab",
+    "count": 1
+}

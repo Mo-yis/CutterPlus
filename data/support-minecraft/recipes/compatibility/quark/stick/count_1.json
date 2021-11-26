@@ -1,8 +1,18 @@
 {
     "type": "minecraft:stonecutting",
-    "ingredient": {
-        "tag": "support-quark:post"
-    },
+    "ingredient": [{
+        "tag": "support-quark:wooden/post"
+    },{
+        "tag": "support-quark:wooden/stained/slab"
+    },{
+        "tag": "support-quark:wooden/stained/stairs"
+    },{
+        "tag": "support-quark:wooden/stained/vertical_slab"
+    },{
+        "tag": "support-quark:wooden/vertical_slab"
+    },{
+        "tag": "support-quark:wooden/hedge"
+    }],
     "result": "minecraft:stick",
     "count": 1
 }

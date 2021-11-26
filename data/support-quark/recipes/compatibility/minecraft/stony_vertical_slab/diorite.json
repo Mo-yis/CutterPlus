@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "minecraft:diorite_stairs"
+    },{
+        "item": "minecraft:diorite_slab"
+    }],
+    "result": "quark:diorite_vertical_slab",
+    "count": 1
+}

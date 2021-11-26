@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "minecraft:birch_slab"
+    },{
+        "item": "minecraft:birch_stairs"
+    }],
+    "result": "quark:birch_vertical_slab",
+    "count": 1
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:acacia_vertical_slab"
+    },
+    "result": "minecraft:acacia_slab",
+    "count": 1
+}

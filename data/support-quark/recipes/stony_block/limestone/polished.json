@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "tag": "support-quark:block/cutting_limestone"
+        "tag": "support-quark:stony_block/cutting_limestone"
     },
     "result": "quark:polished_limestone",
     "count": 1

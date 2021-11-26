@@ -5,10 +5,6 @@
             "item": "minecraft:ladder"
         },{
             "item": "minecraft:loom"
-        },{
-            "item": "minecraft:painting"
-        },{
-            "item": "minecraft:item_frame"
         }
     ],
     "result": "minecraft:stick",

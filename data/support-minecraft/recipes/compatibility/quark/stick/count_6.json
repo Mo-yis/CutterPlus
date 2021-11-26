@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:wooden/bookshelf"
+    },
+    "result": "minecraft:stick",
+    "count": 6
+}

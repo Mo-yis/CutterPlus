@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": [{
-        "tag": "support-quark:deepslate/vertical_slab"
+        "tag": "support-quark:stony_block/deepslate/vertical_slab"
     },{
         "item": "quark:deepslate_tiles_slab"
     },{

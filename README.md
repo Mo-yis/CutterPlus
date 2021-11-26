@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.10
+- 版本 Version: 2.14.11
 - 支持版本 Supported version: 1.14.4 ~ 1.17.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -335,7 +335,6 @@ copper_block -->>  copper_ingot [9] <<-- cut_copper
 竹子 -------->>  木棍 [1] <<-- 脚手架
 枯萎的灌木 --->>  木棍 [1]
 梯子 -------->>  木棍 [2] <<-- 织布机
-画 ---------->>  木棍 [2] <<-- 物品展示框
 制图台 ------->>  木棍 [4]
 制箭台 ------->>  木棍 [4] <<-- 锻造台
 工作台 ------->>  木棍 [4] <<-- (灵魂)营火
@@ -353,7 +352,6 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 bamboo ----------->>  stick [1] <<-- scaffolding
 dead_bush -------->>  stick [1]
 ladder ----------->>  stick [2] <<-- loom
-painting --------->>  stick [2] <<-- item_frame
 wooden_sign ------>>  stick [4] <<-- cartography_table
 fletching_table -->>  stick [4] <<-- smithing_table
 crafting_table --->>  stick [4] <<-- (soul)campfire
@@ -404,11 +402,20 @@ trapped_chest ----->> stick [8] <<-- note_block
 (长沼蓝调) 丝柏树枝 ------->>  木棍 [1]
 (长沼蓝调) 丝柏木告示牌 ---->>  木棍 [4] <<-- 丝柏木栅栏门
 (秋原) 枫木告示牌 --------->>  木棍 [4] <<-- 枫木栅栏门
-(夸克) 木柱 -------------->>  木棍 [1]
+(夸克) 木柱 -------------->>  木棍 [1] <<-- 染色木台阶
+(夸克) 染色木楼梯 --------->>  木棍 [1] <<-- (染色)竖直木台阶
+(夸克) 书架 -------------->>  木棍 [6]
+(夸克) 饲料槽 ------------>>  木棍 [2] <<-- 木梯子
+(夸克) 木(陷阱)箱 --------->>  木棍 [8]
+(夸克) 树篱 -------------->>  木棍 [1]
 
 (夸克) 陶瓦片(彩色) <====> 陶瓦(彩色)
 (夸克) 竖直木板 <==> 木板
 (夸克) 岩浆砖 <==> 岩浆块
+(夸克) 竖直木台阶 <==> 木台阶
+(夸克) 磨制花岗岩砖墙 <==> 花岗岩墙
+(夸克) 磨制闪长岩砖墙 <==> 闪长岩墙
+(夸克) 磨制安山岩砖墙 <==> 安山岩墙
 
 ------------------------------------------------------------------
 
@@ -439,10 +446,20 @@ refined_radiance_casing
 (Bayou Blues) cypress_branch ------>>  stick [1]
 (Bayou Blues) cypress_fence_gate -->>  stick [4] <<-- large_sign
 (Autumnity) maple_fence_gate ------>>  stick [4] <<-- maple_sign
+(Quark) wooden_post ---->>  stick [1] <<-- stained_planks_slab
+(Quark) stained_planks_stairs ----->>  stick [1] <<-- (stained_planks)_vertical_slab
+(Quark) bookshelf ----------------->>  stick [6]
+(Quark) feeding_trough ------------>>  stick [2] <<-- wooden_ladder
+(Quark) wooden_(trapped_)chest ---->>  stick [8]
+(Quark) hedge --------------------->>  stick [1]
 
 (Quark) shingles(colored) <====> terracotta(colored)
 (Quark) vertical_planks <==> planks
 (Quark) magma_bricks <==> magma_block
+(Quark) wooden_vertical_slab <==> wooden_slab
+(Quark) granite_bricks_wall <==> granite_wall
+(Quark) diorite_bricks_wall <==> diorite_wall
+(Quark) andesite_bricks_wall <==> andesite_wall
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="tconstruct">匠魂支持 Tinkers' Construct Support</h3>
@@ -818,11 +835,17 @@ rusty_iron_plate_◻ -->> iron_plate_◻
 刚玉(彩色) ---->> 刚玉板(彩色) [2]
 深板岩圆石墙 <==> 深板岩瓦墙 <==> 深板岩砖墙 <==> 磨制深板岩墙
 
+(◻ = 大理石 / 石灰石 / 碧玉石 / 板岩 / 虚空石 / 幻境石 / 冻土)
+◻墙 <==> 磨制◻砖墙
+
 ------------------------------------------------------------------
 
 crystal(colored) ---->> crystal_pane(colored) [2]
 cobbled_deepslate_wall <==> deepslate_tile_wall
     <=======> deepslate_brick_wall <==> polished_deepslate_wall
+
+(◻ = marble / limestone / jasper / slate / basalt / myalite / permafrost)
+◻_wall <==> ◻_bricks_wall
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-quark">模组兼容 Mod Compatibility</h4>
@@ -831,26 +854,37 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 (原版) 木(菌核) ---->> 木柱 [3]
 (原版) 木板 <==> 竖直木板
 (原版) 岩浆块 <==> 岩浆砖
+(原版) 木台阶 <==> 竖直木台阶
+(原版) 花岗岩墙 <==> 磨制花岗岩砖墙
+(原版) 闪长岩墙 <==> 磨制闪长岩砖墙
+(原版) 安山岩墙 <==> 磨制安山岩砖墙
 
 ------------------------------------------------------------------
 
 (Vanilla) wood(hyphae) ---->> wood_post [3]
 (Vanilla) planks <==> vertical_planks
 (Vanilla) magma_block <==> magma_bricks
+(Vanilla) wooden_slab <==> wooden_vertical_slab
+(Vanilla) granite_wall <==> granite_bricks_wall
+(Vanilla) diorite_wall <==> diorite_bricks_wall
+(Vanilla) andesite_wall <==> andesite_bricks_wall
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 夸克：更新仙人掌绿相关配方
+- 添加了夸克一些遗漏的配方
+- 添加了大量夸克与原版的兼容性配方
+- 调整了文件目录
+- 移除原版 画 与 物品展示框 加工成 木棍 [2] 的配方
+- 移除了一个疑似错误的配方，该配方创建于 Version 2.14.9
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 支持 夸克 Quark 所有内容
 - 将数据包对应游戏版本提升至1.18
 - 更新模组内容支持
 - 添加更多模组间兼容性配方
-- 调整文件夹结构、规范文件命名
+- 调整文件夹目录、规范文件命名
 - 支持更多1.16.5的模组
 
 <a href="#Contents">回到目录 Back to contents</a>

@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "quark:feeding_trough"
+    },{
+        "tag": "support-quark:wooden/ladder"
+    }],
+    "result": "minecraft:stick",
+    "count": 2
+}

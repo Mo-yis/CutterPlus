@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "tag": "support-quark:block/cutting_marble"
+        "tag": "support-quark:stony_block/cutting_marble"
     },
     "result": "quark:marble_pavement",
     "count": 1

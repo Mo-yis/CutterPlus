@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "tag": "support-quark:block/cutting_slate"
+        "tag": "support-quark:stony_block/cutting_slate"
     },
     "result": "quark:slate_pavement",
     "count": 1

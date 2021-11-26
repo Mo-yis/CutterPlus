@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "minecraft:sandstone_stairs"
+    },{
+        "item": "minecraft:sandstone_slab"
+    }],
+    "result": "quark:sandstone_vertical_slab",
+    "count": 1
+}
