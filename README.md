@@ -1,8 +1,8 @@
 <h1>切石机增强 Cutter Plus</h1>
 
 - 作者 Author: 莫yis
-- 版本 Version: 2.14.11
-- 支持版本 Supported version: 1.14.4 ~ 1.17.1
+- 版本 Version: 3.0.0
+- 支持版本 Supported version: 1.14.4 ~ 1.18
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
 
@@ -240,8 +240,8 @@ stripped_log(stripped_stem) -->>  stick [8] <<-- stripped_wood(stripped_hyphae)
 下界砖块 -------->>  下界砖 [4]
 砖台阶 ---------->>  红砖 [2] <<---- 砖楼梯
 砖块 ----------->>  红砖 [4]
-铁块 ----------->>  铁锭 [9] --->> 铁粒 [9]
-金块 ----------->>  金锭 [9] -->> 金粒[9]
+铁块 ----------->>  铁锭 [9]
+金块 ----------->>  金锭 [9]
 下界合金块 ------>>  下界合金锭 [9]
 钻石块 ---------->>  钻石 [9]
 绿宝石块 -------->>  绿宝石 [9]
@@ -257,10 +257,9 @@ stripped_log(stripped_stem) -->>  stick [8] <<-- stripped_wood(stripped_hyphae)
 （铜质方块）
 (先) 打蜡的 -->>  未打蜡的
 (后) 氧化的 -->>  锈蚀的 -->> 斑驳的 -->> 新的
-块状的 <======>  切制的
-台阶 -->>  铜锭 [4] <<-- 楼梯
-铜块 -->>  铜锭 [9] <<---- 切制铜块
-
+切制铜台阶 -->>  铜锭 [1] <<-- 切制铜楼梯
+铜块 -->>  铜锭 [9]
+切制铜块 -->> 铜锭 [2]
 ------------------------------------------------------------------
 
 purpur_block <=====>  purpur_pillar
@@ -303,8 +302,8 @@ nether_brick_slab ----->>  nether_brick [2] <<-- nether_brick_stairs
 nether_bricks --------->>  nether_brick [4]
 brick_slab ------------>>  brick [2] <--- brick_stairs
 bricks ---------------->>  brick [4]
-iron_block ------------>>  iron_ingot [9] -->>  iron_nugget [9]
-gold_block ------------>>  gold_ingot [9] -->>  gold_nugget [9]
+iron_block ------------>>  iron_ingot [9]
+gold_block ------------>>  gold_ingot [9]
 netherite_block ------->>  netherite_ingot [9]
 diamond_block --------->>  diamond [9]
 emerald_block --------->>  emerald [9]
@@ -321,9 +320,9 @@ deepslate ----->> cobbled_deepslate
 (copper blocks)
 (first) waxed ------>>  unwaxed
 (second) oxidized -->>  weathered -->> exposed -->> new
-block <=========>  cut
-slab ---------->>  copper_ingot [4] <<-- stairs
-copper_block -->>  copper_ingot [9] <<-- cut_copper
+cut_slab ---------->>  copper_ingot [1] <<-- cut_stairs
+copper_block -->>  copper_ingot [9]
+cut_copper -->>  copper_ingot [2]
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Decoration-Blocks-minecraft">装饰性方块 Decoration Blocks</h4>
@@ -872,16 +871,17 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 添加了夸克一些遗漏的配方
-- 添加了大量夸克与原版的兼容性配方
-- 调整了文件目录
-- 移除原版 画 与 物品展示框 加工成 木棍 [2] 的配方
-- 移除了一个疑似错误的配方，该配方创建于 Version 2.14.9
+- 移除 原版 块状的 <======>  切制的
+- 移除 原版 铁锭 --->> 铁粒 [9] 和 金锭 -->> 金粒[9]
+- 修改 原版：  
+    切制铜台阶 -->>  铜锭 [1] <<-- 切制铜楼梯  
+    铜块 -->>  铜锭 [9]  
+    切制铜块 -->> 铜锭 [2]
+- 数据包对应游戏版本提升至1.18
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- 将数据包对应游戏版本提升至1.18
 - 更新模组内容支持
 - 添加更多模组间兼容性配方
 - 调整文件夹目录、规范文件命名

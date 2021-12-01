@@ -4,8 +4,6 @@
         "item": "minecraft:exposed_copper"
     },{
         "item": "minecraft:waxed_copper_block"
-    },{
-        "item": "minecraft:cut_copper"
     }],
     "result": "minecraft:copper_block",
     "count": 1
