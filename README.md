@@ -1,16 +1,9 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 作者 Author: 莫yis
-- 版本 Version: 3.0.1
+- 版本 Version: 3.0.2
 - 支持版本 Supported version: 1.14.4 ~ 1.18
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
-
-<h2>献辞 Dedication</h2>
-
-    谨将此数据包, 献给所有努力生存的方块人！
-
-    This datapack is dedicated to all those who strive to survive!
 
 <h2 id="Contents">目录 Contents</h2>
 <ol>
@@ -871,6 +864,10 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
+- 调整support-minecraft的文件夹结构并添加树文件
+- 我自认为做的不够好，亦或是生活比较忙碌。
+- 既然是开源项目，人人均可修改发布，则不以作者自居为是。
+- 同时我也希望有时间的朋友可以一同维护这个项目。
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
