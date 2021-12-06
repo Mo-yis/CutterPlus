@@ -2,6 +2,19 @@
 ├── functions
 │   └── info.mcfunction
 ├── recipes
+│   ├── button
+│   │   ├── stony
+│   │   │   ├── polished_blackstone.json
+│   │   │   └── stone.json
+│   │   └── wooden
+│   │       ├── acacia.json
+│   │       ├── birch.json
+│   │       ├── crimson.json
+│   │       ├── dark_oak.json
+│   │       ├── jungle.json
+│   │       ├── oak.json
+│   │       ├── spruce.json
+│   │       └── warped.json
 │   ├── compatibility
 │   │   ├── autumnity
 │   │   │   └── stick_4.json
@@ -99,6 +112,15 @@
 │   │       ├── obsidian.json
 │   │       ├── stick_4.json
 │   │       └── stick_64.json
+│   ├── fence
+│   │   ├── acacia.json
+│   │   ├── birch.json
+│   │   ├── crimson.json
+│   │   ├── dark_oak.json
+│   │   ├── jungle.json
+│   │   ├── oak.json
+│   │   ├── spruce.json
+│   │   └── warped.json
 │   ├── glass_pane
 │   │   ├── black.json
 │   │   ├── blue.json
@@ -117,7 +139,7 @@
 │   │   ├── this.json
 │   │   ├── white.json
 │   │   └── yellow.json
-│   ├── items
+│   ├── item
 │   │   ├── amethyst_shard
 │   │   │   ├── count_1.json
 │   │   │   └── count_3.json
@@ -147,66 +169,72 @@
 │   │       ├── count_6.json
 │   │       └── count_8.json
 │   ├── slab
+│   │   ├── andesite
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── blackstone
+│   │   │   ├── polished_brick.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── brick.json
 │   │   ├── cut_copper
 │   │   │   ├── exposed.json
 │   │   │   ├── oxidized.json
 │   │   │   ├── this.json
 │   │   │   └── weathered.json
-│   │   ├── stony
-│   │   │   ├── andesite
-│   │   │   │   ├── polished.json
-│   │   │   │   └── this.json
-│   │   │   ├── blackstone
-│   │   │   │   ├── polished_brick.json
-│   │   │   │   ├── polished.json
-│   │   │   │   └── this.json
+│   │   ├── deepslate
 │   │   │   ├── brick.json
-│   │   │   ├── deepslate
-│   │   │   │   ├── brick.json
-│   │   │   │   ├── cobbled.json
-│   │   │   │   ├── polished.json
-│   │   │   │   └── tile.json
-│   │   │   ├── diorite
-│   │   │   │   ├── polished.json
-│   │   │   │   └── this.json
-│   │   │   ├── granite
-│   │   │   │   ├── polished.json
-│   │   │   │   └── this.json
-│   │   │   ├── nether_brick.json
-│   │   │   ├── prismarine
-│   │   │   │   ├── brick.json
-│   │   │   │   ├── dark.json
-│   │   │   │   └── this.json
-│   │   │   ├── purpur.json
-│   │   │   ├── quartz.json
-│   │   │   ├── red_nether_brick.json
-│   │   │   ├── sandstone
-│   │   │   │   ├── cut.json
-│   │   │   │   ├── cut_red.json
-│   │   │   │   ├── red.json
-│   │   │   │   ├── smooth.json
-│   │   │   │   ├── smooth_red.json
-│   │   │   │   └── this.json
-│   │   │   ├── smooth_quartz.json
-│   │   │   └── stone
-│   │   │       ├── cobblestone.json
-│   │   │       ├── end_stone_brick.json
-│   │   │       ├── mossy_cobblestone.json
-│   │   │       ├── mossy_stone_brick.json
-│   │   │       ├── stone_brick.json
-│   │   │       └── stone.json
+│   │   │   ├── cobbled.json
+│   │   │   ├── polished.json
+│   │   │   └── tile.json
+│   │   ├── diorite
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── granite
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── nether_brick.json
+│   │   ├── prismarine
+│   │   │   ├── brick.json
+│   │   │   ├── dark.json
+│   │   │   └── this.json
+│   │   ├── purpur.json
+│   │   ├── quartz.json
+│   │   ├── red_nether_brick.json
+│   │   ├── sandstone
+│   │   │   ├── cut.json
+│   │   │   ├── cut_red.json
+│   │   │   ├── red.json
+│   │   │   ├── smooth.json
+│   │   │   ├── smooth_red.json
+│   │   │   └── this.json
+│   │   ├── smooth_quartz.json
+│   │   ├── stone
+│   │   │   ├── cobblestone.json
+│   │   │   ├── end_stone_brick.json
+│   │   │   ├── mossy_cobblestone.json
+│   │   │   ├── mossy_stone_brick.json
+│   │   │   ├── stone_brick.json
+│   │   │   └── stone.json
 │   │   └── wooden
-│   │       ├── acacia.json
-│   │       ├── birch.json
-│   │       ├── crimson.json
-│   │       ├── dark_oak.json
-│   │       ├── jungle.json
-│   │       ├── oak.json
-│   │       ├── spruce.json
-│   │       └── warped.json
-│   ├── specific
-│   │   ├── polished_blackstone_button.json
-│   │   └── stone_button.json
+│   │       ├── count_1
+│   │       │   ├── acacia.json
+│   │       │   ├── birch.json
+│   │       │   ├── crimson.json
+│   │       │   ├── dark_oak.json
+│   │       │   ├── jungle.json
+│   │       │   ├── oak.json
+│   │       │   ├── spruce.json
+│   │       │   └── warped.json
+│   │       └── count_2
+│   │           ├── acacia.json
+│   │           ├── birch.json
+│   │           ├── crimson.json
+│   │           ├── dark_oak.json
+│   │           ├── jungle.json
+│   │           ├── oak.json
+│   │           ├── spruce.json
+│   │           └── warped.json
 │   ├── stairs
 │   │   ├── andesite
 │   │   │   ├── polished.json
@@ -232,11 +260,20 @@
 │   │   │   ├── polished.json
 │   │   │   └── this.json
 │   │   ├── prismarine.json
-│   │   └── stone
-│   │       ├── cobblestone.json
-│   │       ├── stone_brick.json
-│   │       └── stone.json
-│   ├── stony
+│   │   ├── stone
+│   │   │   ├── cobblestone.json
+│   │   │   ├── stone_brick.json
+│   │   │   └── stone.json
+│   │   └── wooden
+│   │       ├── acacia.json
+│   │       ├── birch.json
+│   │       ├── crimson.json
+│   │       ├── dark_oak.json
+│   │       ├── jungle.json
+│   │       ├── oak.json
+│   │       ├── spruce.json
+│   │       └── warped.json
+│   ├── stony_cube
 │   │   ├── andesite.json
 │   │   ├── basalt.json
 │   │   ├── blackstone
@@ -296,143 +333,55 @@
 │   │       ├── cobbled.json
 │   │       ├── polished.json
 │   │       └── tile.json
-│   └── wooden
+│   └── wooden_cube
 │       ├── acacia
-│       │   ├── log
-│       │   │   ├── planks.json
-│       │   │   ├── stripped
-│       │   │   │   ├── planks.json
-│       │   │   │   └── wood.json
-│       │   │   ├── stripped.json
-│       │   │   └── wood.json
-│       │   ├── planks
-│       │   │   ├── button.json
-│       │   │   ├── fence.json
-│       │   │   ├── slab.json
-│       │   │   └── stairs.json
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
 │       │   └── wood
-│       │       ├── planks.json
 │       │       ├── stripped.json
-│       │       └── stripped_planks.json
+│       │       └── this.json
 │       ├── birch
-│       │   ├── log
-│       │   │   ├── planks.json
-│       │   │   ├── stripped
-│       │   │   │   ├── planks.json
-│       │   │   │   └── wood.json
-│       │   │   ├── stripped.json
-│       │   │   └── wood.json
-│       │   ├── planks
-│       │   │   ├── button.json
-│       │   │   ├── fence.json
-│       │   │   ├── slab.json
-│       │   │   └── stairs.json
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
 │       │   └── wood
-│       │       ├── planks.json
 │       │       ├── stripped.json
-│       │       └── stripped_planks.json
+│       │       └── this.json
 │       ├── crimson
 │       │   ├── hyphae
-│       │   │   ├── planks.json
 │       │   │   ├── stripped.json
-│       │   │   └── stripped_planks.json
-│       │   ├── planks
-│       │   │   ├── button.json
-│       │   │   ├── fence.json
-│       │   │   ├── slab.json
-│       │   │   └── stairs.json
-│       │   └── stem
-│       │       ├── hyphae.json
-│       │       ├── planks.json
-│       │       ├── stripped
-│       │       │   ├── hyphae.json
-│       │       │   └── planks.json
-│       │       └── stripped.json
+│       │   │   └── this.json
+│       │   ├── planks.json
+│       │   └── stripped_log.json
 │       ├── dark_oak
-│       │   ├── log
-│       │   │   ├── planks.json
-│       │   │   ├── stripped
-│       │   │   │   ├── planks.json
-│       │   │   │   └── wood.json
-│       │   │   ├── stripped.json
-│       │   │   └── wood.json
-│       │   ├── planks
-│       │   │   ├── button.json
-│       │   │   ├── fence.json
-│       │   │   ├── slab.json
-│       │   │   └── stairs.json
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
 │       │   └── wood
-│       │       ├── planks.json
 │       │       ├── stripped.json
-│       │       └── stripped_planks.json
+│       │       └── this.json
 │       ├── jungle
-│       │   ├── log
-│       │   │   ├── planks.json
-│       │   │   ├── stripped
-│       │   │   │   ├── planks.json
-│       │   │   │   └── wood.json
-│       │   │   ├── stripped.json
-│       │   │   └── wood.json
-│       │   ├── planks
-│       │   │   ├── button.json
-│       │   │   ├── fence.json
-│       │   │   ├── slab.json
-│       │   │   └── stairs.json
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
 │       │   └── wood
-│       │       ├── planks.json
 │       │       ├── stripped.json
-│       │       └── stripped_planks.json
+│       │       └── this.json
 │       ├── oak
-│       │   ├── log
-│       │   │   ├── planks.json
-│       │   │   ├── stripped
-│       │   │   │   ├── planks.json
-│       │   │   │   └── wood.json
-│       │   │   ├── stripped.json
-│       │   │   └── wood.json
-│       │   ├── planks
-│       │   │   ├── button.json
-│       │   │   ├── fence.json
-│       │   │   ├── slab.json
-│       │   │   └── stairs.json
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
 │       │   └── wood
-│       │       ├── planks.json
 │       │       ├── stripped.json
-│       │       └── stripped_planks.json
+│       │       └── this.json
 │       ├── spruce
-│       │   ├── log
-│       │   │   ├── planks.json
-│       │   │   ├── stripped
-│       │   │   │   ├── planks.json
-│       │   │   │   └── wood.json
-│       │   │   ├── stripped.json
-│       │   │   └── wood.json
-│       │   ├── planks
-│       │   │   ├── button.json
-│       │   │   ├── fence.json
-│       │   │   ├── slab.json
-│       │   │   └── stairs.json
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
 │       │   └── wood
-│       │       ├── planks.json
 │       │       ├── stripped.json
-│       │       └── stripped_planks.json
+│       │       └── this.json
 │       └── warped
 │           ├── hyphae
-│           │   ├── planks.json
 │           │   ├── stripped.json
-│           │   └── stripped_planks.json
-│           ├── planks
-│           │   ├── button.json
-│           │   ├── fence.json
-│           │   ├── slab.json
-│           │   └── stairs.json
-│           └── stem
-│               ├── hyphae.json
-│               ├── planks.json
-│               ├── stripped
-│               │   ├── hyphae.json
-│               │   └── planks.json
-│               └── stripped.json
+│           │   └── this.json
+│           ├── planks.json
+│           └── stripped_log.json
 ├── tags
 │   └── items
 │       ├── slab
@@ -448,4 +397,4 @@
 │       └── wooden_signs.json
 └── tree
 
-109 directories, 339 files
+90 directories, 307 files

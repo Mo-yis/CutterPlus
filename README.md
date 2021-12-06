@@ -1,6 +1,6 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 版本 Version: 3.0.2
+- 版本 Version: 3.0.3
 - 支持版本 Supported version: 1.14.4 ~ 1.18
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -153,22 +153,41 @@
 <h3 id="General-Crafting-Tree">通用加工图 General Crafting Tree</h3>
 
 ```
-种类 type
-    |-- 原木 log (菌柄 stem)
-        |-- 木头 wood (菌核 hyphae)
-        |-- 木板 planks [4]
-        |-- 去皮原木 stripped_log (去皮菌柄 stripped_stem)
-            |-- 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
-            |-- 木板 planks [4]
+原木 log (菌柄 stem)
+    |-- 木板 planks [4]
+        |-- 按钮 button
+        |-- 台阶 slab [2]
+        |-- 栅栏 fence
+        |-- 楼梯 stairs
+            |-- 台阶 slab
     |-- 木头 wood (菌核 hyphae)
         |-- 木板 planks [4]
+            |-- 按钮 button
+            |-- 台阶 slab [2]
+            |-- 栅栏 fence
+            |-- 楼梯 stairs
+                |-- 台阶 slab
         |-- 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
             |-- 木板 planks [4]
-    |-- 木板 planks
-        |-- 栅栏 fence
-        |-- 台阶 slab [2]
-        |-- 按钮 button
-        |-- 楼梯 stairs
+                |-- 按钮 button
+                |-- 台阶 slab [2]
+                |-- 栅栏 fence
+                |-- 楼梯 stairs
+                    |-- 台阶 slab
+    |-- 去皮原木 stripped_log (去皮菌柄 stripped_stem)
+        |-- 木板 planks [4]
+            |-- 按钮 button
+            |-- 台阶 slab [2]
+            |-- 栅栏 fence
+            |-- 楼梯 stairs
+                |-- 台阶 slab
+        |-- 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
+            |-- 木板 planks [4]
+                |-- 按钮 button
+                |-- 台阶 slab [2]
+                |-- 栅栏 fence
+                |-- 楼梯 stairs
+                    |-- 台阶 slab
 
 木台阶 ------------>>  木棍 [1] <<---- 木楼梯
 树叶 -------------->>  木棍 [1] <<---- 树苗
@@ -281,34 +300,32 @@ blackstone_◻ <==>  polished_blackstone_◻ <==> polished_blackstone_brick_◻
 cobbled_deepslate_◻ <=====> polished_deepslate_◻
     <===> deepslate_brick_◻ <===> deepslate_tile_◻
 
-bookshelf ------------->>  stick [6]
-glass(stained) -------->>  glass_pane(stained) [3]
-dripstone_block ------->>  pointed_dripstone
-stone ----------------->>  stone_button
-blackstone ------------>>  polished_blackstone_button
-    <<------- polished_blackstone
-amethyst_block -------->>  amethyst_shard
-amethyst_cluster ------>>  amethyst_shard [3]
-blue_ice -------------->>  packed_ice --->> ice
-quartz_block ---------->>  quartz
-nether_brick_slab ----->>  nether_brick [2] <<-- nether_brick_stairs
-nether_bricks --------->>  nether_brick [4]
-brick_slab ------------>>  brick [2] <--- brick_stairs
-bricks ---------------->>  brick [4]
-iron_block ------------>>  iron_ingot [9]
-gold_block ------------>>  gold_ingot [9]
-netherite_block ------->>  netherite_ingot [9]
-diamond_block --------->>  diamond [9]
-emerald_block --------->>  emerald [9]
-lapis_block ----------->>  lapis_lazuli [9]
-prismarine_brick_slab --->>  prismarine_slab
-prismarine_brick_stairs ->>  prismarine_stairs
-prismarine_bricks ---->>  prismarine --------->>
-    prismarine_shard <<------- sea_lantern
-stone --------->> cobblestone
-stone_slab ---->> cobblestone_slabe
-stone_stairs -->> cobblestone_stairs
-deepslate ----->> cobbled_deepslate
+bookshelf ---------------->>  stick [6]
+glass(stained) ----------->>  glass_pane(stained) [3]
+dripstone_block ---------->>  pointed_dripstone
+stone -------------------->>  stone_button
+blackstone --------------->>  polished_blackstone_button <<-- polished_blackstone
+amethyst_block ----------->>  amethyst_shard
+amethyst_cluster --------->>  amethyst_shard [3]
+blue_ice ----------------->>  packed_ice --->> ice
+quartz_block ------------->>  quartz
+nether_brick_slab -------->>  nether_brick [2] <<-- nether_brick_stairs
+nether_bricks ------------>>  nether_brick [4]
+brick_slab --------------->>  brick [2] <--- brick_stairs
+bricks ------------------->>  brick [4]
+iron_block --------------->>  iron_ingot [9]
+gold_block --------------->>  gold_ingot [9]
+netherite_block ---------->>  netherite_ingot [9]
+diamond_block ------------>>  diamond [9]
+emerald_block ------------>>  emerald [9]
+lapis_block -------------->>  lapis_lazuli [9]
+prismarine_brick_slab ---->>  prismarine_slab
+prismarine_brick_stairs -->>  prismarine_stairs
+prismarine_bricks -------->>  prismarine -->> prismarine_shard <<-- sea_lantern
+stone -------------------->>  cobblestone
+stone_slab --------------->>  cobblestone_slabe
+stone_stairs ------------->>  cobblestone_stairs
+deepslate ---------------->>  cobbled_deepslate
 
 (copper blocks)
 (first) waxed ------>>  unwaxed
@@ -864,14 +881,12 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 调整support-minecraft的文件夹结构并添加树文件
-- 我自认为做的不够好，亦或是生活比较忙碌。
-- 既然是开源项目，人人均可修改发布，则不以作者自居为是。
-- 同时我也希望有时间的朋友可以一同维护这个项目。
+- 大幅优化support-minecraft的文件夹结构
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
+- data/support-tconstruct/recipes/stony_block/scorched_road.json 需烧炼制成，并移除相关配方
 - 更新模组内容支持
 - 添加更多模组间兼容性配方
 - 调整文件夹目录、规范文件命名
