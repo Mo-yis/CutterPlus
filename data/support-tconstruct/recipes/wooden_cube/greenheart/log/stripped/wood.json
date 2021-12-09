@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "tconstruct:stripped_greenheart_log"
-    },
-    "result": "tconstruct:stripped_greenheart_wood",
-    "count": 1
-}

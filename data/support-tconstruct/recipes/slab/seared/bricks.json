@@ -4,6 +4,8 @@
         "item": "tconstruct:seared_stone_slab"
     },{
         "item": "tconstruct:seared_bricks_stairs"
+    },{
+        "item": "tconstruct:seared_paver_slab"
     }],
     "result": "tconstruct:seared_bricks_slab",
     "count": 1

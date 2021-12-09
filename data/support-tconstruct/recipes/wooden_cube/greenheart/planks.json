@@ -1,7 +1,7 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "item": "tconstruct:greenheart_log"
+        "tag": "tconstruct:greenheart_logs"
     },
     "result": "tconstruct:greenheart_planks",
     "count": 4

@@ -1,6 +1,6 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 版本 Version: 3.0.4
+- 版本 Version: 3.0.5
 - 支持版本 Supported version: 1.14.4 ~ 1.18
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -489,7 +489,7 @@ clear_glass ---------->>  clear_glass_pane [3]
 soul_glass ----------->>  soul_glass_pane [3]
 clear_stained_glass -->>  clear_stained_glass_pane [3]
 
-(block -->> ingot [9] -->> nugget [9])
+(block -->> ingot [9])
 copper              cobalt
 slimesteet          tinkers_bronze
 rose_gold           pig_iron
@@ -500,22 +500,26 @@ hepatizon
 <h4 id="Tinkers-Smeltery">Tinkers' Smeltery</h4>
 
 ```
-seared_stone <=====> seared_bricks <=======> 
-    seared_fancy_bricks <==> seared_triangle_bricks
-seared_bricks_stairs <===> seared_stone_stairs
-seared_bricks_slab <====> seared_stone_slab
+seared_stone <=============>  seared_bricks <=======> 
+    seared_fancy_bricks <==>  seared_triangle_bricks
+seared_bricks_stairs <=====>  seared_stone_stairs
+seared_bricks_slab <=======>  seared_stone_slab
 
 seared_bricks ----------->>  seared_brick [4]
 seared_bricks_stairs ---->>  seared_brick [2] <<-- seared_bricks_slab
 seared_glass ------------>>  seared_glass_pane [3]
 seared_stone ------------>>  seared_cobble
+seared_paver_slab ------->>  seared_bricks_slab
+seared_paver_stairs ----->>  seared_bricks_stairs
+seared_triangle_bricks <<---- seared_paver -->> seared_bricks
+seared_stone <<-------------- seared_paver -->> seared_fancy_bricks
 
-scorched_bricks <==> chiseled_scorched_bricks <==>
-    polished_scorched_stone <==> scorched_stone <==> scorched_road
-scorched_bricks_slab <==> scorched_road_slab
-scorched_bricks_stairs <==> scorched_road_stairs
+scorched_bricks <=====>  chiseled_scorched_bricks <====>
+    scorched_stone <==>  polished_scorched_stone
 
-scorched_bricks --------->>  scorched_bricks_fence
+scorched_road_slab ------>>  scorched_bricks_slab
+scorched_road_stairs ---->>  scorched_bricks_stairs
+scorched_road ----------->>  scorched_stone
 scorched_bricks --------->>  scorched_brick [4]
 scorched_bricks_stairs -->>  scorched_brick [2] <<-- scorched_bricks_slab
 scorched_glass ---------->>  scorched_glass_pane [3]
@@ -525,18 +529,16 @@ scorched_glass ---------->>  scorched_glass_pane [3]
 
 ```
 (◻ = 铜) (forge ----->> ◻)
-◻锭    ◻粒    ◻矿石    ◻块
+◻锭    ◻矿石    ◻块
 
-(原版) 下界合金锭 ----->>  netherite_nugget
 (原版) 黑曜石 -------->>  obsidian_pane
 (超多生物群系) 泥巴 <===>  mud_bricks
 
 ------------------------------------------------------------------
 
 (◻ = copper) (forge ----->> ◻)
-◻_ingot    ◻_nugget    ◻_ore    ◻_block
+◻_ingot    ◻_ore    ◻_block
 
-(Vanilla) netherite_ingot -->>  netherite_nugget
 (Vanilla) obsidian --------->>  obsidian_pane
 (Biomes O' Plenty) mud <=====>  mud_bricks
 ```
@@ -881,13 +883,20 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 调整support-tconstruct文件夹结构、增加tree文件
-- 将 Cutter Plus 注册信息并入minecraft命名空间
+- 移除 tconstruct 中所有合成 nugget 的配方
+- 移除 tconstruct: scorched_bricks -->>  scorched_bricks_fence
+- 移除 tconstruct: scorched_road 合成配方
+- 修改 tconstruct: scorched_road_slab -->>  scorched_bricks_slab
+- 修改 tconstruct: scorched_road_stairs -->>  scorched_bricks_stairs
+- 添加 tconstruct: seared_triangle_bricks  <<-- seared_paver -->> seared_bricks
+- 添加 tconstruct: seared_stone  <<-- seared_paver  -->> seared_fancy_bricks
+- 添加 tconstruct: seared_paver_slab -->> seared_bricks_slab
+- 添加 tconstruct: seared_paver_stairs -->> seared_bricks_stairs
+- 优化初始化信息
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
-- data/support-tconstruct/recipes/stony_cube/scorched_road.json 需烧炼制成，并移除相关配方
 - 更新模组内容支持
 - 添加更多模组间兼容性配方
 - 调整文件夹目录、规范文件命名

@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "tag": "forge:nuggets/copper"
-    },
-    "result": "tconstruct:copper_nugget",
-    "count": 1
-}

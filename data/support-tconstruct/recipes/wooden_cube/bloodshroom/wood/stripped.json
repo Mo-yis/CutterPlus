@@ -1,8 +1,10 @@
 {
     "type": "minecraft:stonecutting",
-    "ingredient": {
+    "ingredient": [{
+        "item": "tconstruct:stripped_bloodshroom_log"
+    },{
         "item": "tconstruct:bloodshroom_wood"
-    },
+    }],
     "result": "tconstruct:stripped_bloodshroom_wood",
     "count": 1
 }
