@@ -1,0 +1,172 @@
+.
+├── functions
+│   └── info.mcfunction
+├── recipes
+│   ├── compatibility
+│   │   ├── biomesoplenty
+│   │   │   └── mud_bricks.json
+│   │   ├── forge
+│   │   │   ├── ingot
+│   │   │   │   └── copper.json
+│   │   │   ├── nugget
+│   │   │   │   └── copper.json
+│   │   │   ├── ore
+│   │   │   │   └── copper.json
+│   │   │   └── storage_block
+│   │   │       └── copper.json
+│   │   └── minecraft
+│   │       ├── netherite_nugget.json
+│   │       └── obsidian_pane.json
+│   ├── fence
+│   │   ├── nahuatl_fence.json
+│   │   └── scorched_bricks_fence.json
+│   ├── glass_pane
+│   │   ├── clear.json
+│   │   ├── clear_stained
+│   │   │   ├── black.json
+│   │   │   ├── blue.json
+│   │   │   ├── brown.json
+│   │   │   ├── cyan.json
+│   │   │   ├── gray.json
+│   │   │   ├── green.json
+│   │   │   ├── light_blue.json
+│   │   │   ├── light_gray.json
+│   │   │   ├── lime.json
+│   │   │   ├── magenta.json
+│   │   │   ├── orange.json
+│   │   │   ├── pink.json
+│   │   │   ├── purple.json
+│   │   │   ├── red.json
+│   │   │   ├── white.json
+│   │   │   └── yellow.json
+│   │   ├── scorched.json
+│   │   ├── seared.json
+│   │   └── soul.json
+│   ├── item
+│   │   ├── brick
+│   │   │   ├── scorched
+│   │   │   │   ├── count_2.json
+│   │   │   │   └── count_4.json
+│   │   │   └── seared
+│   │   │       ├── count_2.json
+│   │   │       └── count_4.json
+│   │   ├── ingot
+│   │   │   ├── cobalt.json
+│   │   │   ├── copper.json
+│   │   │   ├── hepatizon.json
+│   │   │   ├── manyullyn.json
+│   │   │   ├── pig_iron.json
+│   │   │   ├── queens_slime.json
+│   │   │   ├── rose_gold.json
+│   │   │   ├── slimesteel.json
+│   │   │   └── tinkers_bronze.json
+│   │   └── nugget
+│   │       ├── cobalt.json
+│   │       ├── copper.json
+│   │       ├── hepatizon.json
+│   │       ├── manyullyn.json
+│   │       ├── pig_iron.json
+│   │       ├── queens_slime.json
+│   │       ├── rose_gold.json
+│   │       ├── slimesteel.json
+│   │       └── tinkers_bronze.json
+│   ├── slab
+│   │   ├── blazewood
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── lavawood
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── mud_bricks
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── nahuatl
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── scorched
+│   │   │   ├── scorched_bricks.json
+│   │   │   └── scorched_road.json
+│   │   ├── seared
+│   │   │   ├── bricks.json
+│   │   │   ├── cobble.json
+│   │   │   ├── paver.json
+│   │   │   └── stone.json
+│   │   └── wooden
+│   │       ├── bloodshroom.json
+│   │       ├── greenheart.json
+│   │       └── skyroot.json
+│   ├── stairs
+│   │   ├── blazewood.json
+│   │   ├── lavawood.json
+│   │   ├── mud_bricks.json
+│   │   ├── nahuatl.json
+│   │   ├── scorched
+│   │   │   ├── bricks.json
+│   │   │   └── road.json
+│   │   └── seared
+│   │       ├── bricks.json
+│   │       └── stone.json
+│   ├── stony_cube
+│   │   ├── scorched_road.json
+│   │   ├── scorched_stone.json
+│   │   ├── seard_stone.json
+│   │   └── seared_cobble.json
+│   └── wooden_cube
+│       ├── bloodshroom
+│       │   ├── log
+│       │   │   ├── planks.json
+│       │   │   ├── stripped
+│       │   │   │   ├── planks.json
+│       │   │   │   └── wood.json
+│       │   │   ├── stripped.json
+│       │   │   └── wood.json
+│       │   ├── planks
+│       │   │   ├── button.json
+│       │   │   ├── fence.json
+│       │   │   ├── slab.json
+│       │   │   └── stairs.json
+│       │   └── wood
+│       │       ├── planks.json
+│       │       ├── stripped.json
+│       │       └── stripped_planks.json
+│       ├── greenheart
+│       │   ├── log
+│       │   │   ├── planks.json
+│       │   │   ├── stripped
+│       │   │   │   ├── planks.json
+│       │   │   │   └── wood.json
+│       │   │   ├── stripped.json
+│       │   │   └── wood.json
+│       │   ├── planks
+│       │   │   ├── button.json
+│       │   │   ├── fence.json
+│       │   │   ├── slab.json
+│       │   │   └── stairs.json
+│       │   └── wood
+│       │       ├── planks.json
+│       │       ├── stripped.json
+│       │       └── stripped_planks.json
+│       └── skyroot
+│           ├── log
+│           │   ├── planks.json
+│           │   ├── stripped
+│           │   │   ├── planks.json
+│           │   │   └── wood.json
+│           │   ├── stripped.json
+│           │   └── wood.json
+│           ├── planks
+│           │   ├── button.json
+│           │   ├── fence.json
+│           │   ├── slab.json
+│           │   └── stairs.json
+│           └── wood
+│               ├── planks.json
+│               ├── stripped.json
+│               └── stripped_planks.json
+├── tags
+│   └── items
+│       ├── wooden_fence_gates.json
+│       └── wooden_signs.json
+└── tree
+
+49 directories, 120 files
