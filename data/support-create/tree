@@ -1,0 +1,365 @@
+.
+├── functions
+│   └── info.mcfunction
+├── recipes
+│   ├── compatibility
+│   │   ├── forge
+│   │   │   ├── ingot
+│   │   │   │   └── copper.json
+│   │   │   ├── nugget
+│   │   │   │   └── copper.json
+│   │   │   ├── ore
+│   │   │   │   └── copper.json
+│   │   │   └── storage_block
+│   │   │       └── copper.json
+│   │   └── minecraft
+│   │       ├── slab
+│   │       │   ├── andesite
+│   │       │   │   ├── bricks.json
+│   │       │   │   ├── cobblestone.json
+│   │       │   │   ├── fancy_bricks.json
+│   │       │   │   └── paved.json
+│   │       │   ├── diorite
+│   │       │   │   ├── bricks.json
+│   │       │   │   ├── cobblestone.json
+│   │       │   │   ├── fancy_bricks.json
+│   │       │   │   └── paved.json
+│   │       │   └── granite
+│   │       │       ├── bricks.json
+│   │       │       ├── cobblestone.json
+│   │       │       ├── fancy_bricks.json
+│   │       │       └── paved.json
+│   │       ├── stairs
+│   │       │   ├── andesite
+│   │       │   │   ├── bricks.json
+│   │       │   │   ├── cobblestone.json
+│   │       │   │   ├── fancy_bricks.json
+│   │       │   │   └── paved.json
+│   │       │   ├── diorite
+│   │       │   │   ├── bricks.json
+│   │       │   │   ├── cobblestone.json
+│   │       │   │   ├── fancy_bricks.json
+│   │       │   │   └── paved.json
+│   │       │   └── granite
+│   │       │       ├── bricks.json
+│   │       │       ├── cobblestone.json
+│   │       │       ├── fancy_bricks.json
+│   │       │       └── paved.json
+│   │       └── wall
+│   │           ├── andesite
+│   │           │   ├── bricks.json
+│   │           │   ├── cobblestone.json
+│   │           │   ├── fancy_bricks.json
+│   │           │   └── paved.json
+│   │           ├── diorite
+│   │           │   ├── bricks.json
+│   │           │   ├── cobblestone.json
+│   │           │   ├── fancy_bricks.json
+│   │           │   └── paved.json
+│   │           └── granite
+│   │               ├── bricks.json
+│   │               ├── cobblestone.json
+│   │               ├── fancy_bricks.json
+│   │               └── paved.json
+│   ├── item
+│   │   ├── ingot
+│   │   │   ├── brass.json
+│   │   │   ├── copper.json
+│   │   │   └── zinc.json
+│   │   └── nugget
+│   │       ├── brass.json
+│   │       ├── copper.json
+│   │       └── zinc.json
+│   ├── pane
+│   │   ├── glass
+│   │   │   ├── framed.json
+│   │   │   ├── horizontal_framed.json
+│   │   │   ├── tiled.json
+│   │   │   └── vertical_framed.json
+│   │   └── window
+│   │       ├── acacia.json
+│   │       ├── birch.json
+│   │       ├── crimson.json
+│   │       ├── dark_oak.json
+│   │       ├── jungle.json
+│   │       ├── oak.json
+│   │       ├── ornate_iron.json
+│   │       ├── spruce.json
+│   │       └── warped.json
+│   ├── slab
+│   │   ├── andesite
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   └── paved.json
+│   │   ├── dark_scoria
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   ├── diorite
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   └── paved.json
+│   │   ├── dolomite
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   ├── gabbro
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   ├── granite
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   └── paved.json
+│   │   ├── limestone
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   ├── scoria
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   └── weathered_limestone
+│   │       ├── bricks.json
+│   │       ├── cobblestone.json
+│   │       ├── fancy_bricks.json
+│   │       ├── paved.json
+│   │       └── polished.json
+│   ├── stairs
+│   │   ├── andesite
+│   │   │   ├── bricks.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   └── paved.json
+│   │   ├── dark_scoria
+│   │   │   ├── bricks.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   ├── diorite
+│   │   │   ├── bricks.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   └── paved.json
+│   │   ├── dolomite
+│   │   │   ├── bricks.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   ├── gabbro
+│   │   │   ├── bricks.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   ├── granite
+│   │   │   ├── bricks.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   └── paved.json
+│   │   ├── limestone
+│   │   │   ├── bricks.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   ├── scoria
+│   │   │   ├── bricks.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── paved.json
+│   │   │   └── polished.json
+│   │   └── weathered_limestone
+│   │       ├── bricks.json
+│   │       ├── fancy_bricks.json
+│   │       ├── paved.json
+│   │       └── polished.json
+│   ├── stone_cube
+│   │   ├── andesite
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── layered.json
+│   │   │   ├── mossy.json
+│   │   │   ├── overgrown.json
+│   │   │   ├── paved.json
+│   │   │   └── pillar.json
+│   │   ├── dark_scoria
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── layered.json
+│   │   │   ├── mossy.json
+│   │   │   ├── overgrown.json
+│   │   │   ├── paved.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── diorite
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── layered.json
+│   │   │   ├── mossy.json
+│   │   │   ├── overgrown.json
+│   │   │   ├── paved.json
+│   │   │   └── pillar.json
+│   │   ├── dolomite
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── layered.json
+│   │   │   ├── mossy.json
+│   │   │   ├── overgrown.json
+│   │   │   ├── paved.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── gabbro
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── layered.json
+│   │   │   ├── mossy.json
+│   │   │   ├── overgrown.json
+│   │   │   ├── paved.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── granite
+│   │   │   ├── bricks.json
+│   │   │   ├── cobblestone.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── layered.json
+│   │   │   ├── mossy.json
+│   │   │   ├── overgrown.json
+│   │   │   ├── paved.json
+│   │   │   └── pillar.json
+│   │   ├── limestone
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── layered.json
+│   │   │   ├── mossy.json
+│   │   │   ├── overgrown.json
+│   │   │   ├── paved.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── scoria
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── fancy_bricks.json
+│   │   │   ├── layered.json
+│   │   │   ├── mossy.json
+│   │   │   ├── overgrown.json
+│   │   │   ├── paved.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   └── weathered_limestone
+│   │       ├── bricks.json
+│   │       ├── chiseled.json
+│   │       ├── fancy_bricks.json
+│   │       ├── layered.json
+│   │       ├── mossy.json
+│   │       ├── overgrown.json
+│   │       ├── paved.json
+│   │       ├── pillar.json
+│   │       ├── polished.json
+│   │       └── this.json
+│   └── wall
+│       ├── andesite
+│       │   ├── bricks.json
+│       │   ├── fancy_bricks.json
+│       │   └── paved.json
+│       ├── dark_scoria
+│       │   ├── bricks.json
+│       │   ├── fancy_bricks.json
+│       │   ├── paved.json
+│       │   └── polished.json
+│       ├── diorite
+│       │   ├── bricks.json
+│       │   ├── fancy_bricks.json
+│       │   └── paved.json
+│       ├── dolomite
+│       │   ├── bricks.json
+│       │   ├── fancy_bricks.json
+│       │   ├── paved.json
+│       │   └── polished.json
+│       ├── gabbro
+│       │   ├── bricks.json
+│       │   ├── fancy_bricks.json
+│       │   ├── paved.json
+│       │   └── polished.json
+│       ├── granite
+│       │   ├── bricks.json
+│       │   ├── fancy_bricks.json
+│       │   └── paved.json
+│       ├── limestone
+│       │   ├── bricks.json
+│       │   ├── fancy_bricks.json
+│       │   ├── paved.json
+│       │   └── polished.json
+│       ├── scoria
+│       │   ├── bricks.json
+│       │   ├── fancy_bricks.json
+│       │   ├── paved.json
+│       │   └── polished.json
+│       └── weathered_limestone
+│           ├── bricks.json
+│           ├── fancy_bricks.json
+│           ├── paved.json
+│           └── polished.json
+├── tags
+│   └── items
+│       ├── block
+│       │   ├── andesite.json
+│       │   ├── dark_scoria.json
+│       │   ├── diorite.json
+│       │   ├── dolomite.json
+│       │   ├── gabbro.json
+│       │   ├── granite.json
+│       │   ├── limestone.json
+│       │   ├── scoria.json
+│       │   └── weathered_limestone.json
+│       ├── slab
+│       │   ├── andesite.json
+│       │   ├── dark_scoria.json
+│       │   ├── diorite.json
+│       │   ├── dolomite.json
+│       │   ├── gabbro.json
+│       │   ├── granite.json
+│       │   ├── limestone.json
+│       │   ├── scoria.json
+│       │   └── weathered_limestone.json
+│       ├── stairs
+│       │   ├── andesite.json
+│       │   ├── dark_scoria.json
+│       │   ├── diorite.json
+│       │   ├── dolomite.json
+│       │   ├── gabbro.json
+│       │   ├── granite.json
+│       │   ├── limestone.json
+│       │   ├── scoria.json
+│       │   └── weathered_limestone.json
+│       └── wall
+│           ├── andesite.json
+│           ├── dark_scoria.json
+│           ├── diorite.json
+│           ├── dolomite.json
+│           ├── gabbro.json
+│           ├── granite.json
+│           ├── limestone.json
+│           ├── scoria.json
+│           └── weathered_limestone.json
+└── tree
+
+73 directories, 289 files

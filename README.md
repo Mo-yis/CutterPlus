@@ -1,6 +1,6 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 版本 Version: 3.0.5
+- 版本 Version: 3.0.6
 - 支持版本 Supported version: 1.14.4 ~ 1.18
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -883,16 +883,7 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 移除 tconstruct 中所有合成 nugget 的配方
-- 移除 tconstruct: scorched_bricks -->>  scorched_bricks_fence
-- 移除 tconstruct: scorched_road 合成配方
-- 修改 tconstruct: scorched_road_slab -->>  scorched_bricks_slab
-- 修改 tconstruct: scorched_road_stairs -->>  scorched_bricks_stairs
-- 添加 tconstruct: seared_triangle_bricks  <<-- seared_paver -->> seared_bricks
-- 添加 tconstruct: seared_stone  <<-- seared_paver  -->> seared_fancy_bricks
-- 添加 tconstruct: seared_paver_slab -->> seared_bricks_slab
-- 添加 tconstruct: seared_paver_stairs -->> seared_bricks_stairs
-- 优化初始化信息
+- 修改 support-create 的文件夹结构
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
