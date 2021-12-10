@@ -1,0 +1,137 @@
+.
+├── functions
+│   └── info.mcfunction
+├── recipes
+│   ├── button
+│   │   ├── canopy.json
+│   │   ├── dark.json
+│   │   ├── mangrove.json
+│   │   ├── mine.json
+│   │   ├── sort.json
+│   │   ├── time.json
+│   │   ├── trans.json
+│   │   └── twilight_oak.json
+│   ├── fence
+│   │   ├── canopy.json
+│   │   ├── dark.json
+│   │   ├── mangrove.json
+│   │   ├── mine.json
+│   │   ├── sort.json
+│   │   ├── time.json
+│   │   ├── trans.json
+│   │   └── twilight_oak.json
+│   ├── item
+│   │   └── ingot
+│   │       ├── fiery.json
+│   │       ├── ironwood.json
+│   │       └── knightmetal.json
+│   ├── slab
+│   │   └── wooden
+│   │       ├── count_1
+│   │       │   ├── canopy.json
+│   │       │   ├── dark.json
+│   │       │   ├── mangrove.json
+│   │       │   ├── mine.json
+│   │       │   ├── sort.json
+│   │       │   ├── time.json
+│   │       │   ├── trans.json
+│   │       │   └── twilight_oak.json
+│   │       └── count_2
+│   │           ├── canopy.json
+│   │           ├── dark.json
+│   │           ├── mangrove.json
+│   │           ├── mine.json
+│   │           ├── sort.json
+│   │           ├── time.json
+│   │           ├── trans.json
+│   │           └── twilight_oak.json
+│   ├── stairs
+│   │   ├── castle_stairs_brick.json
+│   │   ├── nagastone_stairs_left
+│   │   │   ├── mossy.json
+│   │   │   ├── this.json
+│   │   │   └── weathered.json
+│   │   ├── nagastone_stairs_right
+│   │   │   ├── mossy.json
+│   │   │   ├── this.json
+│   │   │   └── weathered.json
+│   │   └── wooden
+│   │       ├── canopy.json
+│   │       ├── dark.json
+│   │       ├── mangrove.json
+│   │       ├── mine.json
+│   │       ├── sort.json
+│   │       ├── time.json
+│   │       ├── trans.json
+│   │       └── twilight_oak.json
+│   ├── stony_cube
+│   │   ├── castle_brick.json
+│   │   ├── castle_pillar_bold.json
+│   │   ├── castle_pillar_encased.json
+│   │   └── maze_stone.json
+│   └── wooden_cube
+│       ├── canopy
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── dark
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── mangrove
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── mining
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── sorting
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── time
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── transformation
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       └── twilight_oak
+│           ├── planks.json
+│           ├── stripped_log.json
+│           └── wood
+│               ├── stripped.json
+│               └── this.json
+├── tags
+│   └── items
+│       ├── logs
+│       │   ├── canopy.json
+│       │   ├── dark.json
+│       │   ├── mangrove.json
+│       │   ├── mining.json
+│       │   ├── sorting.json
+│       │   ├── time.json
+│       │   ├── transformation.json
+│       │   └── twilight_oak.json
+│       ├── maze_stone.json
+│       ├── wooden_fence_gates.json
+│       └── wooden_signs.json
+└── tree
+
+35 directories, 99 files

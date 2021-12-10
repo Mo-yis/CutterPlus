@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-twilightforest:logs/transformation"
+    },
+    "result": "twilightforest:trans_planks",
+    "count": 4
+}

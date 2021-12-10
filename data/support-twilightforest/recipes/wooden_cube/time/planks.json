@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-twilightforest:logs/time"
+    },
+    "result": "twilightforest:time_planks",
+    "count": 4
+}

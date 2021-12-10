@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "twilightforest:sorting_wood",
+        "twilightforest:stripped_sorting_log",
+        "twilightforest:stripped_sorting_wood",
+        "twilightforest:sorting_log"
+    ]
+}

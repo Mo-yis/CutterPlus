@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "twilightforest:stripped_dark_wood"
-    },
-    "result": "twilightforest:dark_planks",
-    "count": 4
-}

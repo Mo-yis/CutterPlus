@@ -1,6 +1,6 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 版本 Version: 3.0.7
+- 版本 Version: 3.0.8
 - 支持版本 Supported version: 1.14.4 ~ 1.18
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -643,8 +643,8 @@ fancy_◻_bricks_wall        paved_◻_wall
 娜迦石楼梯（左） <========>  娜迦石楼梯（右）
 风化的娜迦石楼梯（左） <===>  风化的娜迦石楼梯（右）
 娜迦苔石楼梯（左） <======>  娜迦苔石楼梯（右）
-迷宫石头 <==> 迷宫石砖 <==>  装饰迷宫石砖
-    <==> 錾制迷宫石头 <==>  迷宫石沿 <==> 迷宫镶石
+迷宫石头 <==> 迷宫石砖 <==>  装饰迷宫石砖 <=======>
+    錾制迷宫石头 <=======>  迷宫石沿 <==> 迷宫镶石
 
 ------------------------------------------------------------------
 
@@ -883,11 +883,7 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 移除 create: 加工 nugget 的所有配方
-- 移除 create: 加工花岗岩圆石的配方
-- 移除 create: 加工闪长岩圆石的配方
-- 移除 create: 加工安山岩圆石的配方
-- 添加 create: 兼容 zinc 块、矿石、锭的配方
+- 调整 support-twilightforest 文件夹结构，增加 tree 文件
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

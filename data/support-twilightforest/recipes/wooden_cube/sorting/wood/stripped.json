@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "twilightforest:stripped_sorting_log"
+    },{
+        "item": "twilightforest:sorting_wood"
+    }],
+    "result": "twilightforest:stripped_sorting_wood",
+    "count": 1
+}

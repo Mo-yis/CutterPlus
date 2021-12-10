@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "twilightforest:stripped_dark_log"
+    },{
+        "item": "twilightforest:dark_wood"
+    }],
+    "result": "twilightforest:stripped_dark_wood",
+    "count": 1
+}

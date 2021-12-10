@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "twilightforest:mining_wood"
-    },
-    "result": "twilightforest:mine_planks",
-    "count": 4
-}
