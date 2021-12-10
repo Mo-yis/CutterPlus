@@ -5,13 +5,14 @@
 │   ├── compatibility
 │   │   ├── forge
 │   │   │   ├── ingot
-│   │   │   │   └── copper.json
-│   │   │   ├── nugget
-│   │   │   │   └── copper.json
+│   │   │   │   ├── copper.json
+│   │   │   │   └── zinc.json
 │   │   │   ├── ore
-│   │   │   │   └── copper.json
+│   │   │   │   ├── copper.json
+│   │   │   │   └── zinc.json
 │   │   │   └── storage_block
-│   │   │       └── copper.json
+│   │   │       ├── copper.json
+│   │   │       └── zinc.json
 │   │   └── minecraft
 │   │       ├── slab
 │   │       │   ├── andesite
@@ -62,11 +63,7 @@
 │   │               ├── fancy_bricks.json
 │   │               └── paved.json
 │   ├── item
-│   │   ├── ingot
-│   │   │   ├── brass.json
-│   │   │   ├── copper.json
-│   │   │   └── zinc.json
-│   │   └── nugget
+│   │   └── ingot
 │   │       ├── brass.json
 │   │       ├── copper.json
 │   │       └── zinc.json
@@ -184,7 +181,6 @@
 │   ├── stone_cube
 │   │   ├── andesite
 │   │   │   ├── bricks.json
-│   │   │   ├── cobblestone.json
 │   │   │   ├── fancy_bricks.json
 │   │   │   ├── layered.json
 │   │   │   ├── mossy.json
@@ -204,7 +200,6 @@
 │   │   │   └── this.json
 │   │   ├── diorite
 │   │   │   ├── bricks.json
-│   │   │   ├── cobblestone.json
 │   │   │   ├── fancy_bricks.json
 │   │   │   ├── layered.json
 │   │   │   ├── mossy.json
@@ -235,7 +230,6 @@
 │   │   │   └── this.json
 │   │   ├── granite
 │   │   │   ├── bricks.json
-│   │   │   ├── cobblestone.json
 │   │   │   ├── fancy_bricks.json
 │   │   │   ├── layered.json
 │   │   │   ├── mossy.json
@@ -362,4 +356,4 @@
 │           └── weathered_limestone.json
 └── tree
 
-73 directories, 289 files
+71 directories, 285 files

@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "create:zinc_ingot"
-    },
-    "result": "create:zinc_nugget",
-    "count": 9
-}

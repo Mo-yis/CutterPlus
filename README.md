@@ -1,6 +1,6 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 版本 Version: 3.0.6
+- 版本 Version: 3.0.7
 - 支持版本 Supported version: 1.14.4 ~ 1.18
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -583,27 +583,27 @@ window ---------->>  window_pane [3]
 <h4 id="Create-items">机械动力 Create</h4>
 
 ```
-(块 -->> 锭 [9] -->> 粒 [9])
+(块 -->> 锭 [9])
 铜     锌     黄铜
 
 ------------------------------------------------------------------
 
-(block -->> ingot [9] -->> nugget [9])
+(block -->> ingot [9])
 copper         zinc        brass
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-create">模组兼容 Mod Compatibility</h4>
 
 ```
-(◻ = 铜) (forge ----->> ◻)
-◻锭    ◻粒    ◻矿石    ◻块
+(◻ = 铜 / 锌) (forge ----->> ◻)
+◻锭    ◻矿石    ◻块
 
 (原版) (◻ = (磨制)花岗岩 / (磨制)闪长岩 / (磨制)安山岩)
 ◻砖楼梯
-方纹◻砖楼梯    ◻铺路石楼梯
-◻砖台阶       方纹◻砖台阶
-◻铺路石台阶    ◻砖墙
-方纹◻砖墙      ◻铺路石墙
+方纹◻砖楼梯      ◻铺路石楼梯
+◻砖台阶         方纹◻砖台阶
+◻铺路石台阶      ◻砖墙
+方纹◻砖墙        ◻铺路石墙
 
 (原版) (◻ = 花岗岩 / 闪长岩 / 安山岩)
 ◻台阶 ------>>  ◻圆石台阶
@@ -612,8 +612,8 @@ copper         zinc        brass
 
 ------------------------------------------------------------------
 
-(◻ = copper) (forge ----->> ◻)
-◻_ingot    ◻_nugget    ◻_ore    ◻_block
+(◻ = copper / zinc) (forge ----->> ◻)
+◻_ingot    ◻_ore    ◻_block
 
 (Vanilla) (◻ = (polished)granite / (polished)diorite / (polished)andesite)
 ◻_bricks_stairs
@@ -883,7 +883,11 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 修改 support-create 的文件夹结构
+- 移除 create: 加工 nugget 的所有配方
+- 移除 create: 加工花岗岩圆石的配方
+- 移除 create: 加工闪长岩圆石的配方
+- 移除 create: 加工安山岩圆石的配方
+- 添加 create: 兼容 zinc 块、矿石、锭的配方
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

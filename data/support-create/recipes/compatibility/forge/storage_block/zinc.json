@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "forge:storage_blocks/zinc"
+    },
+    "result": "create:zinc_block",
+    "count": 1
+}

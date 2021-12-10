@@ -1,8 +1,8 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "tag": "forge:nuggets/copper"
+        "tag": "forge:ingots/zinc"
     },
-    "result": "create:copper_nugget",
+    "result": "create:zinc_ingot",
     "count": 1
 }
