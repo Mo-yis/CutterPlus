@@ -1,6 +1,6 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 版本 Version: 3.0.8
+- 版本 Version: 3.0.9
 - 支持版本 Supported version: 1.14.4 ~ 1.18
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
@@ -883,7 +883,7 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 调整 support-twilightforest 文件夹结构，增加 tree 文件
+- 调整 support-biomesoplenty 文件夹结构，增加 tree 文件
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

@@ -1,0 +1,179 @@
+.
+├── functions
+│   └── info.mcfunction
+├── recipes
+│   ├── button
+│   │   ├── cherry.json
+│   │   ├── dead.json
+│   │   ├── fir.json
+│   │   ├── hellbark.json
+│   │   ├── jacaranda.json
+│   │   ├── magic.json
+│   │   ├── mahogany.json
+│   │   ├── palm.json
+│   │   ├── redwood.json
+│   │   ├── umbran.json
+│   │   └── willow.json
+│   ├── compatibility
+│   │   └── tconstruct
+│   │       └── mud.json
+│   ├── fence
+│   │   ├── cherry.json
+│   │   ├── dead.json
+│   │   ├── fir.json
+│   │   ├── hellbark.json
+│   │   ├── jacaranda.json
+│   │   ├── magic.json
+│   │   ├── mahogany.json
+│   │   ├── palm.json
+│   │   ├── redwood.json
+│   │   ├── umbran.json
+│   │   └── willow.json
+│   ├── item
+│   │   ├── mud_brick
+│   │   │   ├── count_2.json
+│   │   │   └── count_4.json
+│   │   └── nether_crystal.json
+│   ├── slab
+│   │   ├── mud_brick
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── sandstone
+│   │   │   ├── black
+│   │   │   │   ├── cut.json
+│   │   │   │   ├── smooth.json
+│   │   │   │   └── this.json
+│   │   │   ├── orange
+│   │   │   │   ├── cut.json
+│   │   │   │   ├── smooth.json
+│   │   │   │   └── this.json
+│   │   │   └── white
+│   │   │       ├── cut.json
+│   │   │       ├── smooth.json
+│   │   │       └── this.json
+│   │   └── wooden
+│   │       ├── count_1
+│   │       │   ├── cherry.json
+│   │       │   ├── dead.json
+│   │       │   ├── fir.json
+│   │       │   ├── hellbark.json
+│   │       │   ├── jacaranda.json
+│   │       │   ├── magic.json
+│   │       │   ├── mahogany.json
+│   │       │   ├── palm.json
+│   │       │   ├── redwood.json
+│   │       │   ├── umbran.json
+│   │       │   └── willow.json
+│   │       └── count_2
+│   │           ├── cherry.json
+│   │           ├── dead.json
+│   │           ├── fir.json
+│   │           ├── hellbark.json
+│   │           ├── jacaranda.json
+│   │           ├── magic.json
+│   │           ├── mahogany.json
+│   │           ├── palm.json
+│   │           ├── redwood.json
+│   │           ├── umbran.json
+│   │           └── willow.json
+│   ├── stairs
+│   │   ├── mud_brick.json
+│   │   └── wooden
+│   │       ├── cherry.json
+│   │       ├── dead.json
+│   │       ├── fir.json
+│   │       ├── hellbark.json
+│   │       ├── jacaranda.json
+│   │       ├── magic.json
+│   │       ├── mahogany.json
+│   │       ├── palm.json
+│   │       ├── redwood.json
+│   │       ├── umbran.json
+│   │       └── willow.json
+│   ├── stony_cube
+│   │   └── sandstone
+│   │       ├── black
+│   │       │   ├── chiseled.json
+│   │       │   ├── cut.json
+│   │       │   └── this.json
+│   │       ├── orange
+│   │       │   ├── chiseled.json
+│   │       │   ├── cut.json
+│   │       │   └── this.json
+│   │       └── white
+│   │           ├── chiseled.json
+│   │           ├── cut.json
+│   │           └── this.json
+│   └── wooden_cube
+│       ├── cherry
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── dead
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── fir
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── hellbark
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── jacaranda
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── magic
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── mahogany
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── palm
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── redwood
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── umbran
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       └── willow
+│           ├── planks.json
+│           ├── stripped_log.json
+│           └── wood
+│               ├── stripped.json
+│               └── this.json
+├── tags
+│   └── items
+│       └── wooden_fence_gates.json
+└── tree
+
+49 directories, 127 files

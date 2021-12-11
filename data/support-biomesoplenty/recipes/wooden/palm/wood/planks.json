@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "biomesoplenty:palm_wood"
-    },
-    "result": "biomesoplenty:palm_planks",
-    "count": 4
-}

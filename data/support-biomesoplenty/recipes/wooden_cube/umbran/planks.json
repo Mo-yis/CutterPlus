@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "biomesoplenty:umbran_logs"
+    },
+    "result": "biomesoplenty:umbran_planks",
+    "count": 4
+}

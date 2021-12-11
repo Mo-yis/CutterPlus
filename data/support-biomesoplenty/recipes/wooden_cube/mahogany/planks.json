@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "biomesoplenty:mahogany_logs"
+    },
+    "result": "biomesoplenty:mahogany_planks",
+    "count": 4
+}

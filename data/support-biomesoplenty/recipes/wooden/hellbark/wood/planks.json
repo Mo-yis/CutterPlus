@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "biomesoplenty:hellbark_wood"
-    },
-    "result": "biomesoplenty:hellbark_planks",
-    "count": 4
-}
