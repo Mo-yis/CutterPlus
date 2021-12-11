@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "tconstruct:cobalt_ingot"
-    },
-    "result": "tconstruct:cobalt_nugget",
-    "count": 9
-}

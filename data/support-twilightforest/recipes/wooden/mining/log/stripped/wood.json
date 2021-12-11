@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "twilightforest:stripped_mining_log"
-    },
-    "result": "twilightforest:stripped_mining_wood",
-    "count": 1
-}

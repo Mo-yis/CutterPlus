@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "twilightforest:stripped_mangrove_log"
+    },{
+        "item": "twilightforest:mangrove_wood"
+    }],
+    "result": "twilightforest:stripped_mangrove_wood",
+    "count": 1
+}

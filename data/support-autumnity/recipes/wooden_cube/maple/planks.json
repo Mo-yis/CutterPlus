@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "autumnity:maple_logs"
+    },
+    "result": "autumnity:maple_planks",
+    "count": 4
+}

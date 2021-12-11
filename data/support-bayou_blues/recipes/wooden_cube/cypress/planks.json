@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "bayou_blues:cypress_logs"
+    },
+    "result": "bayou_blues:cypress_planks",
+    "count": 4
+}

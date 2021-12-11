@@ -1,0 +1,32 @@
+.
+├── functions
+│   └── info.mcfunction
+├── recipes
+│   ├── button
+│   │   └── cypress.json
+│   ├── fence
+│   │   └── cypress.json
+│   ├── item
+│   │   ├── beard_moss.json
+│   │   └── cypress_branch.json
+│   ├── slab
+│   │   ├── algae_thatch
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   └── wooden
+│   │       ├── cypress_1.json
+│   │       └── cypress_2.json
+│   ├── stairs
+│   │   ├── algae_thatch.json
+│   │   └── wooden
+│   │       └── cypress.json
+│   └── wooden_cube
+│       └── cypress
+│           ├── planks.json
+│           ├── stripped_log.json
+│           └── wood
+│               ├── stripped.json
+│               └── this.json
+└── tree
+
+13 directories, 16 files

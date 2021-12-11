@@ -1,16 +1,9 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 作者 Author: 莫yis
-- 版本 Version: 3.0.1
-- 支持版本 Supported version: 1.14.4 ~ 1.18
+- 版本 Version: 3.0.11
+- 支持版本 Supported version: 1.14.4 ~ 1.18.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
-
-<h2>献辞 Dedication</h2>
-
-    谨将此数据包, 献给所有努力生存的方块人！
-
-    This datapack is dedicated to all those who strive to survive!
 
 <h2 id="Contents">目录 Contents</h2>
 <ol>
@@ -160,22 +153,41 @@
 <h3 id="General-Crafting-Tree">通用加工图 General Crafting Tree</h3>
 
 ```
-种类 type
-    |-- 原木 log (菌柄 stem)
-        |-- 木头 wood (菌核 hyphae)
-        |-- 木板 planks [4]
-        |-- 去皮原木 stripped_log (去皮菌柄 stripped_stem)
-            |-- 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
-            |-- 木板 planks [4]
+原木 log (菌柄 stem)
+    |-- 木板 planks [4]
+        |-- 按钮 button
+        |-- 台阶 slab [2]
+        |-- 栅栏 fence
+        |-- 楼梯 stairs
+            |-- 台阶 slab
     |-- 木头 wood (菌核 hyphae)
         |-- 木板 planks [4]
+            |-- 按钮 button
+            |-- 台阶 slab [2]
+            |-- 栅栏 fence
+            |-- 楼梯 stairs
+                |-- 台阶 slab
         |-- 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
             |-- 木板 planks [4]
-    |-- 木板 planks
-        |-- 栅栏 fence
-        |-- 台阶 slab [2]
-        |-- 按钮 button
-        |-- 楼梯 stairs
+                |-- 按钮 button
+                |-- 台阶 slab [2]
+                |-- 栅栏 fence
+                |-- 楼梯 stairs
+                    |-- 台阶 slab
+    |-- 去皮原木 stripped_log (去皮菌柄 stripped_stem)
+        |-- 木板 planks [4]
+            |-- 按钮 button
+            |-- 台阶 slab [2]
+            |-- 栅栏 fence
+            |-- 楼梯 stairs
+                |-- 台阶 slab
+        |-- 去皮木头 stripped_wood (去皮菌核 stripped_hyphae)
+            |-- 木板 planks [4]
+                |-- 按钮 button
+                |-- 台阶 slab [2]
+                |-- 栅栏 fence
+                |-- 楼梯 stairs
+                    |-- 台阶 slab
 
 木台阶 ------------>>  木棍 [1] <<---- 木楼梯
 树叶 -------------->>  木棍 [1] <<---- 树苗
@@ -288,34 +300,32 @@ blackstone_◻ <==>  polished_blackstone_◻ <==> polished_blackstone_brick_◻
 cobbled_deepslate_◻ <=====> polished_deepslate_◻
     <===> deepslate_brick_◻ <===> deepslate_tile_◻
 
-bookshelf ------------->>  stick [6]
-glass(stained) -------->>  glass_pane(stained) [3]
-dripstone_block ------->>  pointed_dripstone
-stone ----------------->>  stone_button
-blackstone ------------>>  polished_blackstone_button
-    <<------- polished_blackstone
-amethyst_block -------->>  amethyst_shard
-amethyst_cluster ------>>  amethyst_shard [3]
-blue_ice -------------->>  packed_ice --->> ice
-quartz_block ---------->>  quartz
-nether_brick_slab ----->>  nether_brick [2] <<-- nether_brick_stairs
-nether_bricks --------->>  nether_brick [4]
-brick_slab ------------>>  brick [2] <--- brick_stairs
-bricks ---------------->>  brick [4]
-iron_block ------------>>  iron_ingot [9]
-gold_block ------------>>  gold_ingot [9]
-netherite_block ------->>  netherite_ingot [9]
-diamond_block --------->>  diamond [9]
-emerald_block --------->>  emerald [9]
-lapis_block ----------->>  lapis_lazuli [9]
-prismarine_brick_slab --->>  prismarine_slab
-prismarine_brick_stairs ->>  prismarine_stairs
-prismarine_bricks ---->>  prismarine --------->>
-    prismarine_shard <<------- sea_lantern
-stone --------->> cobblestone
-stone_slab ---->> cobblestone_slabe
-stone_stairs -->> cobblestone_stairs
-deepslate ----->> cobbled_deepslate
+bookshelf ---------------->>  stick [6]
+glass(stained) ----------->>  glass_pane(stained) [3]
+dripstone_block ---------->>  pointed_dripstone
+stone -------------------->>  stone_button
+blackstone --------------->>  polished_blackstone_button <<-- polished_blackstone
+amethyst_block ----------->>  amethyst_shard
+amethyst_cluster --------->>  amethyst_shard [3]
+blue_ice ----------------->>  packed_ice --->> ice
+quartz_block ------------->>  quartz
+nether_brick_slab -------->>  nether_brick [2] <<-- nether_brick_stairs
+nether_bricks ------------>>  nether_brick [4]
+brick_slab --------------->>  brick [2] <--- brick_stairs
+bricks ------------------->>  brick [4]
+iron_block --------------->>  iron_ingot [9]
+gold_block --------------->>  gold_ingot [9]
+netherite_block ---------->>  netherite_ingot [9]
+diamond_block ------------>>  diamond [9]
+emerald_block ------------>>  emerald [9]
+lapis_block -------------->>  lapis_lazuli [9]
+prismarine_brick_slab ---->>  prismarine_slab
+prismarine_brick_stairs -->>  prismarine_stairs
+prismarine_bricks -------->>  prismarine -->> prismarine_shard <<-- sea_lantern
+stone -------------------->>  cobblestone
+stone_slab --------------->>  cobblestone_slabe
+stone_stairs ------------->>  cobblestone_stairs
+deepslate ---------------->>  cobbled_deepslate
 
 (copper blocks)
 (first) waxed ------>>  unwaxed
@@ -408,13 +418,14 @@ trapped_chest ----->> stick [8] <<-- note_block
 (夸克) 木(陷阱)箱 --------->>  木棍 [8]
 (夸克) 树篱 -------------->>  木棍 [1]
 
-(夸克) 陶瓦片(彩色) <====> 陶瓦(彩色)
-(夸克) 竖直木板 <========> 木板
-(夸克) 岩浆砖 <==========> 岩浆块
-(夸克) 竖直木台阶 <======> 木台阶
-(夸克) 磨制花岗岩砖墙 <===> 花岗岩墙
-(夸克) 磨制闪长岩砖墙 <===> 闪长岩墙
-(夸克) 磨制安山岩砖墙 <===> 安山岩墙
+(夸克) 陶瓦片(彩色) <====>  陶瓦(彩色)
+(夸克) 竖直木板 <========>  木板
+(夸克) 岩浆砖 <==========>  岩浆块
+(夸克) 竖直木台阶 <======>  木台阶
+(夸克) 磨制花岗岩砖墙 <===>  花岗岩墙
+(夸克) 磨制闪长岩砖墙 <===>  闪长岩墙
+(夸克) 磨制安山岩砖墙 <===>  安山岩墙
+(秋原) 大型南瓜块 <======>  南瓜
 
 ------------------------------------------------------------------
 
@@ -452,13 +463,14 @@ refined_radiance_casing
 (Quark) wooden_(trapped_)chest ---->>  stick [8]
 (Quark) hedge --------------------->>  stick [1]
 
-(Quark) shingles(colored) <=====> terracotta(colored)
-(Quark) vertical_planks <=======> planks
-(Quark) magma_bricks <==========> magma_block
-(Quark) wooden_vertical_slab <==> wooden_slab
-(Quark) granite_bricks_wall <===> granite_wall
-(Quark) diorite_bricks_wall <===> diorite_wall
-(Quark) andesite_bricks_wall <==> andesite_wall
+(Quark) shingles(colored) <========>  terracotta(colored)
+(Quark) vertical_planks <==========>  planks
+(Quark) magma_bricks <=============>  magma_block
+(Quark) wooden_vertical_slab <=====>  wooden_slab
+(Quark) granite_bricks_wall <======>  granite_wall
+(Quark) diorite_bricks_wall <======>  diorite_wall
+(Quark) andesite_bricks_wall <=====>  andesite_wall
+(Autumnity) large_pumpkin_slice <==>  pumpkin
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="tconstruct">匠魂支持 Tinkers' Construct Support</h3>
@@ -479,7 +491,7 @@ clear_glass ---------->>  clear_glass_pane [3]
 soul_glass ----------->>  soul_glass_pane [3]
 clear_stained_glass -->>  clear_stained_glass_pane [3]
 
-(block -->> ingot [9] -->> nugget [9])
+(block -->> ingot [9])
 copper              cobalt
 slimesteet          tinkers_bronze
 rose_gold           pig_iron
@@ -490,22 +502,26 @@ hepatizon
 <h4 id="Tinkers-Smeltery">Tinkers' Smeltery</h4>
 
 ```
-seared_stone <=====> seared_bricks <=======> 
-    seared_fancy_bricks <==> seared_triangle_bricks
-seared_bricks_stairs <===> seared_stone_stairs
-seared_bricks_slab <====> seared_stone_slab
+seared_stone <=============>  seared_bricks <=======> 
+    seared_fancy_bricks <==>  seared_triangle_bricks
+seared_bricks_stairs <=====>  seared_stone_stairs
+seared_bricks_slab <=======>  seared_stone_slab
 
 seared_bricks ----------->>  seared_brick [4]
 seared_bricks_stairs ---->>  seared_brick [2] <<-- seared_bricks_slab
 seared_glass ------------>>  seared_glass_pane [3]
 seared_stone ------------>>  seared_cobble
+seared_paver_slab ------->>  seared_bricks_slab
+seared_paver_stairs ----->>  seared_bricks_stairs
+seared_triangle_bricks <<---- seared_paver -->> seared_bricks
+seared_stone <<-------------- seared_paver -->> seared_fancy_bricks
 
-scorched_bricks <==> chiseled_scorched_bricks <==>
-    polished_scorched_stone <==> scorched_stone <==> scorched_road
-scorched_bricks_slab <==> scorched_road_slab
-scorched_bricks_stairs <==> scorched_road_stairs
+scorched_bricks <=====>  chiseled_scorched_bricks <====>
+    scorched_stone <==>  polished_scorched_stone
 
-scorched_bricks --------->>  scorched_bricks_fence
+scorched_road_slab ------>>  scorched_bricks_slab
+scorched_road_stairs ---->>  scorched_bricks_stairs
+scorched_road ----------->>  scorched_stone
 scorched_bricks --------->>  scorched_brick [4]
 scorched_bricks_stairs -->>  scorched_brick [2] <<-- scorched_bricks_slab
 scorched_glass ---------->>  scorched_glass_pane [3]
@@ -515,18 +531,16 @@ scorched_glass ---------->>  scorched_glass_pane [3]
 
 ```
 (◻ = 铜) (forge ----->> ◻)
-◻锭    ◻粒    ◻矿石    ◻块
+◻锭    ◻矿石    ◻块
 
-(原版) 下界合金锭 ----->>  netherite_nugget
 (原版) 黑曜石 -------->>  obsidian_pane
 (超多生物群系) 泥巴 <===>  mud_bricks
 
 ------------------------------------------------------------------
 
 (◻ = copper) (forge ----->> ◻)
-◻_ingot    ◻_nugget    ◻_ore    ◻_block
+◻_ingot    ◻_ore    ◻_block
 
-(Vanilla) netherite_ingot -->>  netherite_nugget
 (Vanilla) obsidian --------->>  obsidian_pane
 (Biomes O' Plenty) mud <=====>  mud_bricks
 ```
@@ -571,27 +585,27 @@ window ---------->>  window_pane [3]
 <h4 id="Create-items">机械动力 Create</h4>
 
 ```
-(块 -->> 锭 [9] -->> 粒 [9])
+(块 -->> 锭 [9])
 铜     锌     黄铜
 
 ------------------------------------------------------------------
 
-(block -->> ingot [9] -->> nugget [9])
+(block -->> ingot [9])
 copper         zinc        brass
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-create">模组兼容 Mod Compatibility</h4>
 
 ```
-(◻ = 铜) (forge ----->> ◻)
-◻锭    ◻粒    ◻矿石    ◻块
+(◻ = 铜 / 锌) (forge ----->> ◻)
+◻锭    ◻矿石    ◻块
 
 (原版) (◻ = (磨制)花岗岩 / (磨制)闪长岩 / (磨制)安山岩)
 ◻砖楼梯
-方纹◻砖楼梯    ◻铺路石楼梯
-◻砖台阶       方纹◻砖台阶
-◻铺路石台阶    ◻砖墙
-方纹◻砖墙      ◻铺路石墙
+方纹◻砖楼梯      ◻铺路石楼梯
+◻砖台阶         方纹◻砖台阶
+◻铺路石台阶      ◻砖墙
+方纹◻砖墙        ◻铺路石墙
 
 (原版) (◻ = 花岗岩 / 闪长岩 / 安山岩)
 ◻台阶 ------>>  ◻圆石台阶
@@ -600,8 +614,8 @@ copper         zinc        brass
 
 ------------------------------------------------------------------
 
-(◻ = copper) (forge ----->> ◻)
-◻_ingot    ◻_nugget    ◻_ore    ◻_block
+(◻ = copper / zinc) (forge ----->> ◻)
+◻_ingot    ◻_ore    ◻_block
 
 (Vanilla) (◻ = (polished)granite / (polished)diorite / (polished)andesite)
 ◻_bricks_stairs
@@ -631,8 +645,8 @@ fancy_◻_bricks_wall        paved_◻_wall
 娜迦石楼梯（左） <========>  娜迦石楼梯（右）
 风化的娜迦石楼梯（左） <===>  风化的娜迦石楼梯（右）
 娜迦苔石楼梯（左） <======>  娜迦苔石楼梯（右）
-迷宫石头 <==> 迷宫石砖 <==>  装饰迷宫石砖
-    <==> 錾制迷宫石头 <==>  迷宫石沿 <==> 迷宫镶石
+迷宫石头 <==> 迷宫石砖 <==>  装饰迷宫石砖 <=======>
+    錾制迷宫石头 <=======>  迷宫石沿 <==> 迷宫镶石
 
 ------------------------------------------------------------------
 
@@ -703,12 +717,14 @@ nether_crystal_block -->>  nether_crystal
 
 ```
 水藻团台阶 [2] <<-- 水藻团 -->> 水藻团楼梯
-须松罗块 -->> 须松罗
+须松罗块 -->>  须松罗
+丝柏木 ---->>  丝柏树枝
 
 ------------------------------------------------------------------
 
 algae_thatch_slab [2] <<-- algae_thatch -->> algae_thatch_stairs
-beard_moss_block -->> beard_moss
+beard_moss_block -->>  beard_moss
+cypress_wood ------>>  cypress_branch
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h4 id="Mod-Compatibility-bayou_blues">模组兼容 Mod Compatibility</h4>
@@ -751,7 +767,11 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 <h4 id="Mod-Compatibility-autumnity">模组兼容 Mod Compatibility</h4>
 
 ```
+(原版) 南瓜 <======>  大型南瓜块
 
+------------------------------------------------------------------
+
+(Vanilla) pumpkin <==>  large_pumpkin_slice
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="quark">夸克支持 Quark Support</h3>
@@ -860,17 +880,20 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 
 ------------------------------------------------------------------
 
-(Vanilla) wood(hyphae) ---->> wood_post [3]
-(Vanilla) planks <==> vertical_planks
-(Vanilla) magma_block <==> magma_bricks
-(Vanilla) wooden_slab <==> wooden_vertical_slab
-(Vanilla) granite_wall <==> granite_bricks_wall
-(Vanilla) diorite_wall <==> diorite_bricks_wall
-(Vanilla) andesite_wall <==> andesite_bricks_wall
+(Vanilla) wood(hyphae) ---->>  wood_post [3]
+(Vanilla) planks <==========>  vertical_planks
+(Vanilla) magma_block <=====>  magma_bricks
+(Vanilla) wooden_slab <=====>  wooden_vertical_slab
+(Vanilla) granite_wall <====>  granite_bricks_wall
+(Vanilla) diorite_wall <====>  diorite_bricks_wall
+(Vanilla) andesite_wall <===>  andesite_bricks_wall
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
+- 调整 support-autumnity 文件夹结构，增加 tree 文件
+- 添加兼容性配方 autumnity:large_pumpkin_slice <==> minecraft:pumpkin
+- 将数据包支持的游戏版本提升至1.18.1
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

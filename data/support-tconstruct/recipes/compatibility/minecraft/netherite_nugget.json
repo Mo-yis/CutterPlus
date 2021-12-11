@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:netherite_ingot"
-    },
-    "result": "tconstruct:netherite_nugget",
-    "count": 9
-}

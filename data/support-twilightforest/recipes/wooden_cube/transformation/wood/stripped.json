@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "twilightforest:stripped_transformation_log"
+    },{
+        "item": "twilightforest:transformation_wood"
+    }],
+    "result": "twilightforest:stripped_transformation_wood",
+    "count": 1
+}

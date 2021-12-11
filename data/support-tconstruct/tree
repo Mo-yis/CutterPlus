@@ -1,0 +1,141 @@
+.
+├── functions
+│   └── info.mcfunction
+├── recipes
+│   ├── button
+│   │   ├── bloodshroom.json
+│   │   ├── greanheart.json
+│   │   └── skyroot.json
+│   ├── compatibility
+│   │   ├── biomesoplenty
+│   │   │   └── mud_bricks.json
+│   │   ├── forge
+│   │   │   ├── ingot
+│   │   │   │   └── copper.json
+│   │   │   ├── ore
+│   │   │   │   └── copper.json
+│   │   │   └── storage_block
+│   │   │       └── copper.json
+│   │   └── minecraft
+│   │       └── obsidian_pane.json
+│   ├── fence
+│   │   ├── bloodshroom.json
+│   │   ├── greenheart.json
+│   │   ├── nahuatl.json
+│   │   └── skyroot.json
+│   ├── glass_pane
+│   │   ├── clear.json
+│   │   ├── clear_stained
+│   │   │   ├── black.json
+│   │   │   ├── blue.json
+│   │   │   ├── brown.json
+│   │   │   ├── cyan.json
+│   │   │   ├── gray.json
+│   │   │   ├── green.json
+│   │   │   ├── light_blue.json
+│   │   │   ├── light_gray.json
+│   │   │   ├── lime.json
+│   │   │   ├── magenta.json
+│   │   │   ├── orange.json
+│   │   │   ├── pink.json
+│   │   │   ├── purple.json
+│   │   │   ├── red.json
+│   │   │   ├── white.json
+│   │   │   └── yellow.json
+│   │   ├── scorched.json
+│   │   ├── seared.json
+│   │   └── soul.json
+│   ├── item
+│   │   ├── brick
+│   │   │   ├── scorched
+│   │   │   │   ├── count_2.json
+│   │   │   │   └── count_4.json
+│   │   │   └── seared
+│   │   │       ├── count_2.json
+│   │   │       └── count_4.json
+│   │   └── ingot
+│   │       ├── cobalt.json
+│   │       ├── copper.json
+│   │       ├── hepatizon.json
+│   │       ├── manyullyn.json
+│   │       ├── pig_iron.json
+│   │       ├── queens_slime.json
+│   │       ├── rose_gold.json
+│   │       ├── slimesteel.json
+│   │       └── tinkers_bronze.json
+│   ├── slab
+│   │   ├── blazewood
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── lavawood
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── mud_bricks
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── nahuatl
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── scorched
+│   │   │   ├── scorched_bricks.json
+│   │   │   └── scorched_road.json
+│   │   ├── seared
+│   │   │   ├── bricks.json
+│   │   │   ├── cobble.json
+│   │   │   ├── paver.json
+│   │   │   └── stone.json
+│   │   └── wooden
+│   │       ├── count_1
+│   │       │   ├── bloodshroom.json
+│   │       │   ├── greenheart.json
+│   │       │   └── skyroot.json
+│   │       └── count_2
+│   │           ├── bloodshroom.json
+│   │           ├── greenheart.json
+│   │           └── skyroot.json
+│   ├── stairs
+│   │   ├── blazewood.json
+│   │   ├── lavawood.json
+│   │   ├── mud_bricks.json
+│   │   ├── nahuatl.json
+│   │   ├── scorched_bricks.json
+│   │   ├── seared
+│   │   │   ├── bricks.json
+│   │   │   └── stone.json
+│   │   └── wooden
+│   │       ├── bloodshroom.json
+│   │       ├── greenheart.json
+│   │       └── skyroot.json
+│   ├── stony_cube
+│   │   ├── scorched_stone.json
+│   │   ├── seared_bricks.json
+│   │   ├── seared_cobble.json
+│   │   ├── seared_fancy_bricks.json
+│   │   ├── seared_stone.json
+│   │   └── seared_triangle_bricks.json
+│   └── wooden_cube
+│       ├── bloodshroom
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       ├── greenheart
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       └── skyroot
+│           ├── planks.json
+│           ├── stripped_log.json
+│           └── wood
+│               ├── stripped.json
+│               └── this.json
+├── tags
+│   └── items
+│       ├── wooden_fence_gates.json
+│       └── wooden_signs.json
+└── tree
+
+41 directories, 97 files

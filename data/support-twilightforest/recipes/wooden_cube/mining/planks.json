@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-twilightforest:logs/mining"
+    },
+    "result": "twilightforest:mine_planks",
+    "count": 4
+}

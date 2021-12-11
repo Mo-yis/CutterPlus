@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "twilightforest:mangrove_wood"
-    },
-    "result": "twilightforest:mangrove_planks",
-    "count": 4
-}

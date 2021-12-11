@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "twilightforest:canopy_wood",
+        "twilightforest:stripped_canopy_log",
+        "twilightforest:stripped_canopy_wood",
+        "twilightforest:canopy_log"
+    ]
+}

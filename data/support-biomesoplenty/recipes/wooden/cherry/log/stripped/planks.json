@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "biomesoplenty:stripped_cherry_log"
-    },
-    "result": "biomesoplenty:cherry_planks",
-    "count": 4
-}

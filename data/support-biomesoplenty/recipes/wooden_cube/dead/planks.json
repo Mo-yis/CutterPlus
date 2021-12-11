@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "biomesoplenty:dead_logs"
+    },
+    "result": "biomesoplenty:dead_planks",
+    "count": 4
+}

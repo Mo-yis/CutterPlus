@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "biomesoplenty:redwood_logs"
+    },
+    "result": "biomesoplenty:redwood_planks",
+    "count": 4
+}

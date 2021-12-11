@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-twilightforest:logs/sorting"
+    },
+    "result": "twilightforest:sort_planks",
+    "count": 4
+}

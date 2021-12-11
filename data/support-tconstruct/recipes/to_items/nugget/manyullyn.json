@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "tconstruct:manyullyn_ingot"
-    },
-    "result": "tconstruct:manyullyn_nugget",
-    "count": 9
-}

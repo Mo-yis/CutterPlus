@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "tconstruct:bloodshroom_log"
-    },
-    "result": "tconstruct:bloodshroom_planks",
-    "count": 4
-}

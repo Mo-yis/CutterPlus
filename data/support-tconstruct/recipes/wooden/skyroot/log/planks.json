@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "tconstruct:skyroot_log"
-    },
-    "result": "tconstruct:skyroot_planks",
-    "count": 4
-}

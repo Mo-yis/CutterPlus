@@ -1,0 +1,46 @@
+.
+├── functions
+│   └── info.mcfunction
+├── recipes
+│   ├── button
+│   │   └── maple.json
+│   ├── compatibility
+│   │   └── minecraft
+│   │       └── pumpkin.json
+│   ├── fence
+│   │   └── maple.json
+│   ├── item
+│   │   └── snail_shell_piece.json
+│   ├── slab
+│   │   ├── snail_shell
+│   │   │   ├── brick.json
+│   │   │   └── tile.json
+│   │   └── wooden
+│   │       ├── maple_1.json
+│   │       └── maple_2.json
+│   ├── stairs
+│   │   ├── snail_shell
+│   │   │   ├── brick.json
+│   │   │   └── tile.json
+│   │   └── wooden
+│   │       └── maple.json
+│   ├── stony_cube
+│   │   └── snail_shell
+│   │       ├── bricks.json
+│   │       ├── chiseled_bricks.json
+│   │       └── tiles.json
+│   ├── wall
+│   │   └── snail_shell
+│   │       ├── brick.json
+│   │       └── tile.json
+│   └── wooden_cube
+│       ├── maple
+│       │   ├── planks.json
+│       │   ├── stripped_log.json
+│       │   └── wood
+│       │       ├── stripped.json
+│       │       └── this.json
+│       └── sappy_maple_wood.json
+└── tree
+
+20 directories, 23 files
