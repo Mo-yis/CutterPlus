@@ -1,7 +1,7 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 版本 Version: 3.0.10
-- 支持版本 Supported version: 1.14.4 ~ 1.18
+- 版本 Version: 3.0.11
+- 支持版本 Supported version: 1.14.4 ~ 1.18.1
 - Github: https://github.com/Mo-yis/CutterPlus
 - Gitee: https://gitee.com/Mo-yis/CutterPlus
 
@@ -418,13 +418,14 @@ trapped_chest ----->> stick [8] <<-- note_block
 (夸克) 木(陷阱)箱 --------->>  木棍 [8]
 (夸克) 树篱 -------------->>  木棍 [1]
 
-(夸克) 陶瓦片(彩色) <====> 陶瓦(彩色)
-(夸克) 竖直木板 <========> 木板
-(夸克) 岩浆砖 <==========> 岩浆块
-(夸克) 竖直木台阶 <======> 木台阶
-(夸克) 磨制花岗岩砖墙 <===> 花岗岩墙
-(夸克) 磨制闪长岩砖墙 <===> 闪长岩墙
-(夸克) 磨制安山岩砖墙 <===> 安山岩墙
+(夸克) 陶瓦片(彩色) <====>  陶瓦(彩色)
+(夸克) 竖直木板 <========>  木板
+(夸克) 岩浆砖 <==========>  岩浆块
+(夸克) 竖直木台阶 <======>  木台阶
+(夸克) 磨制花岗岩砖墙 <===>  花岗岩墙
+(夸克) 磨制闪长岩砖墙 <===>  闪长岩墙
+(夸克) 磨制安山岩砖墙 <===>  安山岩墙
+(秋原) 大型南瓜块 <======>  南瓜
 
 ------------------------------------------------------------------
 
@@ -462,13 +463,14 @@ refined_radiance_casing
 (Quark) wooden_(trapped_)chest ---->>  stick [8]
 (Quark) hedge --------------------->>  stick [1]
 
-(Quark) shingles(colored) <=====> terracotta(colored)
-(Quark) vertical_planks <=======> planks
-(Quark) magma_bricks <==========> magma_block
-(Quark) wooden_vertical_slab <==> wooden_slab
-(Quark) granite_bricks_wall <===> granite_wall
-(Quark) diorite_bricks_wall <===> diorite_wall
-(Quark) andesite_bricks_wall <==> andesite_wall
+(Quark) shingles(colored) <========>  terracotta(colored)
+(Quark) vertical_planks <==========>  planks
+(Quark) magma_bricks <=============>  magma_block
+(Quark) wooden_vertical_slab <=====>  wooden_slab
+(Quark) granite_bricks_wall <======>  granite_wall
+(Quark) diorite_bricks_wall <======>  diorite_wall
+(Quark) andesite_bricks_wall <=====>  andesite_wall
+(Autumnity) large_pumpkin_slice <==>  pumpkin
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="tconstruct">匠魂支持 Tinkers' Construct Support</h3>
@@ -765,7 +767,11 @@ snail_shell_brick_wall <==> snail_shell_tile_wall
 <h4 id="Mod-Compatibility-autumnity">模组兼容 Mod Compatibility</h4>
 
 ```
+(原版) 南瓜 <======>  大型南瓜块
 
+------------------------------------------------------------------
+
+(Vanilla) pumpkin <==>  large_pumpkin_slice
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h3 id="quark">夸克支持 Quark Support</h3>
@@ -874,19 +880,20 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 
 ------------------------------------------------------------------
 
-(Vanilla) wood(hyphae) ---->> wood_post [3]
-(Vanilla) planks <==> vertical_planks
-(Vanilla) magma_block <==> magma_bricks
-(Vanilla) wooden_slab <==> wooden_vertical_slab
-(Vanilla) granite_wall <==> granite_bricks_wall
-(Vanilla) diorite_wall <==> diorite_bricks_wall
-(Vanilla) andesite_wall <==> andesite_bricks_wall
+(Vanilla) wood(hyphae) ---->>  wood_post [3]
+(Vanilla) planks <==========>  vertical_planks
+(Vanilla) magma_block <=====>  magma_bricks
+(Vanilla) wooden_slab <=====>  wooden_vertical_slab
+(Vanilla) granite_wall <====>  granite_bricks_wall
+(Vanilla) diorite_wall <====>  diorite_bricks_wall
+(Vanilla) andesite_wall <===>  andesite_bricks_wall
 ```
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Update">更新内容 Update</h2>
 
-- 调整 support-bayou_blues 文件夹结构，增加 tree 文件
-- 添加 bayou_blues: cypress_wood -->>  cypress_branch
+- 调整 support-autumnity 文件夹结构，增加 tree 文件
+- 添加兼容性配方 autumnity:large_pumpkin_slice <==> minecraft:pumpkin
+- 将数据包支持的游戏版本提升至1.18.1
 - 更新 README
 
 <h2 id="Update-Plan">计划更新 Update Plan</h2>

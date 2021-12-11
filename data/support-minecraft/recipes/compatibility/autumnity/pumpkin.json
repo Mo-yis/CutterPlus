@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": [{
+        "item": "autumnity:large_pumpkin_slice"
+    }],
+    "result": "minecraft:pumpkin",
+    "count": 1
+}

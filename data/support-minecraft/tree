@@ -17,6 +17,7 @@
 │   │       └── warped.json
 │   ├── compatibility
 │   │   ├── autumnity
+│   │   │   ├── pumpkin.json
 │   │   │   └── stick_4.json
 │   │   ├── bayou_blues
 │   │   │   ├── stick_1.json
@@ -397,4 +398,4 @@
 │       └── wooden_signs.json
 └── tree
 
-90 directories, 307 files
+90 directories, 308 files
