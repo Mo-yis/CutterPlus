@@ -1,9 +1,8 @@
 <h1>切石机增强 Cutter Plus</h1>
 
-- 版本 Version: 3.0.11
+- 数据包版本 Datapack Version: v3.0.12
 - 支持版本 Supported version: 1.14.4 ~ 1.18.1
 - Github: https://github.com/Mo-yis/CutterPlus
-- Gitee: https://gitee.com/Mo-yis/CutterPlus
 
 <h2 id="Contents">目录 Contents</h2>
 <ol>
@@ -76,7 +75,6 @@
             </li>
         </ol>
     </li>
-    <li><a href="#Update">更新内容 Update</a></li>
     <li><a href="#Update-Plan">计划更新 Update Plan</a></li>
     <li><a href="#Usage">使用方式 Usage</a></li>
     <li><a href="#Warming">注意 Warming</a></li>
@@ -888,14 +886,6 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 (Vanilla) diorite_wall <====>  diorite_bricks_wall
 (Vanilla) andesite_wall <===>  andesite_bricks_wall
 ```
-<a href="#Contents">回到目录 Back to contents</a>
-<h2 id="Update">更新内容 Update</h2>
-
-- 调整 support-autumnity 文件夹结构，增加 tree 文件
-- 添加兼容性配方 autumnity:large_pumpkin_slice <==> minecraft:pumpkin
-- 将数据包支持的游戏版本提升至1.18.1
-- 更新 README
-
 <h2 id="Update-Plan">计划更新 Update Plan</h2>
 
 - 更新模组内容支持
@@ -907,11 +897,7 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <h2 id="Usage">使用方式 Usage</h2>
 
 - Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**"。
-- Gitee: 右上角点击**橙色**的 "**克隆/下载**" 再点击 "**下载ZIP**"。
-
-<br>
-
-- 如果你打算将数据包放入存档中，请解压在 ".minecraft\\saves\\(存档名称)\\datapacks\\" 目录下。
+- 如果你打算将数据包放入存档中，请解压在 ".minecraft \\ saves \\ (存档名称) \\ datapacks \\ " 目录下。
 - 如果你正准备新建世界，请将解压出的文件夹添加到游戏中。
 - 如果你打算加载到已经启动的游戏或服务器中，请在后台或以3级操作员身份键入 "/reload" 以加载数据包。
 - 相关疑问请查询 Minecraft Wiki。
@@ -919,27 +905,25 @@ cobbled_deepslate_wall <==> deepslate_tile_wall
 <br>
 
 - Github: Click the **green** "**Code**" in the upper right corner and then click "**Download ZIP**".
-- If you plan to put the datapack into the archive, please unzip it in the ".minecraft\\saves\\(save name)\\datapacks\\" directory.
+- If you want to put the datapack into the archive, please unzip it in the ".minecraft \\ saves \\ (save name) \\ datapacks \\ " directory.
 - If you are preparing to create a new world, please add the extracted folder to the game.
-- If you plan to load into a game or server that has already started, please type "/reload" from the console or as a level 3 operator.
+- If you want to load into a game or server that has already started, please type "/reload" from the console or as a level 3 operator.
 - For questions, please check the Minecraft Wiki.
 
 <a href="#Contents">回到目录 Back to contents</a>
 <h2 id="Warming">注意 Warming</h2>
 
-- 与模组不同，数据包仅对单个世界有效。
+- 与模组不同，数据包仅对单个世界有效。但是有些 MOD 可以实现在多个世界中共享数据包。
 - 数据包兼容一定范围内的版本，但是不会针对旧版本进行维护。
 - 请勿添加功能类似或相同的数据包。
-- 合成配方可以通过JSON文件修改，但不推荐这么做。
 - 当数据包成功加载时，游戏中会提示 "[ 数据包名称 ] Loading Successful !"。
 - 版本低于1.15.2无法显示提示信息，请以管理员身份键入命令 "/datapack list" 查看数据包信息。
 
 <br>
 
-- Unlike Mod, datapack are only valid for a single world.
+- Unlike Mod, datapack are only valid for a single world. However, some mods can share datapacket in multiple worlds.
 - Datapack is compatible with a certain range of versions, but it will not be maintained for the old version.
 - Do not add datapack with similar or identical functions.
-- Synthetic recipes can be modified through JSON files, but this is not recommended.
 - When the datapack is successfully loaded, the game will prompt "[ datapack name ] Loading Successful !".
 - The prompt message cannot be displayed in versions lower than "1.15.2". Please type the command "/datapack list" as an administrator to view the datapack information.
 - Extremely sorry for my bad English.
