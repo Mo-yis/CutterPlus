@@ -1,8 +1,10 @@
 # 切石机增强 Cutter Plus
 
 <div align=right>
-    <a src=README.md>简体中文</a> | <a src=README.cht.md>繁體中文</a> | <a src=README.en.md>English</a>
+    <a src=./README.md>简体中文</a> | <a src=./README.cht.md>繁體中文</a> | <a src=./README.en.md>English</a>
 </div>
+
+
 
 ![icon](pack.png)
 
