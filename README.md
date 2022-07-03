@@ -1,10 +1,6 @@
 # 切石机增强 Cutter Plus
 
-<div align=right>
-    <a src=./README.md>简体中文</a> | <a src=./README.cht.md>繁體中文</a> | <a src=./README.en.md>English</a>
-</div>
-
-
+[简体中文](README.md) | [繁體中文](README.cht.md) | [English](README.en.md)
 
 ![icon](pack.png)
 
@@ -33,7 +29,7 @@
 ## 特性
 
 - 要经过烧炼才能获得的方块无法从切石机获得，如平滑石头。
-- 切石机只能加工固态物品和没有NBT标签的物品（从设计的角度上来看）。
+- 切石机只能加工固态物品和没有 NBT 标签的物品（从设计的角度上来看）。
 - 同一类的方块（材质不同）之间可以相互转化（方块，楼梯，台阶，墙）。
 - 苔石和苔石砖是由圆石和石砖加工而来，故不能相互转化。其他情况类似。
 - 楼梯可以加工成对应的台阶。

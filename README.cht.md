@@ -1,8 +1,6 @@
 # 切石機增强
 
-<div align=right>
-    <a src=README.md>简体中文</a> | <a src=README.cht.md>繁體中文</a> | <a src=README.en.md>English</a>
-</div>
+[简体中文](README.md) | [繁體中文](README.cht.md) | [English](README.en.md)
 
 > NOTICE
 >> This language file is translated by [fanyi.baidu.com](https://fanyi.baidu.com). If you want to improve the translated content, please create a pull request.
@@ -34,7 +32,7 @@
 ## 特性
 
 - 要經過燒煉才能獲得的方塊無法從切石機獲得，如平滑石頭。
-- 切石機只能加工固態物品和沒有NBT標籤的物品（從設計的角度上來看）。
+- 切石機只能加工固態物品和沒有 NBT 標籤的物品（從設計的角度上來看）。
 - 同一類的方塊（材質不同）之間可以相互轉化（方塊，樓梯，臺階，牆）。
 - 苔石和苔石磚是由圓石和石磚加工而來，故不能相互轉化。 其他情况類似。
 - 樓梯可以加工成對應的臺階。

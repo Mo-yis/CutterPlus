@@ -1,8 +1,6 @@
 # Cutter Plus
 
-<div align=right>
-    <a src=README.md>简体中文</a> | <a src=README.cht.md>繁體中文</a> | <a src=README.en.md>English</a>
-</div>
+[简体中文](README.md) | [繁體中文](README.cht.md) | [English](README.en.md)
 
 > NOTICE
 >> This language file is translated by [fanyi.baidu.com](https://fanyi.baidu.com). If you want to improve the translated content, please create a pull request.
