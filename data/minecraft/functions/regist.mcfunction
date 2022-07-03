@@ -1,8 +1,8 @@
-# Loading the infomation.
+# Loading infomation.
 tellraw @a {"text": "---------------------------------"}
-tellraw @a {"text": "Loading Cutter Plus 3.0.13 !","color": "green"}
+tellraw @a {"text": "Loading Cutter Plus 3.0.14 !","color": "green"}
 
-# The registration infomation.
+# Registration infomation.
 function support-minecraft:info
 function support-tconstruct:info
 function support-create:info
