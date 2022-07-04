@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:brimstone_bricks_wall"
+    },
+    "result": "quark:brimstone_wall",
+    "count": 1
+}

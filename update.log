@@ -1,3 +1,18 @@
+### [2022-06-04 : v3.1.0]
+- 调整 support-quark 文件夹结构
+- 调整 support-quark 的部分配方:
+    - [+] dirt_bricks -> dirt_bricks_wall
+    - [+] vanilla_basalt_bricks_stairs -> vanilla_basalt_bricks_vertical_slab <- vanilla_basalt_bricks_slab
+    - [+] iron_plate -> iron_plate_slab [2]
+    - [+] iron_plate -> iron_plate_vertical_slab [2]
+    - [+] rusty_iron_plate -> rusty_iron_plate_slab [2]
+    - [+] rusty_iron_plate -> rusty_iron_plate_vertical_slab [2]
+    - [-] iron_plate_stairs -> rusty_iron_plate_stairs
+    - [+] sandy_bricks -> sandy_bricks_wall
+    - [+] snow_bricks -> snow_bricks_wall
+    - [+] brimstone_wall <=> brimstone_bricks_wall
+- 更新 README
+
 ### [2022-06-03 : v3.0.15]
 - 修复语言切换链接
 

@@ -3,7 +3,7 @@
 [简体中文](README.md) | [繁體中文](README.cht.md) | [English](README.en.md)
 
 > NOTICE
->> This language file is translated by [fanyi.baidu.com](https://fanyi.baidu.com). If you want to improve the translated content, please create a pull request.
+>> This language file is translated from [简体中文](README.md). If you want to improve the translated content, please create a pull request.
 
 ![icon](pack.png)
 
