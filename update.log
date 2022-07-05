@@ -1,3 +1,23 @@
+### [2022-06-05 : v3.1.2]
+- 调整 support-quark 文件夹结构
+- 添加 support-quark tag:
+    - stony_block/quark_andesite
+    - stony_block/quark_diorite
+    - stony_block/quark_granite
+- 调整 support-quark 的部分配方:
+    - [+] (minecraft) tag:logs&stems -> vertical_planks [4]
+    - > [+] ◻_bricks <=> chiseled_◻_bricks <=> ◻_pavement <=> ◻_pillar
+      >> ◻ = granite | diorite | andesite
+    - > * [+] (minecraft) polished_◻ -> chiseled_◻_bricks
+      > * [+] (minecraft) polished_◻ -> ◻_pavement
+      > * [+] (minecraft) polished_◻ -> ◻_pillar
+      >> ◻ = granite | diorite | andesite
+- 调整 support-minecraft 的部分配方:
+    - [+] (quark) sturdy_stone -> cobblestone
+    - > * [+] (quark) tag:stony_block/quark_◻ -> ◻
+      > * [+] (quark) tag:stony_block/quark_◻ -> polished_◻
+      >> ◻ = granite | diorite | andesite
+
 ### [2022-06-05 : v3.1.1]
 - 调整 support-quark 的部分配方:
     - [+] granite_bricks_stairs -> granite_bricks_slab <- granite_bricks_vertical_slab

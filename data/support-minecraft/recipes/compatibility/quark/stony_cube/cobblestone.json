@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:sturdy_stone"
+    },
+    "result": "minecraft:cobblestone",
+    "count": 1
+}

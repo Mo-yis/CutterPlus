@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "quark:diorite_bricks",
+        "quark:chiseled_diorite_bricks",
+        "quark:diorite_pavement",
+        "quark:diorite_pillar"
+    ]
+}
