@@ -1,20 +1,24 @@
+### [2022-06-06 : v4.0.1]
+- 修改单词通配符为 □
+- 更新 README
+
 ### [2022-06-06 : v4.0.0]
 - 调整 support-quark 和 support-minecraft 的文件夹结构与文件命名
 - 调整 support-quark 的部分配方:
-    - > * [+] (minecraft) polished_◻_stairs -> ◻_bricks_stairs
-      > * [+] (minecraft) ◻_stairs -> ◻_bricks_stairs
-      >> ◻ = granite | diorite | andesite
-    - > * [+] (minecraft) polished_◻_slab -> ◻_bricks_slab
-      > * [+] (minecraft) ◻_slab -> ◻_bricks_slab
-      >> ◻ = granite | diorite | andesite
+    - > * [+] (minecraft) polished_□_stairs -> □_bricks_stairs
+      > * [+] (minecraft) □_stairs -> □_bricks_stairs
+      >> □ = granite | diorite | andesite
+    - > * [+] (minecraft) polished_□_slab -> □_bricks_slab
+      > * [+] (minecraft) □_slab -> □_bricks_slab
+      >> □ = granite | diorite | andesite
     - [+] dirty_glass -> dirty_glass_pane
 - 调整 support-minecraft 的部分配方:
-    - > * [+] (quark) ◻_bricks_stairs -> polished_◻_stairs
-      > * [+] (quark) ◻_bricks_stairs -> ◻_stairs
-      >> ◻ = granite | diorite | andesite
-    - > * [+] (quark) ◻_bricks_slab -> polished_◻_slab
-      > * [+] (quark) ◻_bricks_slab -> ◻_slab
-      >> ◻ = granite | diorite | andesite
+    - > * [+] (quark) □_bricks_stairs -> polished_□_stairs
+      > * [+] (quark) □_bricks_stairs -> □_stairs
+      >> □ = granite | diorite | andesite
+    - > * [+] (quark) □_bricks_slab -> polished_□_slab
+      > * [+] (quark) □_bricks_slab -> □_slab
+      >> □ = granite | diorite | andesite
 - 为 support-quark 添加 tree 文件
 - 更新 support-minecraft 的 tree 文件
 - 提升数据包等级至 9
@@ -28,17 +32,17 @@
     - stony_block/quark_granite
 - 调整 support-quark 的部分配方:
     - [+] (minecraft) tag:logs&stems -> vertical_planks [4]
-    - > [+] ◻_bricks <=> chiseled_◻_bricks <=> ◻_pavement <=> ◻_pillar
-      >> ◻ = granite | diorite | andesite
-    - > * [+] (minecraft) polished_◻ -> chiseled_◻_bricks
-      > * [+] (minecraft) polished_◻ -> ◻_pavement
-      > * [+] (minecraft) polished_◻ -> ◻_pillar
-      >> ◻ = granite | diorite | andesite
+    - > [+] □_bricks <=> chiseled_□_bricks <=> □_pavement <=> □_pillar
+      >> □ = granite | diorite | andesite
+    - > * [+] (minecraft) polished_□ -> chiseled_□_bricks
+      > * [+] (minecraft) polished_□ -> □_pavement
+      > * [+] (minecraft) polished_□ -> □_pillar
+      >> □ = granite | diorite | andesite
 - 调整 support-minecraft 的部分配方:
     - [+] (quark) sturdy_stone -> cobblestone
-    - > * [+] (quark) tag:stony_block/quark_◻ -> ◻
-      > * [+] (quark) tag:stony_block/quark_◻ -> polished_◻
-      >> ◻ = granite | diorite | andesite
+    - > * [+] (quark) tag:stony_block/quark_□ -> □
+      > * [+] (quark) tag:stony_block/quark_□ -> polished_□
+      >> □ = granite | diorite | andesite
 
 ### [2022-06-05 : v3.1.1]
 - 调整 support-quark 的部分配方:

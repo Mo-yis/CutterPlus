@@ -7,7 +7,7 @@
 
 ![icon](pack.png)
 
-- Datapack supported version: 1.14.4 -> 1.18.1
+- Datapack supported version: 1.14.4 -> 1.18.2
 - Github: [https://github.com/Mo-yis/CutterPlus](https://github.com/Mo-yis/CutterPlus)
 
 ## Explain

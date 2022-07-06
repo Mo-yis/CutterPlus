@@ -1,6 +1,6 @@
 # Loading infomation.
 tellraw @a {"text": "---------------------------------"}
-tellraw @a {"text": "Loading Cutter Plus v4.0.0 !","color": "green"}
+tellraw @a {"text": "Loading Cutter Plus v4.0.1 !","color": "green"}
 
 # Registration infomation.
 function support-minecraft:info
