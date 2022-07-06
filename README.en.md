@@ -38,16 +38,9 @@
 - Stairs can be processed into corresponding slab.
 - Please check the detailed Recipe on WIKI page: [https://github.com/Mo-yis/CutterPlus/wiki](https://github.com/Mo-yis/CutterPlus/wiki)
 
-## Update Plan
-
-- Support for updating module content.
-- Add more compatibility formulas between mods.
-- Adjust folder directory and standardize file naming.
-- Support more mods of 1.16.5.
-
 ## Usage
 
-- Please select the corresponding version in GitHub Releases page to download Source Code.
+- Please select the corresponding version of Assets to download the source code on the GitHub Releases page.
 - If you want to put the datapack into the archive, please unzip it in the ".minecraft \\ saves \\ (save name) \\ datapacks \\ " directory.
 - If you are preparing to create a new world, please add the extracted folder to the game.
 - If you want to load into a game or server that has already started, please type "/reload" from the console or as a level 3 operator.

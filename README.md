@@ -35,16 +35,9 @@
 - 楼梯可以加工成对应的台阶。
 - 请在 WIKI 页面查看详细配方: [https://github.com/Mo-yis/CutterPlus/wiki](https://github.com/Mo-yis/CutterPlus/wiki)
 
-## 计划更新
-
-- 更新模组内容的支持
-- 添加更多模组间兼容性配方
-- 调整文件夹目录、规范文件命名
-- 支持更多 1.16.5 的模组
-
 ## 使用方式
 
-- 请在 Github Releases 页面中选择对应版本下载 Source Code。
+- 请在 Github Releases 页面中选择对应版本的 Assets 下载 Source code。
 - 如果你打算将数据包放入存档中，请解压在 ".minecraft \\ saves \\ (存档名称) \\ datapacks \\ " 目录下。
 - 如果你正准备新建世界，请将解压出的文件夹添加到游戏中。
 - 如果你打算加载到已经启动的游戏或服务器中，请在后台或以3级操作员身份键入 "/reload" 以加载数据包。

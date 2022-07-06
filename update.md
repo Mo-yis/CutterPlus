@@ -1,3 +1,9 @@
+### [2022-06-06 : v4.0.2]
+- 更新 README
+- 调整 support-create 的部分配方:
+    - copper_tiles <=> copper_shingles
+- 更新 support-create 的 tree 文件
+
 ### [2022-06-06 : v4.0.1]
 - 修改单词通配符为 □
 - 更新 README
