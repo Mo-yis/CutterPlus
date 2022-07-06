@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:stony_block/quark_granite"
+    },
+    "result": "quark:granite_pavement",
+    "count": 1
+}

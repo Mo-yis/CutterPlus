@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:dirty_glass"
+    },
+    "result": "quark:dirty_glass_pane",
+    "count": 3
+}

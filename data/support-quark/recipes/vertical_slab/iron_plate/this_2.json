@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "quark:iron_plate"
+    },
+    "result": "quark:iron_plate_vertical_slab",
+    "count": 2
+}

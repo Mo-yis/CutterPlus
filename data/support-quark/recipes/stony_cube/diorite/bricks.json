@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "support-quark:stony_block/quark_diorite"
+    },
+    "result": "quark:diorite_bricks",
+    "count": 1
+}
