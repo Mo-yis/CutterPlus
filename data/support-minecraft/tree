@@ -59,7 +59,6 @@
 │   │   │       ├── diorite.json
 │   │   │       └── granite.json
 │   │   ├── quark
-│   │   │   ├── magma_block.json
 │   │   │   ├── planks
 │   │   │   │   ├── acacia.json
 │   │   │   │   ├── birch.json
@@ -69,11 +68,39 @@
 │   │   │   │   ├── oak.json
 │   │   │   │   ├── spruce.json
 │   │   │   │   └── warped.json
+│   │   │   ├── slab
+│   │   │   │   ├── andesite.json
+│   │   │   │   ├── diorite.json
+│   │   │   │   ├── granite.json
+│   │   │   │   └── polished
+│   │   │   │       ├── andesite.json
+│   │   │   │       ├── diorite.json
+│   │   │   │       └── granite.json
+│   │   │   ├── stairs
+│   │   │   │   ├── andesite.json
+│   │   │   │   ├── diorite.json
+│   │   │   │   ├── granite.json
+│   │   │   │   └── polished
+│   │   │   │       ├── andesite.json
+│   │   │   │       ├── diorite.json
+│   │   │   │       └── granite.json
 │   │   │   ├── stick
 │   │   │   │   ├── count_1.json
 │   │   │   │   ├── count_2.json
 │   │   │   │   ├── count_6.json
 │   │   │   │   └── count_8.json
+│   │   │   ├── stony_cube
+│   │   │   │   ├── andesite
+│   │   │   │   │   ├── polished.json
+│   │   │   │   │   └── this.json
+│   │   │   │   ├── cobblestone.json
+│   │   │   │   ├── diorite
+│   │   │   │   │   ├── polished.json
+│   │   │   │   │   └── this.json
+│   │   │   │   ├── granite
+│   │   │   │   │   ├── polished.json
+│   │   │   │   │   └── this.json
+│   │   │   │   └── magma_block.json
 │   │   │   ├── terracotta
 │   │   │   │   ├── black.json
 │   │   │   │   ├── blue.json
@@ -94,8 +121,8 @@
 │   │   │   │   └── yellow.json
 │   │   │   ├── wall
 │   │   │   │   ├── andesite.json
-│   │   │   │   ├── diorite_bricks.json
-│   │   │   │   └── granite_bricks.json
+│   │   │   │   ├── diorite.json
+│   │   │   │   └── granite.json
 │   │   │   └── wooden_vertical_slab
 │   │   │       ├── acacia.json
 │   │   │       ├── birch.json
@@ -262,9 +289,9 @@
 │   │   │   └── this.json
 │   │   ├── prismarine.json
 │   │   ├── stone
+│   │   │   ├── brick.json
 │   │   │   ├── cobblestone.json
-│   │   │   ├── stone_brick.json
-│   │   │   └── stone.json
+│   │   │   └── this.json
 │   │   └── wooden
 │   │       ├── acacia.json
 │   │       ├── birch.json
@@ -398,4 +425,4 @@
 │       └── wooden_signs.json
 └── tree
 
-90 directories, 308 files
+98 directories, 327 files

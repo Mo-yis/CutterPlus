@@ -47,7 +47,7 @@
 
 ## Usage
 
-- Github: Click the **green** "**Code**" in the upper right corner and then click "**Download ZIP**".
+- Please select the corresponding version in GitHub Releases page to download Source Code.
 - If you want to put the datapack into the archive, please unzip it in the ".minecraft \\ saves \\ (save name) \\ datapacks \\ " directory.
 - If you are preparing to create a new world, please add the extracted folder to the game.
 - If you want to load into a game or server that has already started, please type "/reload" from the console or as a level 3 operator.

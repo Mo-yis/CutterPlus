@@ -4,7 +4,7 @@
 
 ![icon](pack.png)
 
-- 数据包支持版本: 1.14.4 -> 1.18.1
+- 数据包支持版本: 1.14.4 -> 1.18.2
 - Github: [https://github.com/Mo-yis/CutterPlus](https://github.com/Mo-yis/CutterPlus)
 
 ## 说明
@@ -44,7 +44,7 @@
 
 ## 使用方式
 
-- Github: 右上角点击**绿色**的 "**Code**" 再点击 "**Download ZIP**"。
+- 請在 Github Releases 頁面中選擇對應版本下載 Source Code。
 - 如果你打算将数据包放入存档中，请解压在 ".minecraft \\ saves \\ (存档名称) \\ datapacks \\ " 目录下。
 - 如果你正准备新建世界，请将解压出的文件夹添加到游戏中。
 - 如果你打算加载到已经启动的游戏或服务器中，请在后台或以3级操作员身份键入 "/reload" 以加载数据包。

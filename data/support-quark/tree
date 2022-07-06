@@ -1,0 +1,691 @@
+.
+├── functions
+│   └── info.mcfunction
+├── recipes
+│   ├── compatibility
+│   │   └── minecraft
+│   │       ├── post
+│   │       │   ├── acacia.json
+│   │       │   ├── birch.json
+│   │       │   ├── crimson.json
+│   │       │   ├── dark_oak.json
+│   │       │   ├── jungle.json
+│   │       │   ├── oak.json
+│   │       │   ├── spruce.json
+│   │       │   ├── stripped
+│   │       │   │   ├── acacia.json
+│   │       │   │   ├── birch.json
+│   │       │   │   ├── crimson.json
+│   │       │   │   ├── dark_oak.json
+│   │       │   │   ├── jungle.json
+│   │       │   │   ├── oak.json
+│   │       │   │   ├── spruce.json
+│   │       │   │   └── warped.json
+│   │       │   └── warped.json
+│   │       ├── slab
+│   │       │   ├── andesite_bricks.json
+│   │       │   ├── diorite_bricks.json
+│   │       │   └── granite_bricks.json
+│   │       ├── stairs
+│   │       │   ├── andesite_bricks.json
+│   │       │   ├── diorite_bricks.json
+│   │       │   └── granite_bricks.json
+│   │       ├── stony_cube
+│   │       │   ├── andesite
+│   │       │   │   ├── chiseled_bricks.json
+│   │       │   │   ├── pavement.json
+│   │       │   │   └── pillar.json
+│   │       │   ├── diorite
+│   │       │   │   ├── chiseled_bricks.json
+│   │       │   │   ├── pavement.json
+│   │       │   │   └── pillar.json
+│   │       │   └── granite
+│   │       │       ├── chiseled_bricks.json
+│   │       │       ├── pavement.json
+│   │       │       └── pillar.json
+│   │       ├── vertical_planks
+│   │       │   ├── count_1
+│   │       │   │   ├── acacia.json
+│   │       │   │   ├── birch.json
+│   │       │   │   ├── crimson.json
+│   │       │   │   ├── dark_oak.json
+│   │       │   │   ├── jungle.json
+│   │       │   │   ├── oak.json
+│   │       │   │   ├── spruce.json
+│   │       │   │   └── warped.json
+│   │       │   └── count_4
+│   │       │       ├── acacia.json
+│   │       │       ├── birch.json
+│   │       │       ├── crimson.json
+│   │       │       ├── dark_oak.json
+│   │       │       ├── jungle.json
+│   │       │       ├── oak.json
+│   │       │       ├── spruce.json
+│   │       │       └── warped.json
+│   │       ├── vertical_slab
+│   │       │   ├── stony
+│   │       │   │   ├── andesite
+│   │       │   │   │   ├── polished.json
+│   │       │   │   │   └── this.json
+│   │       │   │   ├── blackstone
+│   │       │   │   │   ├── polished_brick.json
+│   │       │   │   │   ├── polished.json
+│   │       │   │   │   └── this.json
+│   │       │   │   ├── brick.json
+│   │       │   │   ├── cobblestone
+│   │       │   │   │   ├── mossy.json
+│   │       │   │   │   └── this.json
+│   │       │   │   ├── diorite
+│   │       │   │   │   ├── polished.json
+│   │       │   │   │   └── this.json
+│   │       │   │   ├── granite
+│   │       │   │   │   ├── polished.json
+│   │       │   │   │   └── this.json
+│   │       │   │   ├── nether_brick
+│   │       │   │   │   ├── red.json
+│   │       │   │   │   └── this.json
+│   │       │   │   ├── prismarine
+│   │       │   │   │   ├── brick.json
+│   │       │   │   │   ├── dark.json
+│   │       │   │   │   └── this.json
+│   │       │   │   ├── purpur.json
+│   │       │   │   ├── quartz
+│   │       │   │   │   ├── smooth.json
+│   │       │   │   │   └── this.json
+│   │       │   │   ├── sandstone
+│   │       │   │   │   ├── cut.json
+│   │       │   │   │   ├── cut_red.json
+│   │       │   │   │   ├── red.json
+│   │       │   │   │   ├── smooth.json
+│   │       │   │   │   ├── smooth_red.json
+│   │       │   │   │   └── this.json
+│   │       │   │   └── stone
+│   │       │   │       ├── brick.json
+│   │       │   │       ├── end_brick.json
+│   │       │   │       ├── mossy_brick.json
+│   │       │   │       ├── smooth.json
+│   │       │   │       └── this.json
+│   │       │   └── wooden
+│   │       │       ├── acacia.json
+│   │       │       ├── birch.json
+│   │       │       ├── crimson.json
+│   │       │       ├── dark_oak.json
+│   │       │       ├── jungle.json
+│   │       │       ├── oak.json
+│   │       │       ├── spruce.json
+│   │       │       └── warped.json
+│   │       └── wall
+│   │           ├── andesite_bricks.json
+│   │           ├── diorite_bricks.json
+│   │           └── granite_bricks.json
+│   ├── item
+│   │   └── biotite.json
+│   ├── pane
+│   │   ├── crystal
+│   │   │   ├── black.json
+│   │   │   ├── blue.json
+│   │   │   ├── green.json
+│   │   │   ├── indigo.json
+│   │   │   ├── orange.json
+│   │   │   ├── red.json
+│   │   │   ├── violet.json
+│   │   │   ├── white.json
+│   │   │   └── yellow.json
+│   │   ├── dirty_glass.json
+│   │   └── framed_glass
+│   │       ├── black.json
+│   │       ├── blue.json
+│   │       ├── brown.json
+│   │       ├── cyan.json
+│   │       ├── gray.json
+│   │       ├── green.json
+│   │       ├── light_blue.json
+│   │       ├── light_gray.json
+│   │       ├── lime.json
+│   │       ├── magenta.json
+│   │       ├── orange.json
+│   │       ├── pink.json
+│   │       ├── purple.json
+│   │       ├── red.json
+│   │       ├── this.json
+│   │       ├── white.json
+│   │       └── yellow.json
+│   ├── slab
+│   │   ├── andesite_bricks.json
+│   │   ├── basalt
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── biotite
+│   │   │   ├── block.json
+│   │   │   └── smooth.json
+│   │   ├── blackstone_bricks.json
+│   │   ├── blue_nether_bricks.json
+│   │   ├── brimstone
+│   │   │   ├── bricks.json
+│   │   │   └── this.json
+│   │   ├── charred_nether_bricks.json
+│   │   ├── cobblestone
+│   │   │   ├── bricks.json
+│   │   │   ├── mossy_bricks.json
+│   │   │   └── this.json
+│   │   ├── deepslate
+│   │   │   ├── bricks.json
+│   │   │   ├── cobbled.json
+│   │   │   ├── polished.json
+│   │   │   └── tiles.json
+│   │   ├── diorite_bricks.json
+│   │   ├── dirt_bricks
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── duskbound_block
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── elder_prismarine
+│   │   │   ├── bricks.json
+│   │   │   ├── dark.json
+│   │   │   └── this.json
+│   │   ├── granite_bricks.json
+│   │   ├── iron_plate
+│   │   │   ├── rusty_1.json
+│   │   │   ├── rusty_2.json
+│   │   │   ├── this_1.json
+│   │   │   └── this_2.json
+│   │   ├── jasper
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── limestone
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── magma_bricks.json
+│   │   ├── marble
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── midori_block
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── myalite
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── netherrack_bricks.json
+│   │   ├── permafrost
+│   │   │   ├── bricks.json
+│   │   │   └── this.json
+│   │   ├── red_sandstone_bricks.json
+│   │   ├── sandstone_bricks.json
+│   │   ├── sandy_bricks
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── shingles
+│   │   │   ├── black.json
+│   │   │   ├── blue.json
+│   │   │   ├── brown.json
+│   │   │   ├── cyan.json
+│   │   │   ├── gray.json
+│   │   │   ├── green.json
+│   │   │   ├── light_blue.json
+│   │   │   ├── light_gray.json
+│   │   │   ├── lime.json
+│   │   │   ├── magenta.json
+│   │   │   ├── orange.json
+│   │   │   ├── pink.json
+│   │   │   ├── purple.json
+│   │   │   ├── red.json
+│   │   │   ├── this.json
+│   │   │   ├── white.json
+│   │   │   └── yellow.json
+│   │   ├── slate
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── smooth_basalt.json
+│   │   ├── snow_bricks
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── soul_sandstone
+│   │   │   ├── bricks.json
+│   │   │   ├── cut.json
+│   │   │   ├── smooth.json
+│   │   │   └── this.json
+│   │   ├── stained_planks
+│   │   │   ├── count_1
+│   │   │   │   ├── black.json
+│   │   │   │   ├── blue.json
+│   │   │   │   ├── brown.json
+│   │   │   │   ├── cyan.json
+│   │   │   │   ├── gray.json
+│   │   │   │   ├── green.json
+│   │   │   │   ├── light_blue.json
+│   │   │   │   ├── light_gray.json
+│   │   │   │   ├── lime.json
+│   │   │   │   ├── magenta.json
+│   │   │   │   ├── orange.json
+│   │   │   │   ├── pink.json
+│   │   │   │   ├── purple.json
+│   │   │   │   ├── red.json
+│   │   │   │   ├── white.json
+│   │   │   │   └── yellow.json
+│   │   │   └── count_2
+│   │   │       ├── black.json
+│   │   │       ├── blue.json
+│   │   │       ├── brown.json
+│   │   │       ├── cyan.json
+│   │   │       ├── gray.json
+│   │   │       ├── green.json
+│   │   │       ├── light_blue.json
+│   │   │       ├── light_gray.json
+│   │   │       ├── lime.json
+│   │   │       ├── magenta.json
+│   │   │       ├── orange.json
+│   │   │       ├── pink.json
+│   │   │       ├── purple.json
+│   │   │       ├── red.json
+│   │   │       ├── white.json
+│   │   │       └── yellow.json
+│   │   ├── thatch
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── turf
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── twisted_blackstone_bricks.json
+│   │   ├── vanilla_basalt_bricks.json
+│   │   └── weeping_blackstone_bricks.json
+│   ├── stained_planks
+│   │   ├── black.json
+│   │   ├── blue.json
+│   │   ├── brown.json
+│   │   ├── cyan.json
+│   │   ├── gray.json
+│   │   ├── green.json
+│   │   ├── light_blue.json
+│   │   ├── light_gray.json
+│   │   ├── lime.json
+│   │   ├── magenta.json
+│   │   ├── orange.json
+│   │   ├── pink.json
+│   │   ├── purple.json
+│   │   ├── red.json
+│   │   ├── vertical
+│   │   │   ├── black.json
+│   │   │   ├── blue.json
+│   │   │   ├── brown.json
+│   │   │   ├── cyan.json
+│   │   │   ├── gray.json
+│   │   │   ├── green.json
+│   │   │   ├── light_blue.json
+│   │   │   ├── light_gray.json
+│   │   │   ├── lime.json
+│   │   │   ├── magenta.json
+│   │   │   ├── orange.json
+│   │   │   ├── pink.json
+│   │   │   ├── purple.json
+│   │   │   ├── red.json
+│   │   │   ├── white.json
+│   │   │   └── yellow.json
+│   │   ├── white.json
+│   │   └── yellow.json
+│   ├── stairs
+│   │   ├── basalt
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── brimstone
+│   │   │   ├── bricks.json
+│   │   │   └── this.json
+│   │   ├── deepslate
+│   │   │   ├── bricks.json
+│   │   │   ├── cobbled.json
+│   │   │   ├── polished.json
+│   │   │   └── tiles.json
+│   │   ├── dirt_bricks.json
+│   │   ├── duskbound_block.json
+│   │   ├── elder_prismarine_bricks.json
+│   │   ├── elder_prismarine.json
+│   │   ├── iron_plate
+│   │   │   ├── rusty.json
+│   │   │   └── this.json
+│   │   ├── jasper
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── limestone
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── marble
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── midori_block.json
+│   │   ├── myalite
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── permafrost
+│   │   │   ├── bricks.json
+│   │   │   └── this.json
+│   │   ├── sandy_bricks.json
+│   │   ├── slate
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── snow_bricks.json
+│   │   ├── soul_sandstone
+│   │   │   ├── bricks.json
+│   │   │   └── this.json
+│   │   ├── stained_planks
+│   │   │   ├── black.json
+│   │   │   ├── blue.json
+│   │   │   ├── brown.json
+│   │   │   ├── cyan.json
+│   │   │   ├── gray.json
+│   │   │   ├── green.json
+│   │   │   ├── light_blue.json
+│   │   │   ├── light_gray.json
+│   │   │   ├── lime.json
+│   │   │   ├── magenta.json
+│   │   │   ├── orange.json
+│   │   │   ├── pink.json
+│   │   │   ├── purple.json
+│   │   │   ├── red.json
+│   │   │   ├── white.json
+│   │   │   └── yellow.json
+│   │   ├── thatch.json
+│   │   └── turf.json
+│   ├── stony_cube
+│   │   ├── andesite
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled_bricks.json
+│   │   │   ├── pavement.json
+│   │   │   └── pillar.json
+│   │   ├── basalt
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── pavement.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── biotite
+│   │   │   ├── block.json
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   └── pillar.json
+│   │   ├── brimstone.json
+│   │   ├── deepslate
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── cobbled.json
+│   │   │   ├── polished.json
+│   │   │   └── tiles.json
+│   │   ├── diorite
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled_bricks.json
+│   │   │   ├── pavement.json
+│   │   │   └── pillar.json
+│   │   ├── elder_prismarine_bricks.json
+│   │   ├── elder_prismarine.json
+│   │   ├── granite
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled_bricks.json
+│   │   │   ├── pavement.json
+│   │   │   └── pillar.json
+│   │   ├── iron_plate.json
+│   │   ├── jasper
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── pavement.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── limestone
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── pavement.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── marble
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── pavement.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── midori
+│   │   │   ├── block.json
+│   │   │   └── pillar.json
+│   │   ├── myalite
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── pavement.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── permafrost.json
+│   │   ├── slate
+│   │   │   ├── bricks.json
+│   │   │   ├── chiseled.json
+│   │   │   ├── pavement.json
+│   │   │   ├── pillar.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   └── soul_sandstone
+│   │       ├── bricks.json
+│   │       ├── chiseled.json
+│   │       ├── cut.json
+│   │       └── this.json
+│   ├── vertical_slab
+│   │   ├── andesite_bricks.json
+│   │   ├── basalt
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── biotite
+│   │   │   ├── block.json
+│   │   │   └── smooth.json
+│   │   ├── blackstone_bricks.json
+│   │   ├── blue_nether_bricks.json
+│   │   ├── brimstone
+│   │   │   ├── bricks.json
+│   │   │   └── this.json
+│   │   ├── charred_nether_bricks.json
+│   │   ├── cobblestone
+│   │   │   ├── bricks.json
+│   │   │   ├── mossy_bricks.json
+│   │   │   └── this.json
+│   │   ├── deepslate
+│   │   │   ├── bricks.json
+│   │   │   ├── cobbled.json
+│   │   │   ├── polished.json
+│   │   │   └── tiles.json
+│   │   ├── diorite_bricks.json
+│   │   ├── dirt_bricks
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── duskbound_block
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── elder_prismarine
+│   │   │   ├── bricks.json
+│   │   │   ├── dark.json
+│   │   │   └── this.json
+│   │   ├── granite_bricks.json
+│   │   ├── iron_plate
+│   │   │   ├── rusty_1.json
+│   │   │   ├── rusty_2.json
+│   │   │   ├── this_1.json
+│   │   │   └── this_2.json
+│   │   ├── jasper
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── limestone
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── magma_bricks.json
+│   │   ├── marble
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── midori_block
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── myalite
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── netherrack_bricks.json
+│   │   ├── permafrost
+│   │   │   ├── bricks.json
+│   │   │   └── this.json
+│   │   ├── red_sandstone_bricks.json
+│   │   ├── sandstone_bricks.json
+│   │   ├── sandy_bricks
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── shingles
+│   │   │   ├── black.json
+│   │   │   ├── blue.json
+│   │   │   ├── brown.json
+│   │   │   ├── cyan.json
+│   │   │   ├── gray.json
+│   │   │   ├── green.json
+│   │   │   ├── light_blue.json
+│   │   │   ├── light_gray.json
+│   │   │   ├── lime.json
+│   │   │   ├── magenta.json
+│   │   │   ├── orange.json
+│   │   │   ├── pink.json
+│   │   │   ├── purple.json
+│   │   │   ├── red.json
+│   │   │   ├── this.json
+│   │   │   ├── white.json
+│   │   │   └── yellow.json
+│   │   ├── slate
+│   │   │   ├── bricks.json
+│   │   │   ├── polished.json
+│   │   │   └── this.json
+│   │   ├── smooth_basalt.json
+│   │   ├── snow_bricks
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── soul_sandstone
+│   │   │   ├── bricks.json
+│   │   │   ├── cut.json
+│   │   │   ├── smooth_soul_sandstone.json
+│   │   │   └── this.json
+│   │   ├── stained_planks
+│   │   │   ├── count_1
+│   │   │   │   ├── black.json
+│   │   │   │   ├── blue.json
+│   │   │   │   ├── brown.json
+│   │   │   │   ├── cyan.json
+│   │   │   │   ├── gray.json
+│   │   │   │   ├── green.json
+│   │   │   │   ├── light_blue.json
+│   │   │   │   ├── light_gray.json
+│   │   │   │   ├── lime.json
+│   │   │   │   ├── magenta.json
+│   │   │   │   ├── orange.json
+│   │   │   │   ├── pink.json
+│   │   │   │   ├── purple.json
+│   │   │   │   ├── red.json
+│   │   │   │   ├── white.json
+│   │   │   │   └── yellow.json
+│   │   │   └── count_2
+│   │   │       ├── black.json
+│   │   │       ├── blue.json
+│   │   │       ├── brown.json
+│   │   │       ├── cyan.json
+│   │   │       ├── gray.json
+│   │   │       ├── green.json
+│   │   │       ├── light_blue.json
+│   │   │       ├── light_gray.json
+│   │   │       ├── lime.json
+│   │   │       ├── magenta.json
+│   │   │       ├── orange.json
+│   │   │       ├── pink.json
+│   │   │       ├── purple.json
+│   │   │       ├── red.json
+│   │   │       ├── white.json
+│   │   │       └── yellow.json
+│   │   ├── thatch
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── turf
+│   │   │   ├── count_1.json
+│   │   │   └── count_2.json
+│   │   ├── twisted_blackstone_bricks.json
+│   │   ├── vanilla_basalt_bricks.json
+│   │   └── weeping_blackstone_bricks.json
+│   └── wall
+│       ├── basalt
+│       │   ├── bricks.json
+│       │   └── this.json
+│       ├── brimstone
+│       │   ├── bricks.json
+│       │   └── this.json
+│       ├── deepslate
+│       │   ├── bricks.json
+│       │   ├── cobbled.json
+│       │   ├── polished.json
+│       │   └── tiles.json
+│       ├── dirt_bricks.json
+│       ├── jasper
+│       │   ├── bricks.json
+│       │   └── this.json
+│       ├── limestone
+│       │   ├── bricks.json
+│       │   └── this.json
+│       ├── marble
+│       │   ├── bricks.json
+│       │   └── this.json
+│       ├── myalite
+│       │   ├── bricks.json
+│       │   └── this.json
+│       ├── permafrost
+│       │   ├── bricks.json
+│       │   └── this.json
+│       ├── sandy_bricks.json
+│       ├── slate
+│       │   ├── bricks.json
+│       │   └── this.json
+│       └── snow_bricks.json
+├── tags
+│   └── items
+│       ├── stony_block
+│       │   ├── cutting_basalt.json
+│       │   ├── cutting_jasper.json
+│       │   ├── cutting_limestone.json
+│       │   ├── cutting_marble.json
+│       │   ├── cutting_myalite.json
+│       │   ├── cutting_slate.json
+│       │   ├── deepslate
+│       │   │   ├── slab.json
+│       │   │   ├── stairs.json
+│       │   │   ├── vertical_slab.json
+│       │   │   └── wall.json
+│       │   ├── quark_andesite.json
+│       │   ├── quark_diorite.json
+│       │   └── quark_granite.json
+│       └── wooden
+│           ├── bookshelf.json
+│           ├── chest.json
+│           ├── hedge.json
+│           ├── ladder.json
+│           ├── post.json
+│           ├── stained
+│           │   ├── planks.json
+│           │   ├── slab.json
+│           │   ├── stairs.json
+│           │   └── vertical_slab.json
+│           └── vertical_slab.json
+└── tree
+
+130 directories, 558 files
